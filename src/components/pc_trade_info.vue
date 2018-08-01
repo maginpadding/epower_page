@@ -1,148 +1,153 @@
 <template>
-    <div>
-        <div class="introduce_pc">
-            <div id="introduce_banner"></div>
-            <div class="section-1 bg-fff pt-60 pb-60">
-                <div class="center-1200">
-                    <div class="h3-title text-center mb-60" data-sr="enter top,over .7s,move 100px ,wait .1s">
-                        <h3 class="color-434a54 font-32 lh-52">客户自主商标查询</h3>
-                        <p class="color-82939e font-16 lh-36">系统提供商标查询服务，实时更新商标数据库支撑精准的查询结果</p>
-                    </div>
-                    <div class="section-image">
-                        <div class="section-left" data-sr="enter left,over .7s,move 100px"></div>
-                        <div class="section-right" data-sr="enter right,over .7s,move 100px"></div>
-                        <div class="section-icon section-icon-left" data-sr="enter left,over .7s,move 100px ,wait .2s">
-                            <div class="section-left-top bold color-fff font-16">多种查询方式<br>简单快捷</div>
-                            <div class="section-left-bottom text-center">
-                                <div class="font-16 lh-32 color-fff href-btn" data-url="http://demo.epower.cn/trademark/search">模糊查询</div>
-                                <div class="font-16 lh-32 color-fff href-btn" data-url="http://demo.epower.cn/trademark/jinsi">近似查询</div>
-                                <div class="font-16 lh-32 color-fff href-btn" data-url="http://demo.epower.cn/trademark/tm_img_search">图形查询</div>
-                                <div class="font-16 lh-32 color-fff href-btn" data-url="http://demo.epower.cn/trademark/cls">商标分类表</div>
-                            </div>
-                        </div>
-                        <div class="section-icon section-icon-center" data-sr="enter bottom,over .7s,move 100px ,wait .3s"></div>
-                        <div class="section-icon section-icon-right" data-sr="enter right,over .7s,move 100px ,wait .2s"></div>
-                    </div>
-                </div>
+  <div>
+    <div class="introduce_pc">
+      <div id="introduce_banner"></div>
+      <div class="section-1 bg-fff pt-60 pb-60">
+        <div class="center-1200">
+          <div class="h3-title text-center mb-60" data-sr="enter top,over .7s,move 100px ,wait .1s">
+            <h3 class="color-434a54 font-32 lh-52">客户自主商标查询</h3>
+            <p class="color-82939e font-16 lh-36">系统提供商标查询服务，实时更新商标数据库支撑精准的查询结果</p>
+          </div>
+          <div class="section-image">
+            <div class="section-left" data-sr="enter left,over .7s,move 100px"></div>
+            <div class="section-right" data-sr="enter right,over .7s,move 100px"></div>
+            <div class="section-icon section-icon-left" data-sr="enter left,over .7s,move 100px ,wait .2s">
+              <div class="section-left-top bold color-fff font-16">多种查询方式<br>简单快捷</div>
+              <div class="section-left-bottom text-center">
+                <div class="font-16 lh-32 color-fff href-btn" data-url="http://demo.epower.cn/trademark/search">模糊查询</div>
+                <div class="font-16 lh-32 color-fff href-btn" data-url="http://demo.epower.cn/trademark/jinsi">近似查询</div>
+                <div class="font-16 lh-32 color-fff href-btn" data-url="http://demo.epower.cn/trademark/tm_img_search">图形查询</div>
+                <div class="font-16 lh-32 color-fff href-btn" data-url="http://demo.epower.cn/trademark/cls">商标分类表</div>
+              </div>
             </div>
-            <div class="section-2 pt-60 pb-60 bg-f5">
-                <div class="center-1200">
-                    <div class="h3-title text-center mb-40" data-sr="enter top,over .7s,move 100px ,wait .1s">
-                        <h3 class="color-434a54 font-32 lh-52">成熟的商标注册流程，提供多种注册方式</h3>
-                        <p class="color-82939e font-16 lh-36">提供普通注册、保姆注册、担保注册可满足不同客户需求，拥有成熟的线上商标注册流程，商标申请人在线管理简单方便</p>
-                    </div>
-                    <div class="section-image pr">
-                        <div class="section-left-wrap fl pr bg-transparent" data-sr="enter left,over .7s,move 100px">
-                            <div class="section-left po bg-transparent"></div>
-                        </div>
-                        <div class="section-right fl pr" data-sr="enter right,over .7s,move 100px">
-                            <div class="section-right-top po"></div>
-                            <div class="section-right-bottom po"></div>
-                            <div class="section-icon section-icon-top po"></div>
-                            <div class="section-icon section-icon-bottom po"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section-3 bg-fff">
-                <div class="center-1200">
-                    <div class="section-image pr">
-                        <div class="section-title po" data-sr="enter top,over .7s,move 100px ,wait .1s">
-                            <p class="color-434a54 font-32 lh-36">商标状态自动获取</p>
-                            <p class="color-434a54 font-32 lh-36">在线索取电子发文</p>
-                            <span class="color-82939e font-16 lh-32">系统可自动获取商标局最新的商标状态并同步更新，用户可在个人中心随时查看商标最新状态，随时下载电子发文</span>
-                        </div>
-                        <div class="section-left po" data-sr="enter bottom,over .7s,move 100px ,wait .1s"></div>
-                        <div class="section-left-icon po" data-sr="enter top,over .7s,move 100px ,wait .2s"></div>
-                        <div class="section-right-icon po" data-sr="enter top,over .7s,move 100px ,wait .2s"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="section-4 bg-fff">
-                <div class="center-1200">
-                    <div class="h3-title text-center mb-60" data-sr="enter top,over .7s,move 100px ,wait .1s">
-                        <h3 class="color-434a54 font-32 lh-52">商标在线交易</h3>
-                        <p class="color-82939e font-16 lh-36">海量商标数据库，随心选购；用户可一键发布商标，无需缴纳保证金</p>
-                    </div>
-                    <div class="section-image pr">
-                        <div class="section-left po" data-sr="enter left,over .7s,move 100px ,wait .1s"></div>
-                        <div class="section-right po" data-sr="enter right,over .7s,move 100px ,wait .1s"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="section-5 bg-fff pb-60">
-                <div class="center-1200">
-                    <div class="section-image pr">
-                        <div class="h3-title text-center po" data-sr="enter top,over .7s,move 100px ,wait .1s">
-                            <h3 class="color-434a54 font-32 lh-52">商标服务</h3>
-                            <p class="color-82939e font-16 lh-36">十五种商标服务，涵盖基本商标业务所需服务</p>
-                        </div>
-                        <div class="section-left  po" data-sr="enter left,over .7s,move 100px ,wait .1s"></div>
-                        <div class="section-right po" data-sr="enter right,over .7s,move 100px ,wait .1s"></div>
-                        <div class="section-nav-wrap po">
-                            <div class="section-right-nav fl text-center font-14 bg-common href-btn" data-sr="enter right,over .7s,move 100px ,wait .2s" data-url="http://demo.epower.cn/trademark/services?remindinfo=xuzhan">商标续展</div>
-                            <div class="section-right-nav fl text-center font-14 bg-common href-btn" data-sr="enter right,over .7s,move 100px ,wait .2s" data-url="http://demo.epower.cn/trademark/services?remindinfo=beian">商标备案</div>
-                            <div class="section-right-nav fl text-center font-14 bg-common href-btn" data-sr="enter right,over .7s,move 100px ,wait .2s" data-url="http://demo.epower.cn/trademark/services?remindinfo=zhuanrang">商标转让</div>
-                            <div class="section-right-nav fl text-center font-14 bg-common href-btn" data-sr="enter right,over .7s,move 100px ,wait .2s" data-url="http://demo.epower.cn/trademark/services?remindinfo=biangeng">商标变更</div>
-                            <div class="section-right-nav fl text-center font-14 bg-common href-btn" data-sr="enter right,over .7s,move 100px ,wait .2s" data-url="http://demo.epower.cn/trademark/services?remindinfo=zhuxiao">商标注销</div>
-                            <div class="section-right-nav fl text-center font-14 bg-common href-btn" data-sr="enter right,over .7s,move 100px ,wait .2s" data-url="http://demo.epower.cn/trademark/services?remindinfo=bufa">商标证补发</div>
-                            <div class="section-right-nav fl text-center font-14 bg-common href-btn" data-sr="enter right,over .7s,move 100px ,wait .2s" data-url="http://demo.epower.cn/trademark/services?remindinfo=kuanzhan">商标宽展</div>
-                            <div class="section-right-nav fl text-center font-14 bg-common href-btn" data-sr="enter right,over .7s,move 100px ,wait .2s" data-url="http://demo.epower.cn/trademark/services?remindinfo=gengzheng">商标更正</div>
-                            <div class="section-right-nav fl text-center font-14 bg-common href-btn" data-sr="enter right,over .7s,move 100px ,wait .2s" data-url="http://demo.epower.cn/trademark/services?remindinfo=yiyi">商标异议</div>
-                            <div class="section-right-nav fl text-center font-14 bg-common href-btn" data-sr="enter right,over .7s,move 100px ,wait .2s" data-url="http://demo.epower.cn/trademark/services?remindinfo=chexiao">商标撤三申请</div>
-                            <div class="section-right-nav fl text-center font-14 bg-common href-btn" data-sr="enter right,over .7s,move 100px ,wait .2s" data-url="http://demo.epower.cn/trademark/services?remindinfo=bohui">商标驳回复审</div>
-                            <div class="section-right-nav fl text-center font-14 bg-common href-btn" data-sr="enter right,over .7s,move 100px ,wait .2s" data-url="http://demo.epower.cn/trademark/services">···</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section-6 bg-fff pb-60">
-                <div class="center-1200">
-                    <div class="section-image pr">
-                        <div class="h3-title text-center po" data-sr="enter top,over .7s,move 100px ,wait .1s">
-                            <h3 class="color-434a54 font-32 lh-52">专利与版权服务</h3>
-                            <p class="color-82939e font-16 lh-36">多种专利与版权服务，在线下单，减少奔波</p>
-                        </div>
-                        <div class="section-left  po" data-sr="enter left,over .7s,move 100px ,wait .1s"></div>
-                        <div class="section-right po" data-sr="enter right,over .7s,move 100px ,wait .1s"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="section-7 bg-f5 pt-60 pb-60">
-                <div class="center-1200">
-                    <div class="section-btn-wrap">
-                        <div class="section-btn fl" data-sr="enter top,over .7s,move 100px ,wait .1s">
-                            <h3 class="h3-title font-24 color-fff bold text-center">了解商业授权</h3>
-                            <div class="section-desc color-333 font-16 text-center">
-                                可使用自主商标接口，商标知产业务订单均可自主审核提交。
-                            </div>
-                            <a href="http://www.epower.cn/shouquan" target="_blank" class="mod-btn mod-btn-green">了解商业授权</a>
-                        </div>
-                        <div class="section-btn fr" data-sr="enter top,over .7s,move 100px ,wait .1s">
-                            <h3 class="h3-title font-24 color-fff bold text-center">查看系统演示</h3>
-                            <div class="section-desc color-333 font-16 text-center">
-                                没有商标资质也可做商标业务！ePower将提供全阶段的商标服务，无需操心售后。
-                            </div>
-                            <a href="javascript:;" data-url="http://demo.epower.cn/trademark" target="_blank" class="mod-btn mod-btn-red href-btn">立即查看</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div class="section-icon section-icon-center" data-sr="enter bottom,over .7s,move 100px ,wait .3s"></div>
+            <div class="section-icon section-icon-right" data-sr="enter right,over .7s,move 100px ,wait .2s"></div>
+          </div>
         </div>
+      </div>
+      <div class="section-2 pt-60 pb-60 bg-f5">
+        <div class="center-1200">
+          <div class="h3-title text-center mb-40" data-sr="enter top,over .7s,move 100px ,wait .1s">
+            <h3 class="color-434a54 font-32 lh-52">成熟的商标注册流程，提供多种注册方式</h3>
+            <p class="color-82939e font-16 lh-36">提供普通注册、保姆注册、担保注册可满足不同客户需求，拥有成熟的线上商标注册流程，商标申请人在线管理简单方便</p>
+          </div>
+          <div class="section-image pr">
+            <div class="section-left-wrap fl pr bg-transparent" data-sr="enter left,over .7s,move 100px">
+              <div class="section-left po bg-transparent"></div>
+            </div>
+            <div class="section-right fl pr" data-sr="enter right,over .7s,move 100px">
+              <div class="section-right-top po"></div>
+              <div class="section-right-bottom po"></div>
+              <div class="section-icon section-icon-top po"></div>
+              <div class="section-icon section-icon-bottom po"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-3 bg-fff">
+        <div class="center-1200">
+          <div class="section-image pr">
+            <div class="section-title po" data-sr="enter top,over .7s,move 100px ,wait .1s">
+              <p class="color-434a54 font-32 lh-36">商标状态自动获取</p>
+              <p class="color-434a54 font-32 lh-36">在线索取电子发文</p>
+              <span class="color-82939e font-16 lh-32">系统可自动获取商标局最新的商标状态并同步更新，用户可在个人中心随时查看商标最新状态，随时下载电子发文</span>
+            </div>
+            <div class="section-left po" data-sr="enter bottom,over .7s,move 100px ,wait .1s"></div>
+            <div class="section-left-icon po" data-sr="enter top,over .7s,move 100px ,wait .2s"></div>
+            <div class="section-right-icon po" data-sr="enter top,over .7s,move 100px ,wait .2s"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-4 bg-fff">
+        <div class="center-1200">
+          <div class="h3-title text-center mb-60" data-sr="enter top,over .7s,move 100px ,wait .1s">
+            <h3 class="color-434a54 font-32 lh-52">商标在线交易</h3>
+            <p class="color-82939e font-16 lh-36">海量商标数据库，随心选购；用户可一键发布商标，无需缴纳保证金</p>
+          </div>
+          <div class="section-image pr">
+            <div class="section-left po" data-sr="enter left,over .7s,move 100px ,wait .1s"></div>
+            <div class="section-right po" data-sr="enter right,over .7s,move 100px ,wait .1s"></div>
+          </div>
+        </div>
+      </div>
+      <div class="section-5 bg-fff pb-60">
+        <div class="center-1200">
+          <div class="section-image pr">
+            <div class="h3-title text-center po" data-sr="enter top,over .7s,move 100px ,wait .1s">
+              <h3 class="color-434a54 font-32 lh-52">商标服务</h3>
+              <p class="color-82939e font-16 lh-36">十五种商标服务，涵盖基本商标业务所需服务</p>
+            </div>
+            <div class="section-left  po" data-sr="enter left,over .7s,move 100px ,wait .1s"></div>
+            <div class="section-right po" data-sr="enter right,over .7s,move 100px ,wait .1s"></div>
+            <div class="section-nav-wrap po">
+              <div class="section-right-nav fl text-center font-14 bg-common href-btn" data-sr="enter right,over .7s,move 100px ,wait .2s" data-url="http://demo.epower.cn/trademark/services?remindinfo=xuzhan">商标续展</div>
+              <div class="section-right-nav fl text-center font-14 bg-common href-btn" data-sr="enter right,over .7s,move 100px ,wait .2s" data-url="http://demo.epower.cn/trademark/services?remindinfo=beian">商标备案</div>
+              <div class="section-right-nav fl text-center font-14 bg-common href-btn" data-sr="enter right,over .7s,move 100px ,wait .2s" data-url="http://demo.epower.cn/trademark/services?remindinfo=zhuanrang">商标转让</div>
+              <div class="section-right-nav fl text-center font-14 bg-common href-btn" data-sr="enter right,over .7s,move 100px ,wait .2s" data-url="http://demo.epower.cn/trademark/services?remindinfo=biangeng">商标变更</div>
+              <div class="section-right-nav fl text-center font-14 bg-common href-btn" data-sr="enter right,over .7s,move 100px ,wait .2s" data-url="http://demo.epower.cn/trademark/services?remindinfo=zhuxiao">商标注销</div>
+              <div class="section-right-nav fl text-center font-14 bg-common href-btn" data-sr="enter right,over .7s,move 100px ,wait .2s" data-url="http://demo.epower.cn/trademark/services?remindinfo=bufa">商标证补发</div>
+              <div class="section-right-nav fl text-center font-14 bg-common href-btn" data-sr="enter right,over .7s,move 100px ,wait .2s" data-url="http://demo.epower.cn/trademark/services?remindinfo=kuanzhan">商标宽展</div>
+              <div class="section-right-nav fl text-center font-14 bg-common href-btn" data-sr="enter right,over .7s,move 100px ,wait .2s" data-url="http://demo.epower.cn/trademark/services?remindinfo=gengzheng">商标更正</div>
+              <div class="section-right-nav fl text-center font-14 bg-common href-btn" data-sr="enter right,over .7s,move 100px ,wait .2s" data-url="http://demo.epower.cn/trademark/services?remindinfo=yiyi">商标异议</div>
+              <div class="section-right-nav fl text-center font-14 bg-common href-btn" data-sr="enter right,over .7s,move 100px ,wait .2s" data-url="http://demo.epower.cn/trademark/services?remindinfo=chexiao">商标撤三申请</div>
+              <div class="section-right-nav fl text-center font-14 bg-common href-btn" data-sr="enter right,over .7s,move 100px ,wait .2s" data-url="http://demo.epower.cn/trademark/services?remindinfo=bohui">商标驳回复审</div>
+              <div class="section-right-nav fl text-center font-14 bg-common href-btn" data-sr="enter right,over .7s,move 100px ,wait .2s" data-url="http://demo.epower.cn/trademark/services">···</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-6 bg-fff pb-60">
+        <div class="center-1200">
+          <div class="section-image pr">
+            <div class="h3-title text-center po" data-sr="enter top,over .7s,move 100px ,wait .1s">
+              <h3 class="color-434a54 font-32 lh-52">专利与版权服务</h3>
+              <p class="color-82939e font-16 lh-36">多种专利与版权服务，在线下单，减少奔波</p>
+            </div>
+            <div class="section-left  po" data-sr="enter left,over .7s,move 100px ,wait .1s"></div>
+            <div class="section-right po" data-sr="enter right,over .7s,move 100px ,wait .1s"></div>
+          </div>
+        </div>
+      </div>
+      <div class="section-7 bg-f5 pt-60 pb-60">
+        <div class="center-1200">
+          <div class="section-btn-wrap">
+            <div class="section-btn fl" data-sr="enter top,over .7s,move 100px ,wait .1s">
+              <h3 class="h3-title font-24 color-fff bold text-center">了解商业授权</h3>
+              <div class="section-desc color-333 font-16 text-center">
+                可使用自主商标接口，商标知产业务订单均可自主审核提交。
+              </div>
+              <a href="http://www.epower.cn/shouquan" target="_blank" class="mod-btn mod-btn-green">了解商业授权</a>
+            </div>
+            <div class="section-btn fr" data-sr="enter top,over .7s,move 100px ,wait .1s">
+              <h3 class="h3-title font-24 color-fff bold text-center">查看系统演示</h3>
+              <div class="section-desc color-333 font-16 text-center">
+                没有商标资质也可做商标业务！ePower将提供全阶段的商标服务，无需操心售后。
+              </div>
+              <a href="javascript:;" data-url="http://demo.epower.cn/trademark" target="_blank" class="mod-btn mod-btn-red href-btn">立即查看</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </template>
 
 
 <script>
+// import scrollReveal from 'scrollreveal'
+
 export default {
-  name: "HelloWorld",
+  name: 'HelloWorld',
   data() {
     return {
-      msg: "Welcome to Your Vue.js App"
-    };
+      // scrollReveal: scrollReveal()
+    }
+  },
+  mounted() {
+    console.log(this.$scroll.scrollReveal(window));
   }
-};
+}
 </script>
 
 <!-- trademark_info pc common.css -->
@@ -317,7 +322,7 @@ dd {
 <style lang="less" scoped>
 #introduce_banner {
   height: 424px;
-  background: url("../style/images/introduction_01.png") no-repeat center center;
+  background: url('../style/images/introduction_01.png') no-repeat center center;
   background-size: cover;
 }
 .section-image div {
@@ -350,7 +355,7 @@ dd {
     height: 455px;
     left: 0;
     top: 0;
-    background-image: url("../style/images/introduction_07.png");
+    background-image: url('../style/images/introduction_07.png');
     z-index: 50;
   }
   .section-right {
@@ -358,7 +363,7 @@ dd {
     height: 360px;
     right: 0;
     top: 48px;
-    background-image: url("../style/images/introduction_11.png");
+    background-image: url('../style/images/introduction_11.png');
     z-index: 10;
   }
   .section-icon-left {
@@ -367,7 +372,7 @@ dd {
     top: 118px;
     left: 8px;
     z-index: 100;
-    background-image: url("../style/images/introduction_05.png");
+    background-image: url('../style/images/introduction_05.png');
   }
   .section-icon-right {
     width: 280px;
@@ -375,7 +380,7 @@ dd {
     top: 130px;
     right: 4px;
     z-index: 100;
-    background-image: url("../style/images/introduction_13.png");
+    background-image: url('../style/images/introduction_13.png');
   }
 }
 .section-2 {
@@ -398,7 +403,7 @@ dd {
         height: 756px;
         left: 0;
         top: 0;
-        background-image: url("../style/images/introduction_17.png"); // background-image: url("../style/images/introduction_15.png");
+        background-image: url('../style/images/introduction_17.png'); // background-image: url("../style/images/introduction_15.png");
         // background-size: contain;
         // -moz-box-shadow: 1px 1px 10px #999999;
         // -webkit-box-shadow: 1px 1px 10px #999999;
@@ -415,7 +420,7 @@ dd {
         top: 70px;
         right: 4px;
         z-index: 10;
-        background-image: url("../style/images/introduction_20.png");
+        background-image: url('../style/images/introduction_20.png');
       }
       .section-right-bottom {
         width: 556px;
@@ -423,7 +428,7 @@ dd {
         bottom: 97px;
         right: 4px;
         z-index: 10;
-        background-image: url("../style/images/introduction_22.png");
+        background-image: url('../style/images/introduction_22.png');
       }
       .section-icon {
         width: 150px;
@@ -433,11 +438,11 @@ dd {
       }
       .section-icon-top {
         top: 97px;
-        background-image: url("../style/images/introduction_19.png");
+        background-image: url('../style/images/introduction_19.png');
       }
       .section-icon-bottom {
         bottom: 189px;
-        background-image: url("../style/images/introduction_21.png");
+        background-image: url('../style/images/introduction_21.png');
       }
     }
   }
@@ -469,7 +474,7 @@ dd {
       left: 0;
       top: 390px;
       z-index: 10;
-      background-image: url("../style/images/introduction_24.png");
+      background-image: url('../style/images/introduction_24.png');
       background-size: cover;
     }
     .section-left-icon,
@@ -481,20 +486,20 @@ dd {
       top: 480px;
       left: 210px;
       z-index: 100;
-      background-image: url("../style/images/introduction_23.png");
+      background-image: url('../style/images/introduction_23.png');
     }
     .section-right-icon {
       top: 350px;
       right: 340px;
       z-index: 100;
-      background-image: url("../style/images/introduction_25.png");
+      background-image: url('../style/images/introduction_25.png');
     }
   }
 }
 // section4
 .section-4 {
   height: 812px;
-  background: url("../style/images/introduction_29.png") no-repeat center bottom;
+  background: url('../style/images/introduction_29.png') no-repeat center bottom;
   background-size: 100% 442px;
   .section-image {
     height: 610px;
@@ -504,7 +509,7 @@ dd {
       z-index: 10;
       top: 0;
       left: 5px;
-      background-image: url("../style/images/introduction_27.png");
+      background-image: url('../style/images/introduction_27.png');
     }
     .section-right {
       width: 850px;
@@ -512,7 +517,7 @@ dd {
       z-index: 100;
       top: 84px;
       right: 5px;
-      background-image: url("../style/images/introduction_28.png");
+      background-image: url('../style/images/introduction_28.png');
     }
   }
 }
@@ -534,7 +539,7 @@ dd {
     top: 60px;
     left: 0;
     z-index: 10;
-    background-image: url("../style/images/introduction_32.png");
+    background-image: url('../style/images/introduction_32.png');
   }
   .section-right {
     width: 550px;
@@ -542,7 +547,7 @@ dd {
     top: 200px;
     right: 44px;
     z-index: 1;
-    background-image: url("../style/images/introduction_31.png");
+    background-image: url('../style/images/introduction_31.png');
   }
   .section-nav-wrap {
     width: 440px;
@@ -559,7 +564,7 @@ dd {
     margin-bottom: 15px;
     margin-left: 15px;
     color: #009fe8;
-    background-image: url("../style/images/introduction_33.png");
+    background-image: url('../style/images/introduction_33.png');
   }
 }
 // section-6
@@ -580,14 +585,14 @@ dd {
     height: 278px;
     top: 129px;
     left: 0;
-    background-image: url("../style/images/introduction_35.png");
+    background-image: url('../style/images/introduction_35.png');
   }
   .section-right {
     width: 692px;
     height: 405px;
     right: 0;
     top: 15px;
-    background-image: url("../style/images/introduction_34.png");
+    background-image: url('../style/images/introduction_34.png');
   }
 }
 //section-7
@@ -618,10 +623,10 @@ dd {
       }
     }
     .section-btn:first-child {
-      background-image: url("../style/images/introduction_36.png");
+      background-image: url('../style/images/introduction_36.png');
     }
     .section-btn:last-child {
-      background-image: url("../style/images/introduction_37.png");
+      background-image: url('../style/images/introduction_37.png');
     }
   }
 }
