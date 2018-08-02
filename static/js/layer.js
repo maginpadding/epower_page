@@ -650,4 +650,3 @@
     o.run(e.jQuery), r.ready()
   }()
 }(window);
-export default layer;

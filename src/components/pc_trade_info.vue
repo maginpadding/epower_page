@@ -200,7 +200,8 @@ export default {
   },
   methods: {
     confirmHref: function(name, url) {
-      let layer = this.$layer
+      // let layer = this.$layer
+      // let layer = this.$layer
       layer.confirm('是否前往示例网站？', { title: '系统信息' }, function() {
         setTimeout(function() {
           window.open(url)
