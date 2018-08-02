@@ -9,5 +9,6 @@ export default {
 }
 </script>
 <style>
-@import url("../static/css/normalize.css");
+@import "../static/css/normalize.css";
+@import "../static/css/layer/layer.css";
 </style>
