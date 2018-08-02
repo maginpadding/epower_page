@@ -16,6 +16,7 @@
     "scrollreveal": "^3.4.0",
     "style-loader": "^0.21.0",
     "vue": "^2.5.2",
+    "vue-layer": "^0.9.9",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {

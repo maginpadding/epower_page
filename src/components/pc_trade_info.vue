@@ -14,10 +14,7 @@
             <div class="section-icon section-icon-left" data-sr="enter left,over .7s,move 100px ,wait .2s">
               <div class="section-left-top bold color-fff font-16">多种查询方式<br>简单快捷</div>
               <div class="section-left-bottom text-center">
-                <div class="font-16 lh-32 color-fff href-btn" data-url="http://demo.epower.cn/trademark/search">模糊查询</div>
-                <div class="font-16 lh-32 color-fff href-btn" data-url="http://demo.epower.cn/trademark/jinsi">近似查询</div>
-                <div class="font-16 lh-32 color-fff href-btn" data-url="http://demo.epower.cn/trademark/tm_img_search">图形查询</div>
-                <div class="font-16 lh-32 color-fff href-btn" data-url="http://demo.epower.cn/trademark/cls">商标分类表</div>
+                <div class="font-16 lh-32 color-fff href-btn" v-for="item in searchList" :key="item.id" v-bind:data-url="item.url" @click="confirmHref(item.name,item.url)">{{item.name}}</div>
               </div>
             </div>
             <div class="section-icon section-icon-center" data-sr="enter bottom,over .7s,move 100px ,wait .3s"></div>
@@ -81,18 +78,7 @@
             <div class="section-left  po" data-sr="enter left,over .7s,move 100px ,wait .1s"></div>
             <div class="section-right po" data-sr="enter right,over .7s,move 100px ,wait .1s"></div>
             <div class="section-nav-wrap po">
-              <div class="section-right-nav fl text-center font-14 bg-common href-btn" data-sr="enter right,over .7s,move 100px ,wait .2s" data-url="http://demo.epower.cn/trademark/services?remindinfo=xuzhan">商标续展</div>
-              <div class="section-right-nav fl text-center font-14 bg-common href-btn" data-sr="enter right,over .7s,move 100px ,wait .2s" data-url="http://demo.epower.cn/trademark/services?remindinfo=beian">商标备案</div>
-              <div class="section-right-nav fl text-center font-14 bg-common href-btn" data-sr="enter right,over .7s,move 100px ,wait .2s" data-url="http://demo.epower.cn/trademark/services?remindinfo=zhuanrang">商标转让</div>
-              <div class="section-right-nav fl text-center font-14 bg-common href-btn" data-sr="enter right,over .7s,move 100px ,wait .2s" data-url="http://demo.epower.cn/trademark/services?remindinfo=biangeng">商标变更</div>
-              <div class="section-right-nav fl text-center font-14 bg-common href-btn" data-sr="enter right,over .7s,move 100px ,wait .2s" data-url="http://demo.epower.cn/trademark/services?remindinfo=zhuxiao">商标注销</div>
-              <div class="section-right-nav fl text-center font-14 bg-common href-btn" data-sr="enter right,over .7s,move 100px ,wait .2s" data-url="http://demo.epower.cn/trademark/services?remindinfo=bufa">商标证补发</div>
-              <div class="section-right-nav fl text-center font-14 bg-common href-btn" data-sr="enter right,over .7s,move 100px ,wait .2s" data-url="http://demo.epower.cn/trademark/services?remindinfo=kuanzhan">商标宽展</div>
-              <div class="section-right-nav fl text-center font-14 bg-common href-btn" data-sr="enter right,over .7s,move 100px ,wait .2s" data-url="http://demo.epower.cn/trademark/services?remindinfo=gengzheng">商标更正</div>
-              <div class="section-right-nav fl text-center font-14 bg-common href-btn" data-sr="enter right,over .7s,move 100px ,wait .2s" data-url="http://demo.epower.cn/trademark/services?remindinfo=yiyi">商标异议</div>
-              <div class="section-right-nav fl text-center font-14 bg-common href-btn" data-sr="enter right,over .7s,move 100px ,wait .2s" data-url="http://demo.epower.cn/trademark/services?remindinfo=chexiao">商标撤三申请</div>
-              <div class="section-right-nav fl text-center font-14 bg-common href-btn" data-sr="enter right,over .7s,move 100px ,wait .2s" data-url="http://demo.epower.cn/trademark/services?remindinfo=bohui">商标驳回复审</div>
-              <div class="section-right-nav fl text-center font-14 bg-common href-btn" data-sr="enter right,over .7s,move 100px ,wait .2s" data-url="http://demo.epower.cn/trademark/services">···</div>
+              <div class="section-right-nav fl text-center font-14 bg-common href-btn" data-sr="enter right,over .7s,move 100px ,wait .2s" v-for="item in serviceList" :key="item.id" v-bind:data-url="item.url" @click="confirmHref(item.name,item.url)">{{item.name}}</div>
             </div>
           </div>
         </div>
@@ -135,17 +121,93 @@
 
 
 <script>
-// import scrollReveal from 'scrollreveal'
-
 export default {
   name: 'HelloWorld',
   data() {
     return {
-      // scrollReveal: scrollReveal()
+      searchList: [
+        {
+          name: '模糊查询',
+          url: 'http://demo.epower.cn/trademark/search'
+        },
+        {
+          name: '近似查询',
+          url: 'http://demo.epower.cn/trademark/jinsi'
+        },
+        {
+          name: '图形查询',
+          url: 'http://demo.epower.cn/trademark/tm_img_search'
+        },
+        {
+          name: '商标分类表',
+          url: 'http://demo.epower.cn/trademark/cls'
+        }
+      ],
+      serviceList: [
+        {
+          name: '商标续展',
+          url: 'http://demo.epower.cn/trademark/services?remindinfo=xuzhan'
+        },
+        {
+          name: '商标备案',
+          url: 'http://demo.epower.cn/trademark/services?remindinfo=beian'
+        },
+        {
+          name: '商标转让',
+          url: 'http://demo.epower.cn/trademark/services?remindinfo=zhuanrang'
+        },
+        {
+          name: '商标变更',
+          url: 'http://demo.epower.cn/trademark/services?remindinfo=biangeng'
+        },
+        {
+          name: '商标注销',
+          url: 'http://demo.epower.cn/trademark/services?remindinfo=zhuxiao'
+        },
+        {
+          name: '商标证补发',
+          url: 'http://demo.epower.cn/trademark/services?remindinfo=bufa'
+        },
+        {
+          name: '商标宽展',
+          url: 'http://demo.epower.cn/trademark/services?remindinfo=kuanzhan'
+        },
+        {
+          name: '商标更正',
+          url: 'http://demo.epower.cn/trademark/services?remindinfo=gengzheng'
+        },
+        {
+          name: '商标异议',
+          url: 'http://demo.epower.cn/trademark/services?remindinfo=yiyi'
+        },
+        {
+          name: '商标撤三申请',
+          url: 'http://demo.epower.cn/trademark/services?remindinfo=chexiao'
+        },
+        {
+          name: '商标驳回复审',
+          url: 'http://demo.epower.cn/trademark/services?remindinfo=bohui'
+        },
+        {
+          name: '···',
+          url: 'http://demo.epower.cn/trademark/services'
+        }
+      ]
     }
   },
   mounted() {
-    console.log(this.$scroll.scrollReveal(window));
+    this.$scroll.scrollReveal(window)
+  },
+  methods: {
+    confirmHref: function(name, url) {
+      let layer = this.$layer
+      layer.confirm('是否前往示例网站？', { title: '系统信息' }, function() {
+        setTimeout(function() {
+          window.open(url)
+        })
+        layer.closeAll()
+      })
+    }
   }
 }
 </script>
@@ -629,5 +691,11 @@ dd {
       background-image: url('../style/images/introduction_37.png');
     }
   }
+}
+.href-btn {
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  border: 0;
 }
 </style>
