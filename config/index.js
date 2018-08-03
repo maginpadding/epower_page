@@ -4,33 +4,6 @@
 
 const path = require('path')
 
-var build = {
-  env: require('./prod.env'),
-  assetsRoot: path.resolve(__dirname, '../dist'),
-  assetsSubDirectory: 'static',
-  assetsPublicPath: '/',
-  productionSourceMap: true,
-  productionGzip: false,
-  productionGzipExtensions: ['js', 'css']
- }
-  
- function getEntry(globPath) {
-  var entries = {},basename;
-  
-  glob.sync(globPath).forEach(function(entry) {
-   basename = path.basename(entry, path.extname(entry));
-   entries[basename] = entry;
-  });
-  return entries;
- }
-  
- var pages = getEntry('src/pages/**/*.html');
-   
- //入口 index: path.resolve(__dirname, '../dist/index.html')
- for (var pathname in pages) {
-  build[pathname] = path.resolve(__dirname, '../dist/' + pathname + '.html')
- }
- 
 module.exports = {
   dev: {
 

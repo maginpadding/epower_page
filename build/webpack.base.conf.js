@@ -4,33 +4,17 @@ const utils = require('./utils')
 const config = require('../config')
 const vueLoaderConfig = require('./vue-loader.conf')
 
-let glob = require('glob')
-let entries = getEntry('./src/pages/**/*.js')
-
-
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
 }
 
 
-//获取入口js文件
-function getEntry(globPath) {
-  var entries = {},
-   basename, tmp, pathname;
-  
-  glob.sync(globPath).forEach(function (entry) {
-   basename = path.basename(entry, path.extname(entry));
-   pathname = basename.split("_")[0]; //index_main.js得到index
-   entries[pathname] = entry;
-  });
-  return entries;
- }
+
 module.exports = {
   context: path.resolve(__dirname, '../'),
-  // entry: {
-  //   app: './src/main.js'
-  // },
-  entry: entries,
+  entry: {
+    app: './src/main.js'
+  },
   output: {
     path: config.build.assetsRoot,
     filename: '[name].js',
