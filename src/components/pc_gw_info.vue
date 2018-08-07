@@ -75,6 +75,30 @@
         </div>
       </div>
     </div>
+    <div class="section-6 bg-f5 pt-60 pb-50">
+      <div class="center-1200">
+        <div class="h3-title text-center pb-50" data-sr="enter top,over .7s,move 100px ,wait .1s">
+          <h3 class="color-434a54 font-32 lh-52">管理后台可添加自定义模板</h3>
+        </div>
+        <div class="section-image pr bg-common">
+          <div class="section-icon-top po"></div>
+          <div class="section-icon-left po"></div>
+          <div class="section-icon-right po"></div>
+          <div class="section-icon-center po"></div>
+        </div>
+      </div>
+    </div>
+    <div class="section-7 bg-fff pt-60 pb-50">
+      <div class="center-1200">
+        <div class="h3-title text-center pb-50" data-sr="enter top,over .7s,move 100px ,wait .1s">
+          <h3 class="color-434a54 font-36 lh-52 font-lighter">只需商业授权，即刻拥有上千套精美行业解决方案</h3>
+        </div>
+        <div class="section-image pb-50">
+          <div class="section-icon-left mod-btn fl">了解商业授权</div>
+          <div class="section-icon-right mod-btn mod-btn-red fr">查看官网模板</div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -133,6 +157,9 @@ dd {
 .po {
   position: absolute;
 }
+.font-lighter{
+  font-weight: lighter;
+}
 .color-434a54 {
   color: #434a54;
 }
@@ -150,6 +177,9 @@ dd {
 }
 .font-32 {
   font-size: 32px;
+}
+.font-36 {
+  font-size: 36px;
 }
 .font-24 {
   font-size: 24px;
@@ -262,6 +292,11 @@ export default {
 
 <!-- pcGwInfo pc index.css -->
 <style lang="less" scoped>
+.bg-common{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
 div {
   box-sizing: border-box;
 }
@@ -388,6 +423,47 @@ div {
       background-image: url('../style/gw_introduce/gw_20.png');
       background-size: 48px 48px;
     }
+  }
+}
+.section-6{
+  .section-image{
+    height: 600px;
+    background-image: url('../style/gw_introduce/gw_21.png');
+    background-size: 1123px 600px;
+    .section-icon-top{
+      top: 5px;
+      left: 120px;
+      width: 130px;
+      height: 48px;
+      background-image: url('../style/gw_introduce/gw_23.png');
+    }
+    .section-icon-left{
+      width: 160px;
+      height: 50px;
+      top: 173px;
+      left: 0;
+      background-image: url('../style/gw_introduce/gw_24.png');
+    }
+    .section-icon-right{
+      width: 180px;
+      height: 50px;
+      top: 173px;
+      right: 0;
+      background-image: url('../style/gw_introduce/gw_25.png');
+    }
+    .section-icon-center{
+      width: 510px;
+      height: 392px;
+      top: 137px;
+      left: 342px;
+      background-image: url('../style/gw_introduce/gw_26.png');
+    }
+  }
+}
+.section-7{
+  .section-image{
+    width: 400px;
+    margin: 0 auto;
   }
 }
 </style>
