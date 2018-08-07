@@ -23,10 +23,10 @@ Vue.prototype.$scroll = scrollReveal;  //注册到Vue原型上，名字可以自
 Vue.config.productionTip = false
 
 //引入element组件
-import ElementUI from 'element-ui';
-import 'element-ui/lib/theme-chalk/index.css';
+// import ElementUI from 'element-ui';
+// import 'element-ui/lib/theme-chalk/index.css';
 
-Vue.use(ElementUI);
+// Vue.use(ElementUI);
 
 /* eslint-disable no-new */
 new Vue({
