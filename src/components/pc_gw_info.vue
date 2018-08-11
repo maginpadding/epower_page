@@ -50,8 +50,8 @@
                 <img src="../style/gw_introduce/gw_17.png" alt="">
               </li>
             </ul>
-            <div class="po section-icon-left"></div>
-            <div class="po section-icon-right"></div>
+            <div class="po section-icon-left" v-show="false"></div>
+            <div class="po section-icon-right" v-show="false"></div>
           </div>
         </div>
       </div>
@@ -65,9 +65,9 @@
         <div class="section-image pr">
           <div class="section-container pr swiper-container">
             <div class="section-ul swiper-wrapper">
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide"><img src="../style/gw_introduce/gw_18.png" alt="" srcset=""></div>
+                <div class="swiper-slide"><img src="../style/gw_introduce/gw_18.png" alt="" srcset=""></div>
+                <div class="swiper-slide"><img src="../style/gw_introduce/gw_18.png" alt="" srcset=""></div>
             </div>
           </div>
             <div class="swiper-button-prev section-page-left po"></div>
@@ -101,7 +101,6 @@
     </div>
   </div>
 </template>
-
 <!-- pcGwInfo pc common.css -->
 <style scoped>
 h1,

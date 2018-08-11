@@ -153,5 +153,7 @@ RotateZoomPic.prototype = {
   }
 };
 window.onload = function () {
-//   new RotateZoomPic("rotate-1");
+  if(document.querySelector('#rotate-1')){
+    // new RotateZoomPic("rotate-1");
+  }
 }
