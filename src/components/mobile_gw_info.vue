@@ -28,8 +28,10 @@
                 <h3 class="font-32 lh-64 color-fff">强大的网站功能</h3>
                 <p class="font-24 lh-36 color-fff">免费赠送二级域名，支持绑定独立域名</p>
             </div>
-            <!-- <div class="section-image bg-common"></div> -->
-            <div class="section-image">
+            <div class="section-image bg-common">
+                <Xzmm></Xzmm>
+            </div>
+            <div class="section-image" v-show="false">
                 <div class="section-rotate pr" id="rotate-1">
                     <ul>
                         <li class="po section-icon-1">
@@ -52,12 +54,14 @@
                 <h3 class="color-333 font-32 lh-64">在线独立后台管理</h3>
                 <p class="font-24 color-666 lh-36">支持多人管理网站，可设置管理员账号与权限</p>
             </div>
-            <div class="section-image bg-common">
+            <div class="section-image bg-common swiper-container">
                 <div class="section-pagination mb-20">
-                    <div class="section-pa-left fl bg-common"></div>
-                    <div class="section-pa-right fr bg-common"></div>
+                    <div class="section-pa-left fl bg-common swiper-button-prev"></div>
+                    <div class="section-pa-right fr bg-common swiper-button-next"></div>
                 </div>
-                <div class="section-swiper"></div>
+                <div class="swiper-wrapper">
+                    <div class="section-swiper swiper-slide"></div>
+                </div>
             </div>
         </div>
         <div class="section-6 clearfix pd-20 bg-fff">
@@ -80,12 +84,20 @@
     </div>
 </template>
 <script>
+import Xzmm from '../components/xz.vue'
 export default {
+  components:{Xzmm},
   data() {
     return {}
   },
   mounted() {
-    this.change_fontSize(document, window)
+    this.change_fontSize(document, window);
+    var mobileSwiper = new Swiper('.section-5 .swiper-container', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
   },
   created() {},
   methods: {
@@ -378,9 +390,15 @@ dd {
       }
       .section-pa-left {
         background-image: url('../style/gw_introduce/mgw_10.png');
+        top: 0;
+        left: 25%;
+        opacity: 1;
       }
       .section-pa-right {
         background-image: url('../style/gw_introduce/mgw_11.png');
+        top: 0;
+        right: 25%;
+        opacity: 1;
       }
     }
     .section-swiper {

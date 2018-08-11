@@ -37,23 +37,26 @@
           <h3 class="color-fff font-32 lh-52">强大的网站功能</h3>
           <p class="color-82939e font-16 lh-36">免费赠送二级域名，支持绑定独立域名</p>
         </div>
-        <div class="section-image" data-sr="enter bottom,over .7s,move 100px">
-          <div class="section-rotate pr" id="rotate-1">
-            <ul>
-              <li class="po section-icon-1">
+        <div class="section-image">
+            <Xzmm></Xzmm>
+        </div>
+        <!-- <div class="section-image box" data-sr="enter bottom,over .7s,move 100px">
+          <div class="section-rotate pr list" id="rotate-1">
+            <ul class="">
+              <li class="po section-icon-1 p1">
                 <img src="../style/gw_introduce/gw_13.png" alt="">
               </li>
-              <li class="po section-icon-2 active">
+              <li class="po section-icon-2 active p2">
                 <img src="../style/gw_introduce/gw_15.png" alt="">
               </li>
-              <li class="po section-icon-3">
+              <li class="po section-icon-3 p3">
                 <img src="../style/gw_introduce/gw_17.png" alt="">
               </li>
             </ul>
             <div class="po section-icon-left" v-show="false"></div>
             <div class="po section-icon-right" v-show="false"></div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
     <div class="section-5 bg-fff pt-60 pb-50">
@@ -279,7 +282,9 @@ dd {
 </style>
 
 <script>
+import Xzmm from '../components/xz.vue'
 export default {
+  components:{Xzmm},
   name: 'pcGwInfo',
   data() {
     return {}
@@ -348,51 +353,51 @@ div {
   }
 }
 .section-4 {
-  height: 742px;
+  // height: 742px;
   background-image: url('../style/gw_introduce/gw_11.png');
-  .section-image {
-    .section-rotate {
-      li {
-        width: 50%;
-        height: 342px;
-        top: 72px;
-        z-index: 100;
-        img {
-          width: 100%;
-          height: 100%;
-        }
-      }
-      .section-icon-1 {
-        left: 0;
-      }
-      .section-icon-3 {
-        right: 0;
-      }
-      li.active {
-        width: 780px;
-        height: 445px;
-        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
-        z-index: 200;
-        top: 20px;
-        left: 214px;
-      }
-    }
-    .section-icon-left,
-    .section-icon-right {
-      width: 36px;
-      height: 36px;
-      top: 214px;
-      cursor: pointer;
-    }
-    .section-icon-left {
-      left: -60px;
-      background-image: url('../style/gw_introduce/gw_19.png');
-    }
-    .section-icon-right {
-      right: -60px;
-      background-image: url('../style/gw_introduce/gw_20.png');
-    }
-  }
+  // .section-image {
+  //   .section-rotate {
+  //     li {
+  //       width: 50%;
+  //       height: 342px;
+  //       top: 72px;
+  //       z-index: 100;
+  //       img {
+  //         width: 100%;
+  //         height: 100%;
+  //       }
+  //     }
+  //     .section-icon-1 {
+  //       left: 0;
+  //     }
+  //     .section-icon-3 {
+  //       right: 0;
+  //     }
+  //     li.active {
+  //       width: 780px;
+  //       height: 445px;
+  //       box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+  //       z-index: 200;
+  //       top: 20px;
+  //       left: 214px;
+  //     }
+  //   }
+  //   .section-icon-left,
+  //   .section-icon-right {
+  //     width: 36px;
+  //     height: 36px;
+  //     top: 214px;
+  //     cursor: pointer;
+  //   }
+  //   .section-icon-left {
+  //     left: -60px;
+  //     background-image: url('../style/gw_introduce/gw_19.png');
+  //   }
+  //   .section-icon-right {
+  //     right: -60px;
+  //     background-image: url('../style/gw_introduce/gw_20.png');
+  //   }
+  // }
 }
 .section-5 {
   .section-container {
@@ -466,3 +471,5 @@ div {
   }
 }
 </style>
+
+
