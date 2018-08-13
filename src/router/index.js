@@ -6,6 +6,8 @@ import mobileTradeInfo from '@/components/mobile_trade_info'
 import pcGwInfo from '@/components/pc_gw_info'
 import mobileGwInfo from '@/components/mobile_gw_info'
 
+import cloudComputing from '@/components/cloudComputing'
+
 Vue.use(Router)
 
 export default new Router({
@@ -27,6 +29,10 @@ export default new Router({
       path: '/mobile_gw',
       name: 'mobileGwInfo',
       component: mobileGwInfo
+    }, {
+      path: '/server',
+      name: 'cloudComputing',
+      component: cloudComputing
     }
   ]
 })
