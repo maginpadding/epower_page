@@ -8,6 +8,15 @@ import mobileGwInfo from '@/components/mobile_gw_info'
 
 import cloudComputing from '@/components/cloudComputing'
 
+import mobileCloud from '@/components/mobile_cloud'
+
+// 协议
+import xieYi from '@/components/xieyi'
+import step1 from '@/components/step/step1'
+import step2 from '@/components/step/step2'
+import step3 from '@/components/step/step3'
+import step4 from '@/components/step/step4'
+
 Vue.use(Router)
 
 export default new Router({
@@ -26,13 +35,37 @@ export default new Router({
       name: 'pcGwInfo',
       component: pcGwInfo
     }, {
-      path: '/mobile_gw',
+      path: '/gw/m',
       name: 'mobileGwInfo',
       component: mobileGwInfo
     }, {
-      path: '/server',
+      path: '/cloud',
       name: 'cloudComputing',
       component: cloudComputing
+    }, {
+      path: '/cloud/m',
+      name: 'cloudComputing',
+      component: mobileCloud
+    }, {
+      path: '/xieYi',
+      name: 'xieYi',
+      component: xieYi
+    }, {
+      path: '/step1',
+      name: 'step1',
+      component: step1
+    }, {
+      path: '/step2',
+      name: 'step2',
+      component: step2
+    }, {
+      path: '/step3',
+      name: 'step3',
+      component: step3
+    }, {
+      path: '/step4',
+      name: 'step4',
+      component: step4
     }
   ]
 })

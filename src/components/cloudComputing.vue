@@ -1,6 +1,5 @@
 <template>
     <div>
-        <!-- <hostList></hostList> -->
         <div class="cloud-server bg-f5 clearfix">
             <div class="center-1200">
                 <div class="home-title-line">
@@ -142,44 +141,8 @@
         </div>
     </div>
 </template>
-<script>
-// import hostList from '../components/hostList.vue'
-
-export default {
-    // components:{hostList},
-}
-</script>
-
 <style lang="less" scoped>
-.home-title-line {
-  height: 1px;
-  border-top: 1px solid #e4e4e4;
-  margin: 70px 0 100px 0;
-  text-align: center;
-  /*IE*/
-  text-align: -moz-center;
-  /*Firefox*/
-  text-align: -webkit-center;
-  /*Chrome*/
-}
-.home-title-line span {
-  position: relative;
-  top: -20px;
-  padding: 0 28px;
-  font-size: 26px;
-  color: #333333;
-}
-.home-title-line p {
-  position: relative;
-  top: -10px;
-  padding: 0 28px;
-  font-size: 14px;
-  color: #999;
-}
 
-.clearfix {
-  overflow: hidden;
-}
 .cloud-server * {
   box-sizing: border-box;
 }
@@ -417,6 +380,36 @@ dd {
 }
 .fr {
   float: right;
+}
+/* title */
+.home-title-line {
+  height: 1px;
+  border-top: 1px solid #e4e4e4;
+  margin: 70px 0 100px 0;
+  text-align: center;
+  /*IE*/
+  text-align: -moz-center;
+  /*Firefox*/
+  text-align: -webkit-center;
+  /*Chrome*/
+}
+.home-title-line span {
+  position: relative;
+  top: -20px;
+  padding: 0 28px;
+  font-size: 26px;
+  color: #333333;
+}
+.home-title-line p {
+  position: relative;
+  top: -10px;
+  padding: 0 28px;
+  font-size: 14px;
+  color: #999;
+}
+
+.clearfix {
+  overflow: hidden;
 }
 </style>
 
