@@ -41,6 +41,36 @@
 //                 // 如果需要分页器
 //                 pagination: '.swiper-pagination',
 //  })
+    
+      $('#our_adv .sc-li').on('mouseover',function(){
+        var _this = $(this);
+        if(_this.hasClass('active')){
+          return false;
+        }
+        $(this).addClass('active').siblings().removeClass('active');
+      })
+      $('#property_service .sc-tab .sc-li').on('click',function(){
+        var _index = $(this).index();
+        var _this = $(this);
+        if(_this.hasClass('active')){
+          return false;
+        }
+        _this.addClass('active').siblings().removeClass('active');
+        $('#property_service .tab-content').addClass('hide');
+        $('#property_service .tab-content').eq(_index).removeClass('hide');
+        console.log(_index);
+        if(_index == 3){
+          trade_swiper.update()
+        }
+        
+      })
+          var trade_swiper = new Swiper('.library-service .swiper-container', {
+            loop:true,
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+          });
     })
 
   </script>
