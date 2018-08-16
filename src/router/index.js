@@ -14,6 +14,7 @@ import mobileGwInfo from '@/components/mobile_gw_info'
 
 // 首页改版
 import index from '@/components/index'
+import mobileIndex from '@/components/mobileIndex'
 
 
 
@@ -53,6 +54,11 @@ export default new Router({
       path: '/index',
       name: 'index',
       component: index
+    },
+    {
+      path: '/index/m',
+      name: 'mobileIndex',
+      component: mobileIndex
     }
   ]
 })

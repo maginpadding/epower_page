@@ -16,11 +16,11 @@
                         <div class="fix_2 clearfix">
                             <div class="fl">
                                 <p class="insf_1">
-                                    <input type="text" id="Company" name="Company" placeholder="公司名称" style="background-image: url('http://user.epower.cn/template/Home/Default/PC/Static/img/insf_1.png')">
+                                    <input type="text" id="Company" name="Company" required placeholder="公司名称" style="background-image: url('http://user.epower.cn/template/Home/Default/PC/Static/img/insf_1.png')">
                                     <span class="Validform_checktip"></span>
                                 </p>
                                 <p class="insf_2">
-                                    <input type="text" id="tel" name="tel" datatype="m" altercss="gray" sucmsg=" " errormsg=" " nullmsg=" " placeholder="联系电话" style="background-image: url('http://user.epower.cn/template/Home/Default/PC/Static/img/insf_2.png')">
+                                    <input type="text" id="tel" name="tel" datatype="m" required altercss="gray" sucmsg=" " errormsg=" " nullmsg=" " placeholder="联系电话" style="background-image: url('http://user.epower.cn/template/Home/Default/PC/Static/img/insf_2.png')">
                                     <span class="Validform_checktip"></span>
                                 </p>
                                 <div class="insf_3 clearfix">
@@ -35,7 +35,7 @@
                             </div>
                             <div class="fr">
                                 <p class="insf_4">
-                                    <textarea id="Content" name="Content" datatype="*" altercss="gray" nullmsg=" " errormsg=" " sucmsg=" " placeholder="需求" style="background-image: url('http://user.epower.cn/template/Home/Default/PC/Static/img/insf_5.png')"></textarea>
+                                    <textarea id="Content" name="Content" datatype="*" altercss="gray" nullmsg=" " errormsg=" " sucmsg=" " required placeholder="需求" style="background-image: url('http://user.epower.cn/template/Home/Default/PC/Static/img/insf_5.png')"></textarea>
                                     <span class="Validform_checktip"></span>
                                 </p>
                                 <p class="insf_5">
@@ -159,6 +159,9 @@
   font-size: 14px;
   color: #fff;
   line-height: 20px;
+      background-color: #5ca6db;
+      background-repeat: no-repeat;
+      background-position: 10px 10px;
 }
 
 .commit .fix_2 .insf_4 textarea::-webkit-input-placeholder {

@@ -1,0 +1,419 @@
+@charset "utf-8";
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+// 重置样式
+ul,
+li,
+dl,
+ol,
+dd,
+dt {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+}
+
+ul,
+li,
+ol,
+dl,
+dt,
+dd {
+    list-style: none;
+}
+
+i {
+    font-style: normal;
+}
+
+a {
+    color: #666;
+    outline: none;
+    border: 0;
+}
+.mobile {
+    min-width: 320px;
+    max-width: 750px;
+    font-family: '微软雅黑';
+    font-size: 14px;
+    margin: 0 auto;
+  }
+body {
+    font-family: "微软雅黑";
+}
+
+.border-none {
+    border: none !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+.pd-20 {
+    padding: 0 .2rem;
+}
+
+/* 背景颜色 */
+
+.bg-fff {
+    background-color: #fff !important;
+}
+
+.bg-e2383a {
+    background-color: #e2383a !important;
+}
+
+.bg-f5 {
+    background-color: #f5f5f5 !important;
+}
+
+.bg-f5f6fb {
+    background-color: #f5f6fb !important;
+}
+
+.bg-transparent {
+    background-color: transparent !important;
+}
+
+/* 定位 */
+
+.pr {
+    position: relative;
+}
+
+.po {
+    position: absolute;
+}
+
+.clearfix {
+    overflow: hidden;
+}
+
+.bold,
+.font-bold {
+    font-weight: bold;
+}
+
+.font-lighter {
+    font-weight: lighter;
+}
+
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+/* 浮动 */
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+//.section1 .section2 .section3 .section4 .section5 .section6
+// 企服引擎为您领航互联网
+
+.section-title{
+    line-height: 1.5rem;
+    color: #333;
+    font-size: 0.36rem;
+}
+.section1{
+    .content{
+        >div{
+            margin-bottom: 0.2rem;
+            width: 3.46rem;
+            height: 3.64rem;
+            padding-top: 0.4rem;
+            .icon{
+                width: 1.3rem;
+                height: 1.3rem;
+                margin: 0 auto;
+                margin-bottom: 0.15rem;
+            }
+            .name{
+                font-size: 0.32rem;
+                color: #333;
+                line-height: .48rem;
+                margin-bottom: 0.15rem;
+            }
+            .c-list {
+                width: 2.6rem;
+                margin: 0 auto;
+                li{
+                    float: left;
+                    width: 1.3rem;
+                    height: 0.28rem;
+                    line-height: 0.28rem;
+                    margin-bottom: 0.2rem;
+                }
+                li:first-child,li:nth-child(3){
+                    border-right: solid 1px #e6e6e6;
+                }
+                a{
+                    font-size: .24rem;
+                    color: #999;
+                }
+            }
+        }
+        .qy{
+            clear: both;
+            width: 100%;
+            height: 7.42rem;
+            .qy_top{
+                overflow: hidden;
+                width: 3.76rem;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                margin-bottom: 0.3rem;
+                font-size: 0.32rem;
+                color: #333;
+                .icon{
+                    width: 1.3rem;
+                    height: 1.3rem;
+                    border-radius: 50%;
+                    border: solid 1px #e6e6e6;
+                    // box-shadow: 5px 5px 5px #666;
+                    float: left;
+                }
+                span{
+                    float: left;
+                    line-height: 1.3rem;
+                    margin-left: 0.15rem;
+                }
+                
+            }
+            .qy_li{
+                width: 50%;
+                float: left;
+                padding-left: 0.3rem;
+                padding-right: 0.5rem;
+                height: 2.42rem;
+            }
+            .qy_li:first-child{
+                border-right: dashed 1px #e6e6e6;
+                border-bottom: dashed 1px #e6e6e6;
+            }
+            .qy_li:nth-child(2){
+                border-bottom: dashed 1px #e6e6e6;
+            }
+            .qy_li:nth-child(3){
+                border-right: dashed 1px #e6e6e6;
+            }
+            .qy_li:nth-child(3),.qy_li:nth-child(4){
+                padding-top: 0.2rem;
+            }
+            .qy_title{
+                font-size: 0.3rem;
+                color: #333;
+                line-height: 0.42rem;
+            }
+            .qy_desc{
+                font-size: 0.24rem;
+                line-height: 0.36rem;
+                color: #999;
+                margin-bottom: 0.2rem;
+            }
+            .qy_btn{
+                text-align: center;
+                color: #e2383a;
+                font-size: 0.24rem;
+                width: 1.4rem;
+                height: 0.48rem;
+                line-height: 0.48rem;
+                display: block;
+            }
+        }
+    }
+}
+// 一站式企业知产服务
+.section2 {
+    .sc-tab{
+        width: 6.6rem;
+        height: 2.3rem;
+        margin: 0 auto;
+        margin-bottom: 0.68rem;
+        .sc-li{
+            width: 2.6rem;
+            height: 0.68rem;
+            text-align: center;
+            line-height: 0.68rem;
+            float: left;
+            margin-top: 0.3rem;
+            color: #666;
+            font-size: 0.28rem;
+            border-radius: 50px;
+            margin-left: 0.45rem;
+        }
+        .sc-li::nth-child(2),
+        .sc-li::nth-child(4){
+            margin-right: 0;
+        }
+        .sc-li.active{
+            color: #fff;
+            background: #e2383a;
+        }
+    }
+    .sc-content{
+        .sc-li{
+            width: 2.2rem;
+            height: 2.8rem;
+            padding-top: 0.4rem;
+            margin-bottom: 0.2rem;
+            float: left;
+        }
+        .w-2{
+            width: 4.65rem;
+        }
+        .w-1{
+            width: 2.2rem;
+            background: #fff;
+        }
+        .mr-24{
+            margin-right: .24rem;
+        }
+        .mb-24{
+            margin-right: .48rem;
+        }
+        .sc-icon{
+            width: 0.88rem;
+            height: 0.88rem;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 0.2rem;
+        }
+        .sc-name{
+            line-height: 0.54rem;
+            font-weight: bold;
+            font-size: 0.28rem;
+            color: #666;
+        }
+        .sc-price{
+            color: #e2383a;
+            line-height: 0.48rem;
+            font-size: 0.28rem;
+        }
+    }
+
+        .iact-service{
+            .sc-top{
+                width: 100%;
+                height: 2.8rem;
+                background: url("../mobile_index/mobile_index_11.png") no-repeat center center;
+                background-size: cover;
+            }
+            .sc-list{
+                .is-li:nth-child(2n){
+                    margin-right: 0;
+                }
+                .is-li{
+                    background: #fff;
+                    width: 3.45rem;
+                    height: 3.32rem;
+                    padding-top: 0.4rem;
+                    padding-left: .2rem;
+                    padding-right: 0.2rem;
+                    margin-right: .2rem;
+                    margin-bottom: .2rem;
+                    text-align: center;
+                    float: left;
+                    .is-icon{
+                        width: 0.8rem;
+                        height: 0.8rem;
+                        margin: 0 auto;
+                        margin-bottom: .25rem;
+                    }
+                    .is-name{
+                        font-size: 0.28rem;
+                        color: #666;
+                        line-height: 0.48rem;
+                    }
+                    .is-desc{
+                        font-size: 0.2rem;
+                        color: #999999;
+                        line-height: 0.32rem;
+                    }
+                    .is-price{
+                        color: #e2383a;
+                        line-height: 0.52rem;
+                        font-size: 0.28rem;
+                    }
+                }
+            }
+        }
+        .lb-service{
+            .sc-top{
+                width: 100%;
+                height: 2.8rem;
+                background: url("../mobile_index/mobile_index_13.png") no-repeat center center;
+                background-size: cover;
+            }
+            .is-li{
+                width: 33.3%;
+                height: 2.12rem;
+                border-right: solid 1px #e6e6e6;
+                border-bottom: solid 1px #e6e6e6;
+                float: left;
+                background: #fff;
+                text-align: center;
+                padding-top: 0.25rem;
+                .is-icon{
+                    height: 1rem;
+                    width: auto;
+                    display: block;
+                    margin: 0 auto;
+                }
+                .is-price{
+                    line-height: 0.8rem;
+                    color: #e2383a;
+                    font-size: .28rem;
+                }
+            }
+            .is-li::nth-child(3n){
+                border-right: none;
+            }
+        }
+}
+.section3{
+    padding: 0 .2rem;
+    .li-div{
+        height: 2.8rem;
+        width: auto;
+    }
+}
+.section5{
+    .s-content{
+        width: 5.45rem;
+        height: 4.5rem;
+        border-radius: 5px;
+        background-color: #fff;
+    }
+}

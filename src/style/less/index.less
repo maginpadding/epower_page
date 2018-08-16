@@ -30,6 +30,9 @@
             box-shadow: 5px 5px 10px #d6def6;
         }
         .sc-li {
+            .sr-title{
+                margin-bottom: 8px;
+            }
             width: 243px;
             height: 448px; // padding: 48px 54px 0 54px;
             padding-top: 48px;
@@ -68,8 +71,8 @@
                 // width: auto;
                 display: block;
                 opacity: 0;
-                -webkit-animation: toShow-data .5s .3s 1;
-                animation: toShow-data .5s .3s 1;
+                -webkit-animation: toShow-data .3s .1s 1;
+                animation: toShow-data .3s .1s 1;
                 -webkit-animation-fill-mode: forwards;
                 animation-fill-mode: forwards;
             }
@@ -122,9 +125,10 @@
             >div{
                 p{
                     height: 40px;
+                    line-height: 20px;
                 }
                 .sr-btn{
-                    margin-top: 15px;
+                    margin-top: 10px;
                     display: flex;
                     li{
                         width: 80px;
@@ -146,6 +150,7 @@
                     }
                 }
             }
+           
         }
     }
 }
