@@ -87,8 +87,11 @@
                 <div class="sc-li">知产服务</div>
                 <div class="sc-li">知产服务</div>
             </div>
-            <div class="trade-service sc-content clearfix text-center">
-                <div class="sc-li w-2 mr-24"></div>
+            <!-- 商标服务 -->
+            <div class="trade-service sc-content clearfix text-center hide">
+                <div class="sc-li w-2 mr-24">
+                    <img src="../style/mobile_index/mobile_index_03.png" alt="" srcset="">
+                </div>
                 <div class="sc-li w-1">
                     <div class="sc-icon"></div>
                     <div class="sc-name">商标查询</div>
@@ -109,7 +112,9 @@
                     <div class="sc-name">商标查询</div>
                     <div class="sc-price">免费</div>
                 </div>
-                <div class="sc-li w-2 mr-24"></div>
+                <div class="sc-li w-2 mr-24">
+                    <img src="../style/mobile_index/mobile_index_06.png" alt="" srcset="">
+                </div>
                 <div class="sc-li w-1">
                     <div class="sc-icon"></div>
                     <div class="sc-name">商标查询</div>
@@ -131,7 +136,55 @@
                     <div class="sc-price">免费</div>
                 </div>
             </div>
-
+            <!-- 专利版权 -->
+             <div class="patent-service sc-content clearfix text-center hide">
+                <div class="sc-li w-2 mr-24">
+                    <img src="../style/mobile_index/mobile_index_07.png" alt="" srcset="">
+                </div>
+                <div class="sc-li w-1">
+                    <div class="sc-icon"></div>
+                    <div class="sc-name">商标查询</div>
+                    <div class="sc-price">免费</div>
+                </div>
+                <div class="sc-li w-1 mr-24">
+                    <div class="sc-icon"></div>
+                    <div class="sc-name">商标查询</div>
+                    <div class="sc-price">免费</div>
+                </div>
+                <div class="sc-li w-1 mr-24 mb-48">
+                    <div class="sc-icon"></div>
+                    <div class="sc-name">商标查询</div>
+                    <div class="sc-price">免费</div>
+                </div>
+                <div class="sc-li w-1 mb-48">
+                    <div class="sc-icon"></div>
+                    <div class="sc-name">商标查询</div>
+                    <div class="sc-price">免费</div>
+                </div>
+                <div class="sc-li w-2 mr-24">
+                    <img src="../style/mobile_index/mobile_index_09.png" alt="" srcset="">
+                </div>
+                <div class="sc-li w-1">
+                    <div class="sc-icon"></div>
+                    <div class="sc-name">商标查询</div>
+                    <div class="sc-price">免费</div>
+                </div>
+                 <div class="sc-li w-1 mr-24 mb-48">
+                    <div class="sc-icon"></div>
+                    <div class="sc-name">商标查询</div>
+                    <div class="sc-price">免费</div>
+                </div>
+                 <div class="sc-li w-1 mr-24 mb-48">
+                    <div class="sc-icon"></div>
+                    <div class="sc-name">商标查询</div>
+                    <div class="sc-price">免费</div>
+                </div>
+                 <div class="sc-li w-1 mb-48">
+                    <div class="sc-icon"></div>
+                    <div class="sc-name">商标查询</div>
+                    <div class="sc-price">免费</div>
+                </div>
+            </div>
             <!-- 工商财税 -->
             <div class="iact-service sc-content clearfix text-center hide">
                 <div class="sc-top"></div>
@@ -172,10 +225,34 @@
         <!-- 打造企业数字化 -->
          <div class="section3 pd-20 bg-f5 clearfix text-center">
             <div class="section-title">打造企业数字化</div>
+            <div class="li-div"></div>
+            <div class="li-div"></div>
+            <div class="li-div"></div>
+            <div class="li-div"></div>
         </div>
+        <!-- 资讯热点 -->
+        <ziXun></ziXun>
         <!-- 我们合作的客户 -->
         <div class="section5 pd-20 bg-f5 clearfix text-center">
             <div class="section-title">我们合作的客户</div>
+            <div class="s-content">
+                <div class="sc-li">
+                    <div class="sc-icon"></div>
+                    <div class="sc-desc">价格透明</div>
+                </div>
+                <div class="sc-li">
+                    <div class="sc-icon"></div>
+                    <div class="sc-desc">信息安全</div>
+                </div>
+                <div class="sc-li">
+                    <div class="sc-icon"></div>
+                    <div class="sc-desc">一对一服务</div>
+                </div>
+                <div class="sc-li">
+                    <div class="sc-icon"></div>
+                    <div class="sc-desc">售后无忧</div>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -183,7 +260,9 @@
 @import url('../style/less/mobile');
 </style>
 <script>
+import ziXun from "../components/mobile_zixun"
 export default {
+    components:{ziXun},
   data() {
     return {}
   },

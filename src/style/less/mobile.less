@@ -94,6 +94,10 @@ body {
 .bg-transparent {
     background-color: transparent !important;
 }
+// 字体颜色
+.color-red{
+    color: #e2383a;
+}
 
 /* 定位 */
 
@@ -144,6 +148,7 @@ body {
     line-height: 1.5rem;
     color: #333;
     font-size: 0.36rem;
+    text-align: center;
 }
 .section1{
     .content{
@@ -272,6 +277,7 @@ body {
             font-size: 0.28rem;
             border-radius: 50px;
             margin-left: 0.45rem;
+            background: #f6f9fe;
         }
         .sc-li::nth-child(2),
         .sc-li::nth-child(4){
@@ -292,6 +298,7 @@ body {
         }
         .w-2{
             width: 4.65rem;
+            padding-top: 0;
         }
         .w-1{
             width: 2.2rem;
@@ -375,6 +382,7 @@ body {
                 height: 2.8rem;
                 background: url("../mobile_index/mobile_index_13.png") no-repeat center center;
                 background-size: cover;
+                margin-bottom: 0.2rem;
             }
             .is-li{
                 width: 33.3%;
@@ -407,6 +415,22 @@ body {
     .li-div{
         height: 2.8rem;
         width: auto;
+        margin-bottom: 0.1rem;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+    .li-div:nth-child(2){
+        background-image: url("../mobile_index/mobile_index_15.png");
+    }
+    .li-div:nth-child(3){
+        background-image: url("../mobile_index/mobile_index_16.png");
+    }
+    .li-div:nth-child(4){
+        background-image: url("../mobile_index/mobile_index_17.png");
+    }
+    .li-div:nth-child(5){
+        background-image: url("../mobile_index/mobile_index_19.png");
     }
 }
 .section5{
@@ -415,5 +439,40 @@ body {
         height: 4.5rem;
         border-radius: 5px;
         background-color: #fff;
+        margin: 0 auto;
+        margin-bottom: 0.6rem;
+        .sc-li{
+            width: 50%;
+            height: 50%;
+            float: left;
+            .sc-icon{
+                width: 0.95rem;
+                height: 0.8rem;
+                display: block;
+                margin: 0 auto;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+            }
+            .sc-desc{
+                font-size: 0.28rem;
+                color: #333;
+                text-align: center;
+                line-height: 0.62rem;
+            }
+            padding-top: 0.5rem;
+        }
+        .sc-li:nth-child(1) .sc-icon{
+            background-image: url("../mobile_index/mobile_index_23.png");
+        }
+        .sc-li:nth-child(2) .sc-icon{
+            background-image: url("../mobile_index/mobile_index_25.png");
+        }
+        .sc-li:nth-child(3) .sc-icon{
+            background-image: url("../mobile_index/mobile_index_30.png");
+        }
+        .sc-li:nth-child(4) .sc-icon{
+            background-image: url("../mobile_index/mobile_index_31.png");
+        }
     }
 }
