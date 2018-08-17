@@ -127,7 +127,7 @@
                                 </div>
                                 <div class="sr-top-right">
                                     <div class="sr-title lh-24 color-333 font-18 text-left">绑定域名</div>
-                                    <p class="color-80 font-12 lh-24 text-left">建站即送二级域名！可绑独立域名，建立自己的 官网品牌！
+                                    <p class="color-80 font-12 lh-24 text-left">建站即送二级域名！可绑独立域名，建立自己的官网品牌！
                                     </p>
                                     <ul class="sr-btn text-left">
                                         <li class="fl border-none">

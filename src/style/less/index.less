@@ -1,4 +1,6 @@
 @charset "utf-8";
+.app{
+
 * {
     box-sizing: border-box;
 }
@@ -193,6 +195,7 @@
         }
         .tc-right {
             width: 940px;
+            height: 450px;
             .tr-li {
                 .tr-icon {
                     width: 60px;
@@ -209,7 +212,7 @@
             >div {
                 height: 50%;
                 padding-top: 60px;
-                width: 180px;
+                width: 200px;
                 margin-left: auto;
                 margin-right: auto;
                 .tl-title {
@@ -221,6 +224,7 @@
         }
         .tc-right {
             width: 940px;
+            height: 450px;
             .tr-li {
                 width: 25%;
                 height: 220px;
@@ -326,10 +330,10 @@
         background-position: -397px -268px;
     }
     .iact-service .tc-right .tr-li[data-name="高新企业认证"] .tr-icon {
-        background-position: -308px -357px;
+        background-position: -397px -357px;
     }
     .iact-service .tc-right .tr-li[data-name="代办ICP许可证"] .tr-icon {
-        background-position: -308px -449px;
+        background-position: -397px -445px;
     }
     .patent-service {
         .tc-left {
@@ -401,6 +405,29 @@
         }
     } // 海量商标库
     .library-service {
+        // 自定义swiper样式
+        .swiper-button-next{
+            background-image: url("../index/swiper_next.png");
+            width: 30px;
+            height: 120px;
+            background-size: cover;
+            margin-top: -85px;
+            right: 0;
+        }
+        .swiper-button-prev{
+            background-image: url("../index/swiper_prev.png");
+            width: 30px;
+            height: 120px;
+            background-size: cover;
+            margin-top: -85px;
+            left: 0;
+        }
+        .swiper-pagination-bullet-active{
+            background: #e2383a;
+        }
+        .swiper-pagination{
+            bottom: 20px;
+        }
         .tc-left {
             background-image: url("../index/index_24.jpg");
             padding-top: 75px;
@@ -603,4 +630,5 @@
             display: block;
         }
     }
+}
 }

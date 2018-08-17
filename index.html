@@ -60,16 +60,21 @@
         $('#property_service .tab-content').eq(_index).removeClass('hide');
         console.log(_index);
         if(_index == 3){
-          trade_swiper.update()
+          trade_swiper.update();
+          trade_swiper.pagination.update();
         }
       })
-      // var trade_swiper = new Swiper('.library-service .swiper-container', {
-      //   loop:true,
-      //   navigation: {
-      //     nextEl: '.swiper-button-next',
-      //     prevEl: '.swiper-button-prev',
-      //   },
-      // });
+      var trade_swiper = new Swiper('.library-service .swiper-container', {
+        // loop:true,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+        },
+      });
       $('#applyform input[type="submit"]').on('click',function(){
         var Company = $('#Company').val();
         var tel = $('#tel').val();
@@ -103,7 +108,9 @@
         }
       })
     })
-
+    function changecode2014() {
+      $(".show-captcha").click();
+    }
   </script>
 </body>
 

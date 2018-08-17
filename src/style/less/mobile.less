@@ -146,12 +146,24 @@ body {
 
 .section-title{
     line-height: 1.5rem;
-    color: #333;
+    color: #666;
     font-size: 0.36rem;
     text-align: center;
 }
 .section1{
     .content{
+        .zc .icon{
+            background: url("../mobile_index/icon_1.png") no-repeat center center;
+            background-size: .72rem .72rem;
+        }
+        .jz .icon{
+            background: url("../mobile_index/icon_2.png") no-repeat center center;
+            background-size: .72rem .72rem;
+        }
+        .qy .icon{
+            background: url("../mobile_index/icon_3.png") no-repeat center center;
+            background-size: .72rem .72rem;
+        }
         >div{
             margin-bottom: 0.2rem;
             width: 3.46rem;
@@ -162,6 +174,10 @@ body {
                 height: 1.3rem;
                 margin: 0 auto;
                 margin-bottom: 0.15rem;
+                border-radius: 50%;
+                -webkit-box-shadow: #999 0px 0px 10px; 
+                -moz-box-shadow: #999 0px 0px 10px; 
+                box-shadow: #999 0px 0px 10px; 
             }
             .name{
                 font-size: 0.32rem;
@@ -193,7 +209,6 @@ body {
             width: 100%;
             height: 7.42rem;
             .qy_top{
-                overflow: hidden;
                 width: 3.76rem;
                 margin-left: auto;
                 margin-right: auto;
@@ -201,6 +216,7 @@ body {
                 margin-bottom: 0.3rem;
                 font-size: 0.32rem;
                 color: #333;
+                height: 1.4rem;
                 .icon{
                     width: 1.3rem;
                     height: 1.3rem;
@@ -215,6 +231,9 @@ body {
                     margin-left: 0.15rem;
                 }
                 
+            }
+            .qy_list{
+                clear: both;
             }
             .qy_li{
                 width: 50%;
@@ -239,13 +258,13 @@ body {
             .qy_title{
                 font-size: 0.3rem;
                 color: #333;
-                line-height: 0.42rem;
+                line-height: 0.48rem;
             }
             .qy_desc{
                 font-size: 0.24rem;
                 line-height: 0.36rem;
                 color: #999;
-                margin-bottom: 0.2rem;
+                margin-bottom: 0.3rem;
             }
             .qy_btn{
                 text-align: center;
@@ -253,7 +272,7 @@ body {
                 font-size: 0.24rem;
                 width: 1.4rem;
                 height: 0.48rem;
-                line-height: 0.48rem;
+                line-height: 0.45rem;
                 display: block;
                 border:solid 1px #e2383a;
                 border-radius: 5px;
@@ -263,11 +282,28 @@ body {
 }
 // 一站式企业知产服务
 .section2 {
+    .sc-tab::after{
+        content: "";
+        width: 0;
+        height: 0;
+        border: 18px solid transparent;
+        border-top-color: #fff;
+        position: absolute;
+        left: 50%;
+        bottom: -36px;
+        margin-left: -18px;
+    }
     .sc-tab{
+        position: relative;
         width: 6.6rem;
         height: 2.3rem;
         margin: 0 auto;
         margin-bottom: 0.68rem;
+        // TODO
+        -webkit-box-shadow: #e6e6e6 0px 0px 10px; 
+        -moz-box-shadow: #e6e6e6 0px 0px 10px; 
+        box-shadow: #e6e6e6 0px 0px 10px; 
+        
         .sc-li{
             width: 2.6rem;
             height: 0.68rem;
@@ -290,6 +326,16 @@ body {
             background: #e2383a;
         }
     }
+    .trade-service .sc-icon{
+        background-image: url("../mobile_index/mobile_index_00.png");
+    }
+    .patent-service .sc-icon{
+        background-image: url("../mobile_index/mobile_index_01.png");
+        background-size: 1.58rem 8.6rem !important;
+    }
+    .iact-service .is-icon{
+        background-image: url("../mobile_index/mobile_index_02.png");
+    }
     .sc-content{
         .sc-li{
             width: 2.2rem;
@@ -298,9 +344,86 @@ body {
             margin-bottom: 0.2rem;
             float: left;
         }
+        // .trade-service 
+            .sc-li[data-name="商标查询"] .sc-icon{
+                background-position: -.4rem -0.4rem;
+            }
+            .sc-li[data-name="普通注册"] .sc-icon{
+                background-position: -.4rem -1.65rem;
+            }
+            .sc-li[data-name="保姆注册"] .sc-icon{
+                background-position: -.4rem -2.88rem;
+            }
+            .sc-li[data-name="担保注册"] .sc-icon{
+                background-position: -.4rem -4.15rem;
+            }
+            .sc-li[data-name="商标续展"] .sc-icon{
+                background-position: -.4rem -5.37rem;
+            }
+            .sc-li[data-name="商标转让"] .sc-icon{
+                background-position: -.4rem -6.63rem;
+            }
+            .sc-li[data-name="商标变更"] .sc-icon{
+                background-position: -.4rem -7.9rem;
+            }
+            .sc-li[data-name="商标撤三申请"] .sc-icon{
+                background-position: -.4rem -9.2rem;
+            }
+
+        // .patent-service 
+            .sc-li[data-name="发明专利"] .sc-icon{
+                background-position: -.4rem -0.4rem;
+            }
+            .sc-li[data-name="实用新型专利"] .sc-icon{
+                background-position: -.4rem -1.4rem;
+            }
+            .sc-li[data-name="外观设计专利"] .sc-icon{
+                background-position: -.4rem -2.4rem;
+            }
+            .sc-li[data-name="专利驳回复审"] .sc-icon{
+                background-position: -.4rem -3.4rem;
+            }
+            .sc-li[data-name="文字著作权"] .sc-icon{
+                background-position: -.4rem -4.4rem;
+            }
+            .sc-li[data-name="美术著作权"] .sc-icon{
+                background-position: -.4rem -5.4rem;
+            }
+            .sc-li[data-name="软件著作权"] .sc-icon{
+                background-position: -.4rem -6.4rem;
+            }
+            .sc-li[data-name="其他著作权"] .sc-icon{
+                background-position: -.4rem -7.4rem;
+            }
+
+        // .iact-service 
+            .is-li[data-name="代理记账"] .is-icon{
+                background-position: -.4rem -0.4rem;
+            }
+            .is-li[data-name="公司注册"] .is-icon{
+                background-position: -.4rem -1.6rem;
+            }
+            .is-li[data-name="社保代理"] .is-icon{
+                background-position: -.4rem -2.8rem;
+            }
+            .is-li[data-name="网站建站"] .is-icon{
+                background-position: -.4rem -3.99rem;
+            }
+            .is-li[data-name="高新企业认证"] .is-icon{
+                background-position: -.4rem -5.19rem;
+            }
+            .is-li[data-name="代办ICP许可证"] .is-icon{
+                background-position: -.4rem -6.39rem;
+            }
+
         .w-2{
             width: 4.65rem;
             padding-top: 0;
+            img{
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
         }
         .w-1{
             width: 2.2rem;
@@ -318,7 +441,10 @@ body {
             display: block;
             margin: 0 auto;
             margin-bottom: 0.2rem;
+            background-repeat: no-repeat;
+            background-size: 1.58rem 10.53rem;
         }
+      
         .sc-name{
             line-height: 0.54rem;
             font-weight: bold;
@@ -422,20 +548,23 @@ body {
         background-position: center center;
         background-size: cover;
     }
-    .li-div:nth-child(2){
+    .li-div.one{
         background-image: url("../mobile_index/mobile_index_15.png");
     }
-    .li-div:nth-child(3){
+    .li-div.two{
         background-image: url("../mobile_index/mobile_index_16.png");
     }
-    .li-div:nth-child(4){
+    .li-div.three{
         background-image: url("../mobile_index/mobile_index_17.png");
     }
-    .li-div:nth-child(5){
+    .li-div.four{
         background-image: url("../mobile_index/mobile_index_19.png");
     }
 }
 .section5{
+    background: url("../mobile_index/mobile_index_33.png") no-repeat center center;
+    background-size: cover;
+    
     .s-content{
         width: 5.45rem;
         height: 4.5rem;
@@ -443,6 +572,9 @@ body {
         background-color: #fff;
         margin: 0 auto;
         margin-bottom: 0.6rem;
+        -webkit-box-shadow: #e6e6e6 0px 0px 10px; 
+        -moz-box-shadow: #e6e6e6 0px 0px 10px; 
+        box-shadow: #e6e6e6 0px 0px 10px; 
         .sc-li{
             width: 50%;
             height: 50%;
@@ -558,7 +690,11 @@ body {
             .inp_img{
                 height: 0.36rem;
                 width: 1rem;
-                margin: .12rem .1rem;
+                margin: 0 .1rem;
+                img{
+                    width: 100%;
+                    height: 32px;
+                }
             }
             .inp_btn{
                 width: 2.36rem;
@@ -569,6 +705,8 @@ body {
                 text-align: center;
                 line-height: 0.6rem;
                 border-radius: 5px;
+                outline: none;
+                border: 0;
                 background-color: #548bfa;
             }
         }

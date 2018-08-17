@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="app">
         <!-- 企服引擎为您领航互联网 -->
         <section1></section1>
         <!-- 一站式企业知产服务 -->
@@ -20,12 +20,12 @@
                     <div class="tab-content trade-service">
                         <div class="tc-left bg-common text-center clearfix fl">
                             <div class="tl-top lh-36 bg-common">
-                                <div class="tl-title color-fff">商标注册</div>
-                                <p class="tl-desc font-12 lh-24 color-fff mt-15">优质服务、快速高效专业人员审核资料，诚信可靠。</p>
+                                <div class="tl-title color-fff font-20">商标注册</div>
+                                <p class="tl-desc font-14 lh-24 color-fff mt-15">优质服务、快速高效专业人员审核资料，诚信可靠。</p>
                             </div>
                             <div class="tl-bot lh-36">
-                                <div class="tl-title color-fff">商标服务</div>
-                                <p class="tl-desc font-12 lh-24 color-fff mt-15">高性价比，极速办理，资质顾问，优质服务。</p>
+                                <div class="tl-title color-fff font-20">商标服务</div>
+                                <p class="tl-desc font-14 lh-24 color-fff mt-15">高性价比，极速办理，资质顾问，优质服务。</p>
                             </div>
                         </div>
                         <div class="tc-right bg-f5f6fb fl">
@@ -36,7 +36,7 @@
                                 <div class="tr-btnn clearfix">
                                     <div class="fl font-20 lh-36 price color-e2383a">￥580</div>
                                     <div class="fr search font-14 lh-36 bg-common">
-                                        <a :href="item.href" class=" color-666" target="_blank">立即查询</a>
+                                        <a :href="item.href" class=" color-666" target="_blank">{{item.btn}}</a>
                                     </div>
                                 </div>
                             </div>
@@ -46,12 +46,12 @@
                     <div class="tab-content patent-service hide">
                         <div class="tc-left bg-common text-center clearfix fl">
                             <div class="tl-top lh-36 bg-common">
-                                <div class="tl-title color-fff">专利服务</div>
-                                <p class="tl-desc font-12 lh-24 color-fff mt-15">为您的发明保驾护航</p>
+                                <div class="tl-title color-fff font-20">专利服务</div>
+                                <p class="tl-desc font-14 lh-24 color-fff mt-15">为您的发明保驾护航</p>
                             </div>
                             <div class="tl-bot lh-36">
-                                <div class="tl-title color-fff">版权服务</div>
-                                <p class="tl-desc font-12 lh-24 color-fff mt-15">登记发证，保护您的的创作</p>
+                                <div class="tl-title color-fff font-20">版权服务</div>
+                                <p class="tl-desc font-14 lh-24 color-fff mt-15">登记发证，保护您的的创作</p>
                             </div>
                         </div>
                         <div class="tc-right bg-f5f6fb fl">
@@ -59,7 +59,7 @@
                                 <div class="tr-icon mt-40"></div>
                                 <div class="tr-name lh-48 font-16 font-bold">{{item.name}}</div>
                                 <div class="tr-btnn clearfix">
-                                    <div class="fl font-18 font-bold lh-36 price color-e2383a">￥580/件</div>
+                                    <div class="fl font-18 lh-36 price color-e2383a">￥580/件</div>
                                     <div class="fr search font-14 lh-36 bg-common">
                                         <a :href="item.href" target="_blank" class="color-666">
                                             立即办理
@@ -77,16 +77,16 @@
                                 <div class="tt-desc font-16 color-fff lh-52">专业的团队，优质的服务</div>
                             </div>
                             <div class="tl-bot lh-36">
-                                <div class="tl-title color-fff">省心</div>
-                                <div class="tl-title color-fff">省力</div>
-                                <div class="tl-title color-fff">省时</div>
+                                <div class="tl-title color-fff font-16">省心</div>
+                                <div class="tl-title color-fff font-16">省力</div>
+                                <div class="tl-title color-fff font-16">省时</div>
                             </div>
                         </div>
                         <div class="tc-right bg-f5f6fb fl">
                             <div class="tr-li fl clearfix text-center bg-fff" v-for="item in iacts" :data-name="item.name">
                                 <div class="tr-top clearfix">
                                     <div class="tr-icon fl"></div>
-                                    <div class="tr-name lh-48 font-18 color-333 fl">{{item.name}}</div>
+                                    <div class="tr-name lh-48 font-18 color-333 fl font-bold">{{item.name}}</div>
                                 </div>
                                 <div class="tr-center color-666 font-14 lh-24 text-left">
                                     主要面向中小型企业、私营、股份制等在京投资设立的办事机......
@@ -106,7 +106,9 @@
                                 <div class="tt-desc font-16 color-fff lh-36">周期短，无风险，<br>即刻拥有心仪商标。</div>
                             </div>
                             <div class="tl-bot lh-36">
+                                <a href="/trademark/jiaoyilists" target="_blank">
                                 <div class="look-btn color-fff text-center">查看商标库</div>
+                                </a>
                             </div>
                         </div>
                         <div class="tc-right bg-fff fl swiper-container">
@@ -454,6 +456,7 @@
                             <!-- <div class="swiper-pagenation"></div> -->
                             <div class="swiper-button-next"></div>
                             <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
                         </div>
                     </div>
                 </div>
@@ -556,14 +559,14 @@ export default {
   data: function() {
     return {
       items: [
-        { name: '商标查询', href: '/trademark/search' },
-        { name: '商标普通注册', href: '/trademark/form' },
-        { name: '商标保姆注册', href: '/trademark/baomuIndex' },
-        { name: '商标担保注册', href: '/trademark/danbao' },
-        { name: '商标续展', href: '/trademark/services?remindinfo=xuzhan' },
-        { name: '商标转让', href: '/trademark/services?remindinfo=zhuanrang' },
-        { name: '商标变更', href: '/trademark/services?remindinfo=biangeng' },
-        { name: '商标撤三申请', href: '/trademark/services?remindinfo=chexiao' }
+        { name: '商标查询', href: '/trademark/search',btn:'立即查询' },
+        { name: '商标普通注册', href: '/trademark/form',btn:'立即注册' },
+        { name: '商标保姆注册', href: '/trademark/baomuIndex',btn:'立即注册' },
+        { name: '商标担保注册', href: '/trademark/danbao',btn:'立即注册' },
+        { name: '商标续展', href: '/trademark/services?remindinfo=xuzhan',btn:'查看详情' },
+        { name: '商标转让', href: '/trademark/services?remindinfo=zhuanrang',btn:'查看详情' },
+        { name: '商标变更', href: '/trademark/services?remindinfo=biangeng',btn:'查看详情' },
+        { name: '商标撤三申请', href: '/trademark/services?remindinfo=chexiao',btn:'查看详情' }
       ],
       patents: [
         { name: '发明专利', href: '/trademark/services?remindinfo=faming' },
