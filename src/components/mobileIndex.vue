@@ -254,11 +254,74 @@
                 </div>
             </div>
         </div>
+        <div class="section6 pd-20 clearfix">
+            <div class="top-text text-left">
+                <h3>提交我的需求</h3>
+                <p>请认真填写需求信息，我们会尽快和您取得联系。</p>
+            </div>
+            <div class="bottom-form">
+                <div class="inp">
+                    <label for=""></label>
+                    <input type="text" name="" id="" placeholder="公司名称">
+                </div>
+                <div class="inp">
+                    <label for=""></label>
+                    <input type="text" name="" id="" placeholder="公司名称">
+                </div>
+                <div class="inp_wrap">
+                <div class="inp fl">
+                    <label for=""></label>
+                    <input type="text" name="" id="" placeholder="公司名称">
+                </div>
+                <div class="inp fr">
+                    <label for=""></label>
+                    <input type="text" name="" id="" placeholder="公司名称">
+                </div>
+                </div>
+                <div class="inp commond">
+                    <label for=""></label>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="需求"></textarea>
+                </div>
+                <div class="yzm_btn">
+                    <div class="inp fl">
+                         <label for=""></label>
+                    <input type="text" name="" id="" placeholder="公司名称">
+                    </div>
+                    <div class="inp_img fl">
+
+                    </div>
+                    <div class="inp_btn fr">提交项目需求</div>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 <style lang="less">
 @import url('../style/less/mobile');
 </style>
+
+
+<style>
+input::input-placeholder{
+	color: rgba(255, 255, 255, .8);
+}
+::-webkit-input-placeholder {
+	color: rgba(255, 255, 255, .8);
+}
+:-moz-placeholder {
+	color: rgba(255, 255, 255, .8);
+    
+}
+::-moz-placeholder {
+	color: rgba(255, 255, 255, .8);
+
+}
+:-ms-input-placeholder {
+	color: rgba(255, 255, 255, .8);
+}
+
+</style>
+
 <script>
 import ziXun from "../components/mobile_zixun"
 export default {

@@ -3,10 +3,10 @@
         <!-- 企服引擎为您领航互联网 -->
         <section1></section1>
         <!-- 一站式企业知产服务 -->
-        <div class="section2 bg-f5f6fb clearfix pb-60" id="property_service">
+        <div class="section2 bg-f5 clearfix pb-60" id="property_service">
             <div class="center-1200">
                 <div class="home-title-line">
-                    <span class="bg-f5f6fb">一站式企业知产服务</span>
+                    <span class="bg-f5">一站式企业知产服务</span>
                     <p>集合知识产权、工商财税等产品的企业服务平台</p>
                 </div>
                 <div class="section-content">
@@ -18,7 +18,7 @@
                     </div>
                     <!-- 商标服务 -->
                     <div class="tab-content trade-service">
-                        <div class="tc-left bg-common text-center clearfix fl   ">
+                        <div class="tc-left bg-common text-center clearfix fl">
                             <div class="tl-top lh-36 bg-common">
                                 <div class="tl-title color-fff">商标注册</div>
                                 <p class="tl-desc font-12 lh-24 color-fff mt-15">优质服务、快速高效专业人员审核资料，诚信可靠。</p>
@@ -83,17 +83,17 @@
                             </div>
                         </div>
                         <div class="tc-right bg-f5f6fb fl">
-                            <div class="tr-li fl clearfix text-center bg-fff">
+                            <div class="tr-li fl clearfix text-center bg-fff" v-for="item in iacts" :data-name="item.name">
                                 <div class="tr-top clearfix">
                                     <div class="tr-icon fl"></div>
-                                    <div class="tr-name lh-48 font-18 color-333 fl">商标查询</div>
+                                    <div class="tr-name lh-48 font-18 color-333 fl">{{item.name}}</div>
                                 </div>
                                 <div class="tr-center color-666 font-14 lh-24 text-left">
                                     主要面向中小型企业、私营、股份制等在京投资设立的办事机......
                                 </div>
                                 <div class="tr-btnn clearfix">
                                     <div class="fl font-20 lh-36 price color-e2383a">￥580</div>
-                                    <div class="fr detail font-14 lh-32">查看详情</div>
+                                    <a href="" target="_blank"><div class="fr detail font-14 lh-32">查看详情</div></a>
                                 </div>
                             </div>
                         </div>
@@ -464,32 +464,40 @@
             <div class="center-1200">
                 <div class="home-title-line">
                     <span class="bg-fff">打造企业数字化</span>
-                    <p v-show="false">不管你处于什么行业,我们提供快速、安全、稳定的云产品,助你轻松跨入 "互联网+" 时代</p>
                 </div>
                 <div class="section-content">
                     <div class="section-li fl text-center color-fff bg-common">
-                        <div class="sc-title font-24 font-bold lh-48">域名注册</div>
-                        <div class="sc-desc font-14 lh-24">互联网时代的企业第一入口，所有互联网服务的基础之一！</div>
-                        <div class="sc-price font-20 lh-32">¥500起</div>
-                        <a class="sc-btn font-14 color-fff lh-48 bg-e2383a">查看详情</a>
+                        <div class="li-tips">
+                            <div class="sc-title font-24 font-bold lh-48 color-fff">域名注册</div>
+                            <div class="sc-desc font-14 lh-24 color-fff">互联网时代的企业第一入口，所有互联网服务的基础之一！</div>
+                            <div class="sc-price font-20 lh-32 color-fff">¥500起</div>
+                            <a class="sc-btn font-14 color-fff lh-48 bg-e2383a color-fff">查看详情</a>
+                        </div>
                     </div>
                     <div class="section-li fl text-center color-fff bg-common">
-                        <div class="sc-title font-24 font-bold lh-48">云计算</div>
-                        <div class="sc-desc font-14 lh-24">简单高效安全便捷的云计算服务，可帮您快速构建稳定安全的互联网环境。</div>
-                        <div class="sc-price font-20 lh-32">¥500起</div>
+                        <div class="li-tips">
+                        <div class="sc-title font-24 font-bold lh-48 color-fff">云计算</div>
+                        <div class="sc-desc font-14 lh-24 color-fff">简单高效安全便捷的云计算服务，可帮您快速构建稳定安全的互联网环境。</div>
+                        <div class="sc-price font-20 lh-32 color-fff">¥500起</div>
                         <a class="sc-btn font-14 color-fff lh-48 bg-e2383a">查看详情</a>
+                        </div>
                     </div>
                     <div class="section-li fl text-center color-fff bg-common">
-                        <div class="sc-title font-24 font-bold lh-48">SSL证书</div>
-                        <div class="sc-desc font-14 lh-24">全网普及，大势所趋！全站开启HTTPS加密，让你的网站无懈可击！</div>
-                        <div class="sc-price font-20 lh-32">¥500起</div>
+                        <div class="li-tips">
+                        <div class="sc-title font-24 font-bold lh-48 color-fff">SSL证书</div>
+                        <div class="sc-desc font-14 lh-24 color-fff">全网普及，大势所趋！全站开启HTTPS加密，让你的网站无懈可击！</div>
+                        <div class="sc-price font-20 lh-32 color-fff">¥500起</div>
                         <a class="sc-btn font-14 color-fff lh-48 bg-e2383a">查看详情</a>
+                        </div>
+                    
                     </div>
                     <div class="section-li fl text-center color-fff bg-common">
-                        <div class="sc-title font-24 font-bold lh-48">企业邮箱</div>
-                        <div class="sc-desc font-14 lh-24">随时随地全球畅邮，让工作更加简单！</div>
-                        <div class="sc-price font-20 lh-32">¥500起</div>
+                        <div class="li-tips">
+                        <div class="sc-title font-24 font-bold lh-48 color-fff">企业邮箱</div>
+                        <div class="sc-desc font-14 lh-24 color-fff">随时随地全球畅邮，让工作更加简单！</div>
+                        <div class="sc-price font-20 lh-32 color-fff">¥500起</div>
                         <a class="sc-btn font-14 color-fff lh-48 bg-e2383a">查看详情</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -527,15 +535,9 @@
                 </div>
             </div>
             <div class="about-bg">
-                <div class="bg-block">
-                    <img src="../style/index/index_33.jpg" alt="">
-                </div>
-                <div class="bg-block">
-                    <img src="../style/index/index_33.jpg" alt="">
-                </div>
-                <div class="bg-block">
-                    <img src="../style/index/index_33.jpg" alt="">
-                </div>
+                <div class="bg-block"><img src="../style/index/index_33.png" alt=""></div>
+                <div class="bg-block"><img src="../style/index/index_33.png" alt=""></div>
+                <div class="bg-block"><img src="../style/index/index_33.png" alt=""></div>
             </div>
         </div>
         <!-- 提交需求 -->
@@ -556,10 +558,10 @@ export default {
       items: [
         { name: '商标查询', href: '/trademark/search' },
         { name: '商标普通注册', href: '/trademark/form' },
-        { name: '商标普通注册', href: '/trademark/baomuIndex' },
+        { name: '商标保姆注册', href: '/trademark/baomuIndex' },
         { name: '商标担保注册', href: '/trademark/danbao' },
         { name: '商标续展', href: '/trademark/services?remindinfo=xuzhan' },
-        { name: '商标续展', href: '/trademark/services?remindinfo=xuzhan' },
+        { name: '商标转让', href: '/trademark/services?remindinfo=zhuanrang' },
         { name: '商标变更', href: '/trademark/services?remindinfo=biangeng' },
         { name: '商标撤三申请', href: '/trademark/services?remindinfo=chexiao' }
       ],
@@ -581,7 +583,27 @@ export default {
         { name: '美术著作权', href: '/trademark/services?remindinfo=meishu' },
         { name: '软件著作权', href: '/trademark/services?remindinfo=ruanjian' },
         { name: '其他著作权', href: '/trademark/services?remindinfo=qita' }
-      ]
+      ],
+        iacts:[
+            {
+                name:'代理记账'
+            },
+            {
+                name:'公司注册'
+            },
+            {
+                name:'社保代理'
+            },
+            {
+                name:'网站建站'
+            },
+            {
+                name:'高新企业认证'
+            },
+            {
+                name:'代办ICP许可证'
+            }
+        ]
     }
   }
 }
