@@ -36,7 +36,7 @@
                                 <div class="tr-btnn clearfix">
                                     <div class="fl font-20 lh-36 price color-e2383a">￥580</div>
                                     <div class="fr search font-14 lh-36 bg-common">
-                                        <a :href="item.href" class=" color-666" target="_blank">{{item.btn}}</a>
+                                        <a :href="item.href" class="color-666" target="_blank" :title="item.name">{{item.btn}}</a>
                                     </div>
                                 </div>
                             </div>
@@ -61,7 +61,7 @@
                                 <div class="tr-btnn clearfix">
                                     <div class="fl font-18 lh-36 price color-e2383a">￥580/件</div>
                                     <div class="fr search font-14 lh-36 bg-common">
-                                        <a :href="item.href" target="_blank" class="color-666">
+                                        <a :href="item.href" target="_blank" class="color-666" :title="item.name">
                                             立即办理
                                         </a>
                                     </div>
@@ -93,7 +93,7 @@
                                 </div>
                                 <div class="tr-btnn clearfix">
                                     <div class="fl font-20 lh-36 price color-e2383a">￥580</div>
-                                    <a href="" target="_blank"><div class="fr detail font-14 lh-32">查看详情</div></a>
+                                    <a href="item.href" target="_blank"><div class="fr detail font-14 lh-32" :title="item.name">查看详情</div></a>
                                 </div>
                             </div>
                         </div>
@@ -589,22 +589,22 @@ export default {
       ],
         iacts:[
             {
-                name:'代理记账'
+                name:'代理记账',href:'/service/service_detail?id=1'
             },
             {
-                name:'公司注册'
+                name:'公司注册',href:'/service/service_detail?id=3'
             },
             {
-                name:'社保代理'
+                name:'社保代理',href:'/service/service_detail?id=5'
             },
             {
-                name:'网站建站'
+                name:'网站建站',href:'/build'
             },
             {
-                name:'高新企业认证'
+                name:'高新企业认证',href:'/service/service_detail?id=6'
             },
             {
-                name:'代办ICP许可证'
+                name:'代办ICP许可证',href:'/service/service_detail?id=4'
             }
         ]
     }
