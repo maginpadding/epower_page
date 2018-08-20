@@ -88,7 +88,7 @@
                                 <div class="tr-li-top lh-36 font-18 color-666 text-left font-bold">
                                     {{item.name}}
                                 </div>
-                                <div class="tr-li-center lh-24 color-999 font-14">
+                                <div class="tr-li-center text-left lh-24 color-999">
                                     主要面向中小型企业、私营、股份制等在京投资设立的办事机......
                                 </div>
                                 <div class="tr-li-bottom">
@@ -96,10 +96,11 @@
                                         ￥5000
                                     </div>
                                     <a href="item.href" target="_blank">
-                                        <div class="fr detail font-14 lh-32" :title="item.name">查看详情</div>
+                                        <div class="detail font-14 lh-32" :title="item.name">查看详情</div>
                                     </a>
                                 </div>
-                                <div class="tr-top clearfix" v-show="false">
+                                <div class="tr-li-img po"><img src="http://user.epower.cn/Uploads/2017-08-25/59a0083de5135.png" alt="" srcset=""></div>
+                                <!-- <div class="tr-top clearfix" v-show="false">
                                     <div class="tr-icon fl"></div>
                                     <div class="tr-name lh-48 font-18 color-333 fl font-bold">{{item.name}}</div>
                                 </div>
@@ -111,7 +112,7 @@
                                     <a href="item.href" target="_blank">
                                         <div class="fr detail font-14 lh-32" :title="item.name">查看详情</div>
                                     </a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -142,106 +143,6 @@
                                             <div class="font-16 lh-24 price color-e2383a text-center">￥21,000</div>
                                         </div>
                                     </div>
-                                    <div class="tr-li fl clearfix text-center bg-fff">
-                                        <div class="tr-top clearfix">
-                                            <div class="tr-icon">图片</div>
-                                        </div>
-                                        <div class="tr-center lh-32 font-14 color-333 ">
-                                            商标查询
-                                        </div>
-                                        <div class="tr-btnn clearfix">
-                                            <div class="font-16 lh-24 price color-e2383a text-center">￥21,000</div>
-                                        </div>
-                                    </div>
-                                    <div class="tr-li fl clearfix text-center bg-fff">
-                                        <div class="tr-top clearfix">
-                                            <div class="tr-icon">图片</div>
-                                        </div>
-                                        <div class="tr-center lh-32 font-14 color-333 ">
-                                            商标查询
-                                        </div>
-                                        <div class="tr-btnn clearfix">
-                                            <div class="font-16 lh-24 price color-e2383a text-center">￥21,000</div>
-                                        </div>
-                                    </div>
-                                    <div class="tr-li fl clearfix text-center bg-fff">
-                                        <div class="tr-top clearfix">
-                                            <div class="tr-icon">图片</div>
-                                        </div>
-                                        <div class="tr-center lh-32 font-14 color-333 ">
-                                            商标查询
-                                        </div>
-                                        <div class="tr-btnn clearfix">
-                                            <div class="font-16 lh-24 price color-e2383a text-center">￥21,000</div>
-                                        </div>
-                                    </div>
-                                    <div class="tr-li fl clearfix text-center bg-fff">
-                                        <div class="tr-top clearfix">
-                                            <div class="tr-icon">图片</div>
-                                        </div>
-                                        <div class="tr-center lh-32 font-14 color-333 ">
-                                            商标查询
-                                        </div>
-                                        <div class="tr-btnn clearfix">
-                                            <div class="font-16 lh-24 price color-e2383a text-center">￥21,000</div>
-                                        </div>
-                                    </div>
-                                    <div class="tr-li fl clearfix text-center bg-fff">
-                                        <div class="tr-top clearfix">
-                                            <div class="tr-icon">图片</div>
-                                        </div>
-                                        <div class="tr-center lh-32 font-14 color-333 ">
-                                            商标查询
-                                        </div>
-                                        <div class="tr-btnn clearfix">
-                                            <div class="font-16 lh-24 price color-e2383a text-center">￥21,000</div>
-                                        </div>
-                                    </div>
-                                    <div class="tr-li fl clearfix text-center bg-fff">
-                                        <div class="tr-top clearfix">
-                                            <div class="tr-icon">图片</div>
-                                        </div>
-                                        <div class="tr-center lh-32 font-14 color-333 ">
-                                            商标查询
-                                        </div>
-                                        <div class="tr-btnn clearfix">
-                                            <div class="font-16 lh-24 price color-e2383a text-center">￥21,000</div>
-                                        </div>
-                                    </div>
-                                    <div class="tr-li fl clearfix text-center bg-fff">
-                                        <div class="tr-top clearfix">
-                                            <div class="tr-icon">图片</div>
-                                        </div>
-                                        <div class="tr-center lh-32 font-14 color-333 ">
-                                            商标查询
-                                        </div>
-                                        <div class="tr-btnn clearfix">
-                                            <div class="font-16 lh-24 price color-e2383a text-center">￥21,000</div>
-                                        </div>
-                                    </div>
-                                    <div class="tr-li fl clearfix text-center bg-fff">
-                                        <div class="tr-top clearfix">
-                                            <div class="tr-icon">图片</div>
-                                        </div>
-                                        <div class="tr-center lh-32 font-14 color-333 ">
-                                            商标查询
-                                        </div>
-                                        <div class="tr-btnn clearfix">
-                                            <div class="font-16 lh-24 price color-e2383a text-center">￥21,000</div>
-                                        </div>
-                                    </div>
-                                    <div class="tr-li fl clearfix text-center bg-fff">
-                                        <div class="tr-top clearfix">
-                                            <div class="tr-icon">图片</div>
-                                        </div>
-                                        <div class="tr-center lh-32 font-14 color-333 ">
-                                            商标查询
-                                        </div>
-                                        <div class="tr-btnn clearfix">
-                                            <div class="font-16 lh-24 price color-e2383a text-center">￥21,000</div>
-                                        </div>
-                                    </div>
-
                                 </div>
                             </div>
                             <div class="swiper-button-next"></div>
@@ -444,8 +345,35 @@ export default {
     .tc-right {
         .tr-li{
             padding:20px 30px 32px 30px;
+            .tr-li-top{
+                margin-bottom: 5px;
+            }
             .tr-li-center{
                 margin-bottom: 15px;
+                font-size: 14px;
+            }
+            .detail{
+                width: 100px;
+                height: 32px;
+                line-height: 30px;
+                margin-top: 5px;
+                border:solid 1px #e2383a;
+                border-radius:3px;
+                color: #e2383a;
+                background-color: transparent;
+            }
+        }
+        .tr-li:hover .detail{
+            color: #fff;
+                background-color: #e2383a;
+        }
+        .tr-li-img{
+            right: 0;
+            bottom: 0;
+            width: 164px;
+            height: 106px;
+            img{
+                display: block;
             }
         }
     }

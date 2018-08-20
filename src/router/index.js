@@ -6,38 +6,38 @@ import Router from 'vue-router'
 import pcGwInfo from '@/components/www_epower/info/pc_gw_info'
 import mobileGwInfo from '@/components/www_epower/info/mobile_gw_info'
 
-//做完的页面不再引入
+//以及做完的页面不再引入
 
 // import cloudComputing from '@/components/user/yun/cloudComputing'
 
 // import mobileCloud from '@/components/user/yun/mobile_cloud'
 
-// 首页改版--暂时注释掉
-
+// 首页改版
 // import index from '@/components/user/index/index'
 // import mobileIndex from '@/components/user/index/mobileIndex'
 
 
 
 Vue.use(Router)
-
+//使用历史模式需要后台支持--不用路由,使用切换
 export default new Router({
   mode: 'history',
   routes: [
     // {
-    //   path: '/trade',
+    //   path: '/',
     //   name: 'pcTradeInfo',
     //   component: pcTradeInfo
     // }, {
-    //   path: '/trade/m',
+    //   path: '/mobile',
     //   name: 'mobileTradeInfo',
     //   component: mobileTradeInfo
     // },
     {
-      path: '/gw',
+      path: '/',
       name: 'pcGwInfo',
       component: pcGwInfo
-    }, {
+    }
+    , {
       path: '/gw/m',
       name: 'mobileGwInfo',
       component: mobileGwInfo
