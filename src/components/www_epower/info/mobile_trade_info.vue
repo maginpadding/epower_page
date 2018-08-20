@@ -184,7 +184,7 @@ dd {
 // introduce_banner --背景图
 #introduce_banner {
   height: 3.6rem;
-  background-image: url('../style/img/introduce_02.png');
+  background-image: url('../../../style/img/introduce_02.png');
   background-size: cover;
 }
 .h3-title {
@@ -194,54 +194,54 @@ dd {
   padding-bottom: 0.5rem;
   .section-image {
     height: 7rem;
-    background-image: url('../style/img/introduce_05.png');
+    background-image: url('../../../style/img/introduce_05.png');
   }
 }
 .section-2 {
   padding-bottom: 0.2rem;
   .section-image {
     height: 4.64rem;
-    background-image: url('../style/img/introduce_09.png');
+    background-image: url('../../../style/img/introduce_09.png');
   }
 }
 .section-3 {
   padding-bottom: 0.2rem;
   .section-image {
     height: 3.3rem;
-    background-image: url('../style/img/introduce_12.png');
+    background-image: url('../../../style/img/introduce_12.png');
   }
 }
 .section-4 {
   padding-bottom: 0.4rem;
-  background-image: url('../style/img/introduce_15.png');
+  background-image: url('../../../style/img/introduce_15.png');
   background-size: cover;
   .section-image {
     height: 3.52rem;
-    background-image: url('../style/img/introduce_16.png');
+    background-image: url('../../../style/img/introduce_16.png');
   }
 }
 .section-5 {
   padding-bottom: 0.2rem;
   .section-image {
     height: 3.9rem;
-    background-image: url('../style/img/introduce_18.png');
+    background-image: url('../../../style/img/introduce_18.png');
   }
 }
 .section-6 {
   padding-bottom: 1rem;
   .section-image {
     height: 4rem;
-    background-image: url('../style/img/introduce_22.png');
+    background-image: url('../../../style/img/introduce_22.png');
   }
 }
 .section-7 {
   height: 4.38rem;
   .section-btn-wrap {
     a:first-child {
-      background-image: url('../style/img/introduce_26.png');
+      background-image: url('../../../style/img/introduce_26.png');
     }
     a:last-child {
-      background-image: url('../style/img/introduce_28.png');
+      background-image: url('../../../style/img/introduce_28.png');
     }
     a {
       width: 50%;

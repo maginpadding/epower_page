@@ -161,7 +161,7 @@
       height: 0.6rem;
       display: block;
       margin: 0 auto;
-      background-image: url('../style/single/postOffice.png');
+      background-image: url('../../../style/single/postOffice.png');
       background-size: 5rem 6rem;
       margin-top: 0.28rem;
     }

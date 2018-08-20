@@ -242,8 +242,8 @@
                                         <li class="fl">
                                             <a href="/server?id=3" target="_blank" class="color-666 font-12">管理邮箱</a>
                                         </li>
-                                        <li class="fl">
-                                            <a href="/server?id=3" target="_blank" class="color-666 font-12">自定义LOGO</a>
+                                        <li class="fl" style="opacity:0;">
+                                            <a href="/server?id=3" target="_blank" class="color-666 font-12 hide">自定义LOGO</a>
                                         </li>
                                     </ul>
                                 </div>

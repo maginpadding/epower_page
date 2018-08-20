@@ -4,34 +4,34 @@
 
             <div class="list">
                 <ul>
-                    <li class="p7">
-                        <a href="#"><img src="https://www.dummyimage.com/1080x432/000/fff" alt="" /></a>
-                    </li>
+                    <!-- <li class="p7">
+                        <a href="javascript:;"><img src="../../../style/gw_introduce/xz_2.png" alt="" /></a>
+                    </li> -->
                     <li class="p6">
-                        <a href="#"><img src="https://www.dummyimage.com/1080x432/222/fff" alt="" /></a>
+                        <a href="javascript:;"><img src="../../../style/gw_introduce/xz_1.png" alt="" /></a>
                     </li>
                     <li class="p5">
-                        <a href="#"><img src="https://www.dummyimage.com/1080x432/444/fff" alt="" /></a>
+                        <a href="javascript:;"><img src="../../../style/gw_introduce/xz_2.png" alt="" /></a>
                     </li>
                     <li class="p4">
-                        <a href="#"><img src="https://www.dummyimage.com/1080x432/666/fff" alt="" /></a>
+                        <a href="javascript:;"><img src="../../../style/gw_introduce/xz_3.png" alt="" /></a>
                     </li>
                     <li class="p3">
-                        <a href="#"><img src="https://www.dummyimage.com/1080x432/888/fff" alt="" /></a>
+                        <a href="javascript:;"><img src="../../../style/gw_introduce/xz_1.png" alt="" /></a>
                     </li>
                     <li class="p2">
-                        <a href="#"><img src="https://www.dummyimage.com/1080x432/bbb/fff" alt="" /></a>
+                        <a href="javascript:;"><img src="../../../style/gw_introduce/xz_2.png" alt="" /></a>
                     </li>
                     <li class="p1">
-                        <a href="#"><img src="https://www.dummyimage.com/1080x432/ddd/fff" alt="" /></a>
+                        <a href="javascript:;"><img src="../../../style/gw_introduce/xz_3.png" alt="" /></a>
                     </li>
                 </ul>
             </div>
 
-            <a href="javascript:;" class="prev btn">&lt;</a>
-            <a href="javascript:;" class="next btn">&gt;</a>
+            <a href="javascript:;" class="prev btn"></a>
+            <a href="javascript:;" class="next btn"></a>
 
-            <div class="buttons">
+            <div class="buttons" v-show="false">
                 <a href="javascript:;">
                     <span class="white"></span>
                 </a>
@@ -41,7 +41,10 @@
                 <a href="javascript:;">
                     <span></span>
                 </a>
-                <a href="javascript:;">
+                <!-- <a href="javascript:;">
+                    <span></span>
+                </a> -->
+                <!-- <a href="javascript:;">
                     <span></span>
                 </a>
                 <a href="javascript:;">
@@ -49,16 +52,13 @@
                 </a>
                 <a href="javascript:;">
                     <span></span>
-                </a>
-                <a href="javascript:;">
-                    <span></span>
-                </a>
+                </a> -->
             </div>
         </div>
     </div>
 </template>
 
-<style scoped>
+<style scoped >
 a{
     border: 0;
     outline: none;
@@ -66,17 +66,23 @@ a{
 .box {
   margin-top: 0;
   width: 100%;
-  height: 340px;
+  height: 450px;
   position: relative;
 }
 
 .list {
   width: 1200px;
-  height: 300px;
+  height: 450px;
   overflow: hidden;
   position: absolute;
   left: 50%;
   margin-left: -600px;
+}
+.mobile .box{
+height: 3.9rem;
+}
+.mobile .list{
+    margin-left: -107vw;
 }
 
 .btn {
@@ -92,13 +98,20 @@ a{
   text-align: center;
   background: rgba(0, 255, 0, 0.5);
   cursor: pointer;
+      background-color: transparent;
+    background-size: 30px 60px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: .8;
 }
 .next {
   right: -80px;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E")
 }
 
 .prev{
     left: -80px;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E")
 }
 li {
   position: absolute;
@@ -109,8 +122,8 @@ li {
   transition: all 0.3s ease-out;
 }
 img {
-  width: 751px;
-  height: 300px;
+  width: 780px;
+  height: 450px;
   border: none;
   float: left;
 }
@@ -118,6 +131,7 @@ img {
     width: 5.5rem;
     height: 3.2rem;
     margin-left: 1rem;
+    width: 5.2rem;
 }
 .p1 {
   transform: translate3d(-224px, 0, 0) scale(0.81);
@@ -153,15 +167,17 @@ img {
   position: absolute;
   width: 1200px;
   height: 30px;
-  bottom: 0;
+  bottom: -40px;
   left: 50%;
   margin-left: -600px;
   text-align: center;
   padding-top: 10px;
-  display: none;
+  /* display: none; */
+  
 }
 .mobile .buttons{
     display: block;
+    bottom: 0;
 }
 .buttons a {
   display: inline-block;

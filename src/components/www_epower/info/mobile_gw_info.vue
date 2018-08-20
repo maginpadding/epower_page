@@ -35,13 +35,13 @@
                 <div class="section-rotate pr" id="rotate-1">
                     <ul>
                         <li class="po section-icon-1">
-                            <img src="../style/gw_introduce/gw_13.png" alt="">
+                            <img src="../../../style/gw_introduce/gw_13.png" alt="">
                         </li>
                         <li class="po section-icon-2 active">
-                            <img src="../style/gw_introduce/gw_15.png" alt="">
+                            <img src="../../../style/gw_introduce/gw_15.png" alt="">
                         </li>
                         <li class="po section-icon-3">
-                            <img src="../style/gw_introduce/gw_17.png" alt="">
+                            <img src="../../../style/gw_introduce/gw_17.png" alt="">
                         </li>
                     </ul>
                     <div class="po section-icon-left" v-show="false"></div>
@@ -84,7 +84,7 @@
     </div>
 </template>
 <script>
-import Xzmm from '../components/xz.vue'
+import Xzmm from './xz.vue'
 export default {
   components:{Xzmm},
   data() {
@@ -120,6 +120,24 @@ export default {
 </script>
 
 <style lang="less" scoped>
+.mobile{
+
+  .section-7{
+    
+    .section-image{
+      width: auto;
+    display: flex;
+    padding-left: .4rem;
+    padding-right: 0.4rem;
+    .mod-btn{
+      flex: 1;
+    }
+    .mod-btn:first-child{
+      margin-right: .4rem;
+  }
+}
+    }
+}
 *{
     margin: 0 ;
     padding: 0;
@@ -236,7 +254,7 @@ dd {
   height: 50px;
   line-height: 50px;
   border: 1px solid #fff;
-  width: 160px;
+  width: 120px;
   border-radius: 25px;
   -webkit-user-select: none;
 }
@@ -291,10 +309,17 @@ dd {
   -moz-box-shadow: 0 10px 15px -3px rgba(252, 72, 97, 0.5);
   box-shadow: 0 10px 15px -3px rgba(252, 72, 97, 0.5);
 }
+.mobile {
+  .mod-btn{
+    height: 0.8rem;
+    line-height: 0.8rem;
+    font-size: 0.32rem;
+  }
+}
 // introduce_banner --背景图
 #introduce_banner {
   height: 3.6rem;
-  background-image: url('../style/gw_introduce/mgw_01.png');
+  background-image: url('../../../style/gw_introduce/mgw_01.png');
   background-size: cover;
 }
 .h3-title {
@@ -304,34 +329,34 @@ dd {
   padding-bottom: 0.5rem;
   .section-image {
     height: 4.22rem;
-    background-image: url('../style/gw_introduce/mgw_03.png');
+    background-image: url('../../../style/gw_introduce/mgw_03.png');
   }
   .section-image-bottom {
     height: 4rem;
-    background-image: url('../style/gw_introduce/mgw_05.png');
+    background-image: url('../../../style/gw_introduce/mgw_05.png');
   }
 }
 .section-2 {
   padding-bottom: 0.2rem;
   .section-image {
     height: 3.84rem;
-    background-image: url('../style/gw_introduce/mgw_07.png');
+    background-image: url('../../../style/gw_introduce/mgw_07.png');
   }
 }
 .section-3 {
   padding-bottom: 0.2rem;
   .section-image {
     height: 2.92rem;
-    background-image: url('../style/gw_introduce/mgw_09.png');
+    background-image: url('../../../style/gw_introduce/mgw_09.png');
   }
 }
 .section-4 {
   padding-bottom: 0.4rem;
-  background-image: url('../style/gw_introduce/mgw_19.png');
+  background-image: url('../../../style/gw_introduce/mgw_19.png');
   background-size: cover;
   .section-image {
     height: 3.52rem;
-    // background-image: url('../style/img/introduce_16.png');
+    // background-image: url('../../../style/img/introduce_16.png');
     .section-rotate {
       li {
         width: 5rem;
@@ -367,11 +392,11 @@ dd {
     }
     .section-icon-left {
       left: -60px;
-      background-image: url('../style/gw_introduce/gw_19.png');
+      background-image: url('../../../style/gw_introduce/gw_19.png');
     }
     .section-icon-right {
       right: -60px;
-      background-image: url('../style/gw_introduce/gw_20.png');
+      background-image: url('../../../style/gw_introduce/gw_20.png');
     }
   }
 }
@@ -389,13 +414,13 @@ dd {
         height: 0.6rem;
       }
       .section-pa-left {
-        background-image: url('../style/gw_introduce/mgw_10.png');
+        background-image: url('../../../style/gw_introduce/mgw_10.png');
         top: 0;
         left: 25%;
         opacity: 1;
       }
       .section-pa-right {
-        background-image: url('../style/gw_introduce/mgw_11.png');
+        background-image: url('../../../style/gw_introduce/mgw_11.png');
         top: 0;
         right: 25%;
         opacity: 1;
@@ -404,7 +429,8 @@ dd {
     .section-swiper {
       height: 4.16rem;
       width: 100%;
-      background-image: url('../style/gw_introduce/mgw_13.png');
+      background-image: url('../../../style/gw_introduce/mgw_13.png');
+      background-size: contain;
     }
   }
 }
@@ -412,7 +438,7 @@ dd {
   padding-bottom: 0.4rem;
   .section-image {
     height: 3.9rem;
-    background-image: url('../style/gw_introduce/mgw_15.png');
+    background-image: url('../../../style/gw_introduce/mgw_15.png');
   }
 }
 .section-7 {

@@ -61,7 +61,7 @@
   width: 100%;
   overflow: hidden;
   height: 415px;
-  /* background: url('../style/index/lianxi.jpg') no-repeat center center; */
+  /* background: url('../../../style/index/lianxi.jpg') no-repeat center center; */
   background: url("http://user.epower.cn/template/Home/Default/PC/Static/img/bg4.jpg") no-repeat center center;
   background-size: cover;
 }

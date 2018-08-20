@@ -122,7 +122,7 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'pc_trade_info',
   data() {
     return {
       searchList: [
@@ -385,7 +385,7 @@ dd {
 <style lang="less" scoped>
 #introduce_banner {
   height: 424px;
-  background: url('../style/images/introduction_01.png') no-repeat center center;
+  background: url('../../../style/images/introduction_01.png') no-repeat center center;
   background-size: cover;
 }
 .section-image div {
@@ -418,7 +418,7 @@ dd {
     height: 455px;
     left: 0;
     top: 0;
-    background-image: url('../style/images/introduction_07.png');
+    background-image: url('../../../style/images/introduction_07.png');
     z-index: 50;
   }
   .section-right {
@@ -426,7 +426,7 @@ dd {
     height: 360px;
     right: 0;
     top: 48px;
-    background-image: url('../style/images/introduction_11.png');
+    background-image: url('../../../style/images/introduction_11.png');
     z-index: 10;
   }
   .section-icon-left {
@@ -435,7 +435,7 @@ dd {
     top: 118px;
     left: 8px;
     z-index: 100;
-    background-image: url('../style/images/introduction_05.png');
+    background-image: url('../../../style/images/introduction_05.png');
   }
   .section-icon-right {
     width: 280px;
@@ -443,7 +443,7 @@ dd {
     top: 130px;
     right: 4px;
     z-index: 100;
-    background-image: url('../style/images/introduction_13.png');
+    background-image: url('../../../style/images/introduction_13.png');
   }
 }
 .section-2 {
@@ -466,7 +466,7 @@ dd {
         height: 756px;
         left: 0;
         top: 0;
-        background-image: url('../style/images/introduction_17.png'); // background-image: url("../style/images/introduction_15.png");
+        background-image: url('../../../style/images/introduction_17.png'); // background-image: url("../../../style/images/introduction_15.png");
         // background-size: contain;
         // -moz-box-shadow: 1px 1px 10px #999999;
         // -webkit-box-shadow: 1px 1px 10px #999999;
@@ -483,7 +483,7 @@ dd {
         top: 70px;
         right: 4px;
         z-index: 10;
-        background-image: url('../style/images/introduction_20.png');
+        background-image: url('../../../style/images/introduction_20.png');
       }
       .section-right-bottom {
         width: 556px;
@@ -491,7 +491,7 @@ dd {
         bottom: 97px;
         right: 4px;
         z-index: 10;
-        background-image: url('../style/images/introduction_22.png');
+        background-image: url('../../../style/images/introduction_22.png');
       }
       .section-icon {
         width: 150px;
@@ -501,11 +501,11 @@ dd {
       }
       .section-icon-top {
         top: 97px;
-        background-image: url('../style/images/introduction_19.png');
+        background-image: url('../../../style/images/introduction_19.png');
       }
       .section-icon-bottom {
         bottom: 189px;
-        background-image: url('../style/images/introduction_21.png');
+        background-image: url('../../../style/images/introduction_21.png');
       }
     }
   }
@@ -537,7 +537,7 @@ dd {
       left: 0;
       top: 390px;
       z-index: 10;
-      background-image: url('../style/images/introduction_24.png');
+      background-image: url('../../../style/images/introduction_24.png');
       background-size: cover;
     }
     .section-left-icon,
@@ -549,20 +549,20 @@ dd {
       top: 480px;
       left: 210px;
       z-index: 100;
-      background-image: url('../style/images/introduction_23.png');
+      background-image: url('../../../style/images/introduction_23.png');
     }
     .section-right-icon {
       top: 350px;
       right: 340px;
       z-index: 100;
-      background-image: url('../style/images/introduction_25.png');
+      background-image: url('../../../style/images/introduction_25.png');
     }
   }
 }
 // section4
 .section-4 {
   height: 812px;
-  background: url('../style/images/introduction_29.png') no-repeat center bottom;
+  background: url('../../../style/images/introduction_29.png') no-repeat center bottom;
   background-size: 100% 442px;
   .section-image {
     height: 610px;
@@ -572,7 +572,7 @@ dd {
       z-index: 10;
       top: 0;
       left: 5px;
-      background-image: url('../style/images/introduction_27.png');
+      background-image: url('../../../style/images/introduction_27.png');
     }
     .section-right {
       width: 850px;
@@ -580,7 +580,7 @@ dd {
       z-index: 100;
       top: 84px;
       right: 5px;
-      background-image: url('../style/images/introduction_28.png');
+      background-image: url('../../../style/images/introduction_28.png');
     }
   }
 }
@@ -602,7 +602,7 @@ dd {
     top: 60px;
     left: 0;
     z-index: 10;
-    background-image: url('../style/images/introduction_32.png');
+    background-image: url('../../../style/images/introduction_32.png');
   }
   .section-right {
     width: 550px;
@@ -610,7 +610,7 @@ dd {
     top: 200px;
     right: 44px;
     z-index: 1;
-    background-image: url('../style/images/introduction_31.png');
+    background-image: url('../../../style/images/introduction_31.png');
   }
   .section-nav-wrap {
     width: 440px;
@@ -627,7 +627,7 @@ dd {
     margin-bottom: 15px;
     margin-left: 15px;
     color: #009fe8;
-    background-image: url('../style/images/introduction_33.png');
+    background-image: url('../../../style/images/introduction_33.png');
   }
 }
 // section-6
@@ -648,14 +648,14 @@ dd {
     height: 278px;
     top: 129px;
     left: 0;
-    background-image: url('../style/images/introduction_35.png');
+    background-image: url('../../../style/images/introduction_35.png');
   }
   .section-right {
     width: 692px;
     height: 405px;
     right: 0;
     top: 15px;
-    background-image: url('../style/images/introduction_34.png');
+    background-image: url('../../../style/images/introduction_34.png');
   }
 }
 //section-7
@@ -686,10 +686,10 @@ dd {
       }
     }
     .section-btn:first-child {
-      background-image: url('../style/images/introduction_36.png');
+      background-image: url('../../../style/images/introduction_36.png');
     }
     .section-btn:last-child {
-      background-image: url('../style/images/introduction_37.png');
+      background-image: url('../../../style/images/introduction_37.png');
     }
   }
 }

@@ -53,7 +53,7 @@
             <!-- 商标服务 -->
             <div class="trade-service sc-content tab-content clearfix text-center">
                 <div class="sc-li w-2 mr-24">
-                    <img src="../style/mobile_index/mobile_index_03.png" alt="" srcset="">
+                    <img src="../../../style/mobile_index/mobile_index_03.png" alt="" srcset="">
                 </div>
                 <!-- 注册部分  itemsZhuCe-->
 
@@ -87,7 +87,7 @@
                 </div>
                 <!-- 服务部分 -->
                 <div class="sc-li w-2 mr-24">
-                    <img src="../style/mobile_index/mobile_index_06.png" alt="" srcset="">
+                    <img src="../../../style/mobile_index/mobile_index_06.png" alt="" srcset="">
                 </div>
                 <div class="sc-li w-1" data-name="商标续展">
                     <a href="/trademark/services?remindinfo=xuzhan">
@@ -121,7 +121,7 @@
             <!-- 专利版权 -->
             <div class="patent-service sc-content tab-content clearfix text-center hide">
                 <div class="sc-li w-2 mr-24">
-                    <img src="../style/mobile_index/mobile_index_07.png" alt="" srcset="">
+                    <img src="../../../style/mobile_index/mobile_index_07.png" alt="" srcset="">
                 </div>
                 <div class="sc-li w-1" data-name="发明专利">
                     <a href="/trademark/services?remindinfo=faming">
@@ -152,7 +152,7 @@
                     </a>
                 </div>
                 <div class="sc-li w-2 mr-24">
-                    <img src="../style/mobile_index/mobile_index_09.png" alt="" srcset="">
+                    <img src="../../../style/mobile_index/mobile_index_09.png" alt="" srcset="">
                 </div>
                 <div class="sc-li w-1" data-name="文字著作权">
                     <a href="/trademark/services?remindinfo=wenzi">
@@ -327,7 +327,7 @@
     </div>
 </template>
 <style lang="less">
-@import url('../style/less/mobile');
+@import url('../../../style/less/mobile');
 </style>
 <style>
 input::input-placeholder {
@@ -348,7 +348,7 @@ input::input-placeholder {
 </style>
 
 <script>
-import ziXun from '../components/mobile_zixun'
+import ziXun from './mobile_zixun'
 export default {
   components: { ziXun },
   data() {

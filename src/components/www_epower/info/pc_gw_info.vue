@@ -44,13 +44,13 @@
           <div class="section-rotate pr list" id="rotate-1">
             <ul class="">
               <li class="po section-icon-1 p1">
-                <img src="../style/gw_introduce/gw_13.png" alt="">
+                <img src="../../../style/gw_introduce/gw_13.png" alt="">
               </li>
               <li class="po section-icon-2 active p2">
-                <img src="../style/gw_introduce/gw_15.png" alt="">
+                <img src="../../../style/gw_introduce/gw_15.png" alt="">
               </li>
               <li class="po section-icon-3 p3">
-                <img src="../style/gw_introduce/gw_17.png" alt="">
+                <img src="../../../style/gw_introduce/gw_17.png" alt="">
               </li>
             </ul>
             <div class="po section-icon-left" v-show="false"></div>
@@ -68,9 +68,9 @@
         <div class="section-image pr">
           <div class="section-container pr swiper-container">
             <div class="section-ul swiper-wrapper">
-                <div class="swiper-slide"><img src="../style/gw_introduce/gw_18.png" alt="" srcset=""></div>
-                <div class="swiper-slide"><img src="../style/gw_introduce/gw_18.png" alt="" srcset=""></div>
-                <div class="swiper-slide"><img src="../style/gw_introduce/gw_18.png" alt="" srcset=""></div>
+                <div class="swiper-slide"><img src="../../../style/gw_introduce/gw_18.png" alt="" srcset=""></div>
+                <div class="swiper-slide"><img src="../../../style/gw_introduce/gw_18.png" alt="" srcset=""></div>
+                <div class="swiper-slide"><img src="../../../style/gw_introduce/gw_18.png" alt="" srcset=""></div>
             </div>
           </div>
             <div class="swiper-button-prev section-page-left po"></div>
@@ -104,6 +104,7 @@
     </div>
   </div>
 </template>
+
 <!-- pcGwInfo pc common.css -->
 <style scoped>
 h1,
@@ -282,14 +283,16 @@ dd {
 </style>
 
 <script>
-import Xzmm from '../components/xz.vue'
+import Xzmm from './xz.vue'
 export default {
   components:{Xzmm},
   name: 'pcGwInfo',
   data() {
     return {}
   },
-  mounted() {},
+  mounted() {
+    this.$scroll.scrollReveal(window)
+  },
   methods: {}
 }
 </script>
@@ -306,7 +309,7 @@ div {
 }
 #introduce_banner {
   height: 424px;
-  background: url('../style/gw_introduce/gw_01.jpg') no-repeat center center;
+  background: url('../../../style/gw_introduce/gw_01.jpg') no-repeat center center;
   background-size: cover;
 }
 .section-image div {
@@ -328,7 +331,7 @@ div {
     height: 455px;
     left: 3px;
     top: 0;
-    background-image: url('../style/gw_introduce/gw_03.png');
+    background-image: url('../../../style/gw_introduce/gw_03.png');
     z-index: 50;
   }
   .section-right {
@@ -336,25 +339,25 @@ div {
     height: 402px;
     right: 10px;
     top: 20px;
-    background-image: url('../style/gw_introduce/gw_05.png');
+    background-image: url('../../../style/gw_introduce/gw_05.png');
     z-index: 10;
   }
 }
 .section-2 {
   .section-image {
     height: 497px;
-    background-image: url('../style/gw_introduce/gw_07.png');
+    background-image: url('../../../style/gw_introduce/gw_07.png');
   }
 }
 .section-3 {
   .section-image {
     height: 465px;
-    background-image: url('../style/gw_introduce/gw_09.png');
+    background-image: url('../../../style/gw_introduce/gw_09.png');
   }
 }
 .section-4 {
   // height: 742px;
-  background-image: url('../style/gw_introduce/gw_11.png');
+  background-image: url('../../../style/gw_introduce/gw_11.png');
   // .section-image {
   //   .section-rotate {
   //     li {
@@ -391,11 +394,11 @@ div {
   //   }
   //   .section-icon-left {
   //     left: -60px;
-  //     background-image: url('../style/gw_introduce/gw_19.png');
+  //     background-image: url('../../../style/gw_introduce/gw_19.png');
   //   }
   //   .section-icon-right {
   //     right: -60px;
-  //     background-image: url('../style/gw_introduce/gw_20.png');
+  //     background-image: url('../../../style/gw_introduce/gw_20.png');
   //   }
   // }
 }
@@ -419,12 +422,12 @@ div {
     }
     .section-page-left {
       left: 0;
-      background-image: url('../style/gw_introduce/gw_19.png');
+      background-image: url('../../../style/gw_introduce/gw_19.png');
       background-size: 48px 48px;
     }
     .section-page-right {
       right: 0;
-      background-image: url('../style/gw_introduce/gw_20.png');
+      background-image: url('../../../style/gw_introduce/gw_20.png');
       background-size: 48px 48px;
     }
   }
@@ -432,35 +435,35 @@ div {
 .section-6{
   .section-image{
     height: 600px;
-    background-image: url('../style/gw_introduce/gw_21.png');
+    background-image: url('../../../style/gw_introduce/gw_21.png');
     background-size: 1123px 600px;
     .section-icon-top{
       top: 5px;
       left: 120px;
       width: 130px;
       height: 48px;
-      background-image: url('../style/gw_introduce/gw_23.png');
+      background-image: url('../../../style/gw_introduce/gw_23.png');
     }
     .section-icon-left{
       width: 160px;
       height: 50px;
       top: 173px;
       left: 0;
-      background-image: url('../style/gw_introduce/gw_24.png');
+      background-image: url('../../../style/gw_introduce/gw_24.png');
     }
     .section-icon-right{
       width: 180px;
       height: 50px;
       top: 173px;
       right: 0;
-      background-image: url('../style/gw_introduce/gw_25.png');
+      background-image: url('../../../style/gw_introduce/gw_25.png');
     }
     .section-icon-center{
       width: 510px;
       height: 392px;
       top: 137px;
       left: 342px;
-      background-image: url('../style/gw_introduce/gw_26.png');
+      background-image: url('../../../style/gw_introduce/gw_26.png');
     }
   }
 }

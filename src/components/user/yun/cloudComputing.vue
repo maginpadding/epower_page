@@ -173,7 +173,7 @@
       height: 60px;
       display: block;
       margin: 0 auto;
-      background-image: url('../style/single/postOffice.png');
+      background-image: url('../../../style/single/postOffice.png');
       background-size: 500px 600px;
       margin-top: 28px;
     }

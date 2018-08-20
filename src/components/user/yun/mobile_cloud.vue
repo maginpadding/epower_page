@@ -374,8 +374,8 @@ dd {
 </style>
 
 <script>
-import cloudM from '../components/cloud'
-import youShi from '../components/youshi'
+import cloudM from './cloud'
+import youShi from './youshi'
 export default {
   components: { cloudM ,youShi},
   data() {

@@ -1,7 +1,7 @@
 $(function (param) { 
     var $a=$(".buttons a");
 var $s=$(".buttons span");
-var cArr=["p7","p6","p5","p4","p3","p2","p1"];
+var cArr=["p6","p5","p4","p3","p2","p1"];
 var index=0;
 $(".next").click(
     function(){
@@ -15,7 +15,7 @@ $(".prev").click(
 )
 //上一张
 function previmg(){
-    cArr.unshift(cArr[6]);
+    cArr.unshift(cArr[5]);
     cArr.pop();
     //i是元素的索引，从0开始
     //e为当前处理的元素
@@ -25,7 +25,7 @@ function previmg(){
     })
     index--;
     if (index<0) {
-        index=6;
+        index=5;
     }
     show();
 }
@@ -91,7 +91,7 @@ $a.each(function(){
 
 //改变底下按钮的背景色
 function show(){
-        $($s).eq(index).addClass("white").parent().siblings().children().removeClass("white");
+    $($s).eq(index).addClass("white").parent().siblings().children().removeClass("white");
 }
 
 //点击class为p2的元素触发上一张照片的函数
