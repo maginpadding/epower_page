@@ -1,14 +1,14 @@
 $(function (param) { 
-    var $a=$(".buttons a");
-var $s=$(".buttons span");
+    var $a=$(".section-4 .buttons a");
+var $s=$(".section-4 .buttons span");
 var cArr=["p6","p5","p4","p3","p2","p1"];
 var index=0;
-$(".next").click(
+$(".section-4 .next").click(
     function(){
     nextimg();
     }
 )
-$(".prev").click(
+$(".section-4 .prev").click(
     function(){
     previmg();
     }
@@ -20,7 +20,7 @@ function previmg(){
     //i是元素的索引，从0开始
     //e为当前处理的元素
     //each循环，当前处理的元素移除所有的class，然后添加数组索引i的class
-    $("li").each(function(i,e){
+    $(".section-4 li").each(function(i,e){
         $(e).removeClass().addClass(cArr[i]);
     })
     index--;
@@ -34,11 +34,11 @@ function previmg(){
 function nextimg(){
     cArr.push(cArr[0]);
     cArr.shift();
-    $("li").each(function(i,e){
+    $(".section-4 li").each(function(i,e){
         $(e).removeClass().addClass(cArr[i]);
     })
     index++;
-    if (index>6) {
+    if (index>5) {
         index=0;
     }
     show();
@@ -62,7 +62,7 @@ $a.each(function(){
              */
             var newarr=cArr.splice(0,b);
             cArr=$.merge(cArr,newarr);
-            $("li").each(function(i,e){
+            $(".section-4 li").each(function(i,e){
             $(e).removeClass().addClass(cArr[i]);
             })
             index=myindex;
@@ -80,7 +80,7 @@ $a.each(function(){
             var oldarr=cArr.splice(0,-b)
             cArr=$.merge(cArr,oldarr);
             cArr.reverse();
-            $("li").each(function(i,e){
+            $(".section-4 li").each(function(i,e){
             $(e).removeClass().addClass(cArr[i]);
             })
             index=myindex;
@@ -95,24 +95,24 @@ function show(){
 }
 
 //点击class为p2的元素触发上一张照片的函数
-$(document).on("click",".p2",function(){
+$(document).on("click",".section-4 .p2",function(){
     previmg();
     return false;//返回一个false值，让a标签不跳转
 });
 
 //点击class为p4的元素触发下一张照片的函数
-$(document).on("click",".p4",function(){
+$(document).on("click",".section-4 .p4",function(){
     nextimg();
     return false;
 });
 
 //          鼠标移入box时清除定时器
-$(".box").mouseover(function(){
+$(".section-4 .box").mouseover(function(){
     clearInterval(timer);
 })
 
 //          鼠标移出box时开始定时器
-$(".box").mouseleave(function(){
+$(".section-4 .box").mouseleave(function(){
     timer=setInterval(nextimg,4000);
 })
 

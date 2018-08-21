@@ -426,12 +426,14 @@ export default {
   }
   .section-7 {
     width: auto;
-    display: flex;
     padding-left: 0.4rem;
     padding-right: 0.4rem;
-    .mod-btn {
-      flex: 1;
-    }
+    overflow: hidden;
+    display: block;
+    padding-bottom: 0.5rem;
+   .h3-title{
+     width: 100%;
+   }
     .mod-btn:first-child {
       margin-right: 0.4rem;
     }

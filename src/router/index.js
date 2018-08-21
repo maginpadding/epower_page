@@ -4,7 +4,7 @@ import Router from 'vue-router'
 // import mobileTradeInfo from '@/components/www_epower/info/mobile_trade_info'
 
 import pcGwInfo from '@/components/www_epower/info/pc_gw_info'
-import mobileGwInfo from '@/components/www_epower/info/mobile_gw_info'
+// import mobileGwInfo from '@/components/www_epower/info/mobile_gw_info'
 
 //以及做完的页面不再引入
 
@@ -33,15 +33,15 @@ export default new Router({
     //   component: mobileTradeInfo
     // },
     {
-      path: '/',
+      path: '/jianzhan',
       name: 'pcGwInfo',
       component: pcGwInfo
-    }
-    , {
-      path: '/gw/m',
-      name: 'mobileGwInfo',
-      component: mobileGwInfo
     },
+    // {
+    //   path: '/jianzhan',
+    //   name: 'mobileGwInfo',
+    //   component: mobileGwInfo
+    // },
     //  {
     //   path: '/cloud',
     //   name: 'cloudComputing',
