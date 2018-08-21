@@ -1,7 +1,9 @@
 <template>
   <div>
     <div class="pc">
+      <!-- banner -->
       <div id="introduce_banner"></div>
+      <!-- 一键生成，免费建站 -->
       <div class="section-1 bg-fff pt-60 pb-60">
         <div class="center-1200">
           <div class="h3-title text-center mb-60" data-sr="enter top,over .7s,move 100px ,wait .1s">
@@ -14,6 +16,7 @@
           </div>
         </div>
       </div>
+      <!-- 海量建站模板 -->
       <div class="section-2 bg-f5 pt-60 pb-50">
         <div class="center-1200">
           <div class="h3-title text-center mb-60" data-sr="enter top,over .7s,move 100px ,wait .1s">
@@ -23,6 +26,7 @@
           <div class="section-image" data-sr="enter bottom,over .7s,move 100px"></div>
         </div>
       </div>
+      <!-- 五网合一 -->
       <div class="section-3 bg-fff pt-60 pb-50">
         <div class="center-1200">
           <div class="h3-title text-center mb-60" data-sr="enter top,over .7s,move 100px ,wait .1s">
@@ -32,61 +36,48 @@
           <div class="section-image" data-sr="enter bottom,over .7s,move 100px"></div>
         </div>
       </div>
+      <!-- 强大的网站功能 -->
       <div class="section-4 pt-60 pb-50">
         <div class="center-1200">
           <div class="h3-title text-center mb-60" data-sr="enter top,over .7s,move 100px ,wait .1s">
             <h3 class="color-fff font-32 lh-52">强大的网站功能</h3>
             <p class="color-82939e font-16 lh-36">免费赠送二级域名，支持绑定独立域名</p>
           </div>
-          <div class="section-image">
+          <div class="section-image"  data-sr="enter bottom,over .7s,move 100px ,wait .1s">
             <Xzmm></Xzmm>
           </div>
-          <!-- <div class="section-image box" data-sr="enter bottom,over .7s,move 100px">
-          <div class="section-rotate pr list" id="rotate-1">
-            <ul class="">
-              <li class="po section-icon-1 p1">
-                <img src="../../../style/gw_introduce/gw_13.png" alt="">
-              </li>
-              <li class="po section-icon-2 active p2">
-                <img src="../../../style/gw_introduce/gw_15.png" alt="">
-              </li>
-              <li class="po section-icon-3 p3">
-                <img src="../../../style/gw_introduce/gw_17.png" alt="">
-              </li>
-            </ul>
-            <div class="po section-icon-left" v-show="false"></div>
-            <div class="po section-icon-right" v-show="false"></div>
-          </div>
-        </div> -->
         </div>
       </div>
+      <!-- 在线独立后台管理 -->
       <div class="section-5 bg-fff pt-60 pb-50">
         <div class="center-1200">
           <div class="h3-title text-center mb-60" data-sr="enter top,over .7s,move 100px ,wait .1s">
             <h3 class="color-434a54 font-32 lh-52">在线独立后台管理</h3>
             <p class="color-82939e font-16 lh-36">支持多人管理网站，可设置管理员账号与权限</p>
           </div>
-          <div class="section-image pr">
+          <div class="section-image pr" data-sr="enter bottom,over .7s,move 100px ,wait .1s">
             <div class="list-wrap">
 
               <div class="section-container pr swiper-container">
                 <div class="section-ul swiper-wrapper">
                   <div class="swiper-slide"><img src="../../../style/gw_introduce/gw_27.png" alt="" srcset=""></div>
-                  <div class="swiper-slide"><img src="../../../style/gw_introduce/gw_27.png" alt="" srcset=""></div>
-                  <div class="swiper-slide"><img src="../../../style/gw_introduce/gw_27.png" alt="" srcset=""></div>
+                  <div class="swiper-slide"><img src="../../../style/gw_introduce/gw_29.png" alt="" srcset=""></div>
+                  <div class="swiper-slide"><img src="../../../style/gw_introduce/gw_30.png" alt="" srcset=""></div>
                 </div>
               </div>
             </div>
 
-            <div class="swiper-button-prev section-page-left po"></div>
-            <div class="swiper-button-next section-page-right po"></div>
+            <div class="swiper-button-prev section-page-left po  swiper-button-white"></div>
+            <div class="swiper-button-next section-page-right po swiper-button-white"></div>
           </div>
         </div>
       </div>
+      <!-- 自定义模板功能 -->
       <div class="section-6 bg-f5 pt-60 pb-50">
         <div class="center-1200">
           <div class="h3-title text-center pb-50" data-sr="enter top,over .7s,move 100px ,wait .1s">
-            <h3 class="color-434a54 font-32 lh-52">管理后台可添加自定义模板</h3>
+            <h3 class="color-434a54 font-32 lh-52">自定义模板功能</h3>
+            <p class="color-82939e font-16 lh-36">管理后台可添加自定义模板，设置您的专属特色模板</p>
           </div>
           <div class="section-image pr bg-common">
             <div class="section-icon-top po"></div>
@@ -101,7 +92,7 @@
           <div class="h3-title text-center pb-50" data-sr="enter top,over .7s,move 100px ,wait .1s">
             <h3 class="color-434a54 font-36 lh-52 font-lighter">只需商业授权，即刻拥有上千套精美行业解决方案</h3>
           </div>
-          <div class="section-image pb-50">
+          <div class="section-image pb-50" data-sr="enter bottom,over .7s,move 100px ,wait .1s">
             <div class="section-icon-left mod-btn fl">了解商业授权</div>
             <div class="section-icon-right mod-btn mod-btn-red fr">查看官网模板</div>
           </div>
@@ -299,7 +290,8 @@ export default {
   },
   mounted() {
     //动画
-    this.$scroll.scrollReveal(window)
+    //由于项目外部common存在scrollReveal的调用,所以这里可以注释掉了-->main.js里的引用也注释掉
+    // this.$scroll.scrollReveal(window)
   },
   watch: {},
   methods: {}
@@ -401,9 +393,10 @@ export default {
           margin-top: -1px;
         }
       }
-      .section-page-left,
+    }
+     .section-page-left,
       .section-page-right {
-        top: 232px;
+        top: 50%;
         width: 60px;
         height: 60px;
         border-radius: 50%;
@@ -419,7 +412,6 @@ export default {
         background-image: url('../../../style/gw_introduce/gw_20.png');
         background-size: 48px 48px;
       }
-    }
   }
   .section-6 {
     .section-image {

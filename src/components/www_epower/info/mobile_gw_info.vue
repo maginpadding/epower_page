@@ -54,20 +54,26 @@
         <h3 class="color-333 font-32 lh-64">在线独立后台管理</h3>
         <p class="font-24 color-666 lh-36">支持多人管理网站，可设置管理员账号与权限</p>
       </div>
-      <div class="section-image bg-common swiper-container">
+      <div class="section-image bg-common pr">
         <div class="section-pagination mb-20">
           <div class="section-pa-left fl bg-common swiper-button-prev"></div>
           <div class="section-pa-right fr bg-common swiper-button-next"></div>
         </div>
-        <div class="swiper-wrapper">
-          <div class="section-swiper swiper-slide"></div>
+        <div class="list-wrap bg-common">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="section-swiper swiper-slide"><img src="../../../style/gw_introduce/mgw_21.png" alt="" srcset=""></div>
+              <div class="section-swiper swiper-slide"><img src="../../../style/gw_introduce/mgw_23.png" alt="" srcset=""></div>
+              <div class="section-swiper swiper-slide"><img src="../../../style/gw_introduce/mgw_25.png" alt="" srcset=""></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <div class="section-6 clearfix pd-20 bg-fff">
       <div class="h3-title text-center">
-        <h3 class="color-333 font-32 lh-64">管理后台可添加自定义模板</h3>
-        <p class="font-24 color-666 lh-36 hide"></p>
+        <h3 class="color-333 font-32 lh-64">自定义模板功能</h3>
+        <p class="font-24 color-666 lh-36">自定义模板功能</p>
       </div>
       <div class="section-image bg-common"></div>
     </div>
@@ -123,6 +129,7 @@ export default {
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 .mobile {
   min-width: 320px;
@@ -383,13 +390,30 @@ export default {
   }
   .section-5 {
     padding-bottom: 0.2rem;
+    img{
+      width: 6.8rem;
+      height: 3.84rem;
+      display: block;
+    }
+    .list-wrap{
+      width: 7.1rem;
+      height: 4.16rem;
+      overflow: hidden;
+      padding: .15rem;
+      background-image: url('../../../style/gw_introduce/mgw_12.png');
+    }
+    .swiper-container{
+      width: 6.8rem;
+      height: 3.85rem;
+      margin: 0 auto;
+    }
     .section-image {
       height: 5.16rem;
       .section-pagination {
         width: 3.6rem;
         height: 0.6rem;
         margin: 0 auto;
-        padding-bottom: 0.3rem;
+        margin-bottom: 0.3rem;
         div {
           width: 1.6rem;
           height: 0.6rem;
@@ -410,9 +434,9 @@ export default {
         }
       }
       .section-swiper {
-        height: 4.16rem;
+        height: 3.85rem;
         width: 100%;
-        background-image: url('../../../style/gw_introduce/mgw_13.png');
+        background-image: url('../../../style/gw_introduce/gw_28.png');
         background-size: contain;
       }
     }
@@ -431,9 +455,9 @@ export default {
     overflow: hidden;
     display: block;
     padding-bottom: 0.5rem;
-   .h3-title{
-     width: 100%;
-   }
+    .h3-title {
+      width: 100%;
+    }
     .mod-btn:first-child {
       margin-right: 0.4rem;
     }

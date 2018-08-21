@@ -8,7 +8,8 @@ module.exports = {
   dev: {
 
     // Paths
-    assetsSubDirectory: 'template/Home/Default/PC/Static/epower/gw_info',
+    // assetsSubDirectory: 'template/Home/Default/PC/Static/epower/gw_info',
+    assetsSubDirectory: 'template/Home/Default/Mobile/Static/epower/gw_info',
     assetsPublicPath: '/',
     proxyTable: {},
 
@@ -38,12 +39,12 @@ module.exports = {
 
   build: {
     // Template for index.html
-    index: path.resolve(__dirname, '../dist/index.html'),
+    index: path.resolve(__dirname, '../dist/gw_info.html'),
 
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
-    assetsSubDirectory: 'template/Home/Default/PC/Static/epower/gw_info',
-    // assetsSubDirectory: 'template/Home/Default/Mobile/Static/epower/gw_info',
+    // assetsSubDirectory: 'template/Home/Default/PC/Static/epower/gw_info',
+    assetsSubDirectory: 'template/Home/Default/Mobile/Static/epower/gw_info',
     assetsPublicPath: '/',
 
     /**

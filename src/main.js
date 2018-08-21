@@ -7,8 +7,9 @@ import router from './router'
 
 // import glob from 'glob'
 
-import scrollReveal from "./assets/js/scrollReveal.js";  //引入第三方插件，最后.js后缀可以不写
-Vue.prototype.$scroll = scrollReveal;  //注册到Vue原型上，名字可以自己命名一个，别和已命名和Vue存在的冲突便可，我这儿随便命名了一个$scroll
+// import scrollReveal from "./assets/js/scrollReveal";  //引入第三方插件，最后.js后缀可以不写
+
+// Vue.prototype.$scroll = scrollReveal;  //注册到Vue原型上，名字可以自己命名一个，别和已命名和Vue存在的冲突便可，我这儿随便命名了一个$scroll
 
 
 //node版本的原因(?),安装提示内存溢出,暂时使用本地js
