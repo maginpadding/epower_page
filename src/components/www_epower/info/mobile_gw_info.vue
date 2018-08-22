@@ -79,7 +79,7 @@
     </div>
     <div class="section-7 bg-fff">
       <div class="h3-title text-center">
-        <h3 class="color-333 font-32 lh-64">只需商业授权，<br> 即刻拥有上千套精美行业解决方案
+        <h3 class="color-333 font-36 lh-64">只需商业授权，<br> 即刻拥有上千套精美行业解决方案
         </h3>
       </div>
       <div class="section-image pb-50">
@@ -99,6 +99,7 @@ export default {
   mounted() {
     this.change_fontSize(document, window)
     var mobileSwiper = new Swiper('.section-5 .swiper-container', {
+      loop:true,
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
@@ -243,7 +244,6 @@ export default {
     background: #009fe8;
     height: 50px;
     line-height: 50px;
-    border: 1px solid #fff;
     width: 120px;
     border-radius: 25px;
     -webkit-user-select: none;
@@ -306,12 +306,12 @@ export default {
   }
   // introduce_banner --背景图
   #introduce_banner {
-    height: 3.6rem;
+    height: 4.1rem;
     background-image: url('../../../style/gw_introduce/mgw_01.png');
     background-size: cover;
   }
   .h3-title {
-    margin: 0.32rem auto;
+    margin: 0.32rem .2rem;
   }
   .section-1 {
     padding-bottom: 0.5rem;

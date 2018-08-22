@@ -23,7 +23,7 @@
             <h3 class="color-434a54 font-32 lh-52">海量建站模板</h3>
             <p class="color-82939e font-16 lh-36">28个大类，68个小类，上千套模板涵盖市场上基本建站需求！支持自定义模板，伙伴可自行增加模板！</p>
           </div>
-          <div class="section-image" data-sr="enter bottom,over .7s,move 100px"></div>
+          <div class="section-image bg-common" data-sr="enter bottom,over .7s,move 100px"></div>
         </div>
       </div>
       <!-- 五网合一 -->
@@ -43,7 +43,7 @@
             <h3 class="color-fff font-32 lh-52">强大的网站功能</h3>
             <p class="color-82939e font-16 lh-36">免费赠送二级域名，支持绑定独立域名</p>
           </div>
-          <div class="section-image"  data-sr="enter bottom,over .7s,move 100px ,wait .1s">
+          <div class="section-image" data-sr="enter bottom,over .7s,move 100px ,wait .1s">
             <Xzmm></Xzmm>
           </div>
         </div>
@@ -93,7 +93,9 @@
             <h3 class="color-434a54 font-36 lh-52 font-lighter">只需商业授权，即刻拥有上千套精美行业解决方案</h3>
           </div>
           <div class="section-image pb-50" data-sr="enter bottom,over .7s,move 100px ,wait .1s">
-            <div class="section-icon-left mod-btn fl">了解商业授权</div>
+            <a href="">
+              <div class="section-icon-left mod-btn fl">了解商业授权</div>
+            </a>
             <div class="section-icon-right mod-btn mod-btn-red fr">查看官网模板</div>
           </div>
         </div>
@@ -225,6 +227,7 @@ dd {
   width: 160px;
   border-radius: 25px;
   -webkit-user-select: none;
+  cursor: pointer;
 }
 .mod-btn {
   -webkit-box-shadow: 0 10px 15px -3px rgba(0, 159, 232, 0.5);
@@ -311,7 +314,7 @@ export default {
   }
   #introduce_banner {
     height: 424px;
-    background: url('../../../style/gw_introduce/gw_01.jpg') no-repeat center
+    background: url('../../../style/gw_introduce/gw_01.png') no-repeat center
       center;
     background-size: cover;
   }
@@ -349,6 +352,7 @@ export default {
   .section-2 {
     .section-image {
       height: 497px;
+      background-repeat: no-repeat;
       background-image: url('../../../style/gw_introduce/gw_07.png');
     }
   }
@@ -394,24 +398,24 @@ export default {
         }
       }
     }
-     .section-page-left,
-      .section-page-right {
-        top: 50%;
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        background-color: #c3c4c6;
-      }
-      .section-page-left {
-        left: 0;
-        background-image: url('../../../style/gw_introduce/gw_19.png');
-        background-size: 48px 48px;
-      }
-      .section-page-right {
-        right: 0;
-        background-image: url('../../../style/gw_introduce/gw_20.png');
-        background-size: 48px 48px;
-      }
+    .section-page-left,
+    .section-page-right {
+      top: 50%;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #c3c4c6;
+    }
+    .section-page-left {
+      left: 0;
+      background-image: url('../../../style/gw_introduce/gw_19.png');
+      background-size: 48px 48px;
+    }
+    .section-page-right {
+      right: 0;
+      background-image: url('../../../style/gw_introduce/gw_20.png');
+      background-size: 48px 48px;
+    }
   }
   .section-6 {
     .section-image {
