@@ -5,6 +5,7 @@ import Router from 'vue-router'
 
 // import pcGwInfo from '@/components/www_epower/info/pc_gw_info'
 import mobileGwInfo from '@/components/www_epower/info/mobile_gw_info'
+import registe from '@/components/www_epower/info/registe'
 
 //以及做完的页面不再引入
 
@@ -60,6 +61,11 @@ export default new Router({
     //   path: '/index/m',
     //   name: 'mobileIndex',
     //   component: mobileIndex
-    // }
+    // },
+        {
+      path: '/registe',
+      name: 'registe',
+      component: registe
+    },
   ]
 })
