@@ -93,10 +93,12 @@
             <h3 class="color-434a54 font-36 lh-52 font-lighter">只需商业授权，即刻拥有上千套精美行业解决方案</h3>
           </div>
           <div class="section-image pb-50" data-sr="enter bottom,over .7s,move 100px ,wait .1s">
-            <a href="">
+            <a href="/shouquan" target="_blank">
               <div class="section-icon-left mod-btn fl">了解商业授权</div>
             </a>
-            <div class="section-icon-right mod-btn mod-btn-red fr">查看官网模板</div>
+            <a href="http://demo.epower.cn/jianzhan/muban.html" target="_blank">
+              <div class="section-icon-right mod-btn mod-btn-red fr">查看官网模板</div>
+            </a>
           </div>
         </div>
       </div>

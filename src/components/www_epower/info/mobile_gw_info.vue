@@ -73,7 +73,7 @@
     <div class="section-6 clearfix pd-20 bg-fff">
       <div class="h3-title text-center">
         <h3 class="color-333 font-32 lh-64">自定义模板功能</h3>
-        <p class="font-24 color-666 lh-36">自定义模板功能</p>
+        <p class="font-24 color-666 lh-36">管理后台可添加自定义模板，设置您的专属特色模板</p>
       </div>
       <div class="section-image bg-common"></div>
     </div>
