@@ -198,3 +198,37 @@ span {
   background: #fff;
 }
 </style>
+<style lang="less" scoped>
+.mobile{
+    .p1 {
+  transform: translate3d(-224px, 0, 0) scale(0.9);
+}
+.p2 {
+  transform: translate3d(0px, 0, 0) scale(0.9);
+  transform-origin: 0 50%;
+  opacity: 0.8;
+  z-index: 2;
+}
+.p3 {
+  transform: translate3d(224px, 0, 0) scale(1);
+  z-index: 3;
+  opacity: 1;
+}
+.p4 {
+  transform: translate3d(449px, 0, 0) scale(0.9);
+  transform-origin: 100% 50%;
+  opacity: 0.8;
+  z-index: 2;
+}
+.p5 {
+  transform: translate3d(672px, 0, 0) scale(0.9);
+}
+.p6 {
+  transform: translate3d(896px, 0, 0) scale(0.9);
+}
+.p7 {
+  transform: translate3d(1120px, 0, 0) scale(0.9);
+}
+}
+
+</style>

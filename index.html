@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="https://www.niaoyun.com/template/Home/Niaoyun/PC/Static/lib/plugin/jQuery/lightbox/css/lightbox.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
   <title>epower_page</title>
   <!-- <script src="/static/js/layer.js"></script> -->
@@ -15,13 +16,19 @@
   <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
   <script src="https://cdn.bootcss.com/layer/3.1.0/layer.js"></script>
   <!-- 官网建站介绍 -->
-  <script src="/static/js/xz.js"></script>
+  <!-- <script src="/static/js/xz.js"></script> -->
   <!-- <link rel="stylesheet" href="https://www.swiper.com.cn/dist/css/swiper.min.css">
   <script src="https://www.swiper.com.cn/dist/js/swiper.min.js"></script> -->
- 
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.js"></script>
+  <script src="https://www.niaoyun.com/template/Home/Niaoyun/PC/Static/lib/plugin/jQuery/lightbox/js/lightbox.min.js"></script>
+
   <script>
-    $(function(){
+    $(function () {
+
+      lightbox.option({
+        'albumLabel': '资质证书 %1 / %2',
+      });
       var swiper1 = new Swiper('.section-container', {
         slidesPerView: 'auto',
         centeredSlides: true,
@@ -32,15 +39,15 @@
         },
       });
       //       var mySwiper = new Swiper ('#rotate-1', {
-        //                 direction: 'horizontal',
-        //                 loop: true,
-        //                 autoplay: 5000,
-        //                 slidesPerView: "auto",
-        //                 centeredSlides:true,
-        //                 spaceBetween: 20,
-        //                 // 如果需要分页器
-        //                 pagination: '.swiper-pagination',
-        //  })
+      //                 direction: 'horizontal',
+      //                 loop: true,
+      //                 autoplay: 5000,
+      //                 slidesPerView: "auto",
+      //                 centeredSlides:true,
+      //                 spaceBetween: 20,
+      //                 // 如果需要分页器
+      //                 pagination: '.swiper-pagination',
+      //  })
       // $('#our_adv .sc-li').on('mouseover',function(){
       //   var _this = $(this);
       //   if(_this.hasClass('active')){
@@ -110,6 +117,7 @@
     // function changecode2014() {
     //   $(".show-captcha").click();
     // }
+
   </script>
 </body>
 
