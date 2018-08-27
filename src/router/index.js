@@ -22,6 +22,8 @@ import mobileGwInfo from '@/components/www_epower/info/mobile_gw_info'
 
 import company from '@/components/www_epower/about/company'
 import server from '@/components/www_epower/center/server'
+//测试页面
+import form from '@/components/user/form/form'
 
 
 Vue.use(Router)
@@ -42,6 +44,11 @@ export default new Router({
       path: '/jianzhan',
       name: 'pcGwInfo',
       component: pcGwInfo
+    },
+    {
+      path: '/form',
+      name: 'form',
+      component: form
     },
     {
       path: '/jianzhan/m',
