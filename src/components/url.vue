@@ -8,7 +8,7 @@
     </div>
 </template>
 <script>
-console.log(this)
+// console.log(this)
 // import routes from '../router/router';
 // // var routerHref = routes;
 // console.log(routes)

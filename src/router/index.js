@@ -24,6 +24,8 @@ import mobileIndex from '@/components/user/index/mobileIndex'
 
 import company from '@/components/www_epower/about/company'
 import server from '@/components/www_epower/center/server'
+//运营赋能
+import funeng from '@/components/www_epower/funeng/funeng'
 //测试页面
 import form from '@/components/user/form/form'
 
@@ -98,6 +100,10 @@ export default new Router({
       path: '/registe',
       name: 'registe',
       component: registe
+    }, {
+      path: '/funeng',
+      name: 'funeng',
+      component: funeng
     },
   ]
 })
