@@ -4,7 +4,6 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-
 // import glob from 'glob'
 
 // import scrollReveal from "./assets/js/scrollReveal";  //引入第三方插件，最后.js后缀可以不写

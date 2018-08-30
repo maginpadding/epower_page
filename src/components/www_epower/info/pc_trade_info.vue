@@ -119,6 +119,9 @@
   </div>
 </template>
 
+<style>
+@import url("../../../../static/css/layer/layer.css");
+</style>
 
 <script>
 export default {

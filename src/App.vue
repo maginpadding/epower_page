@@ -10,5 +10,4 @@ export default {
 </script>
 <style>
 @import "../static/css/normalize.css";
-/* @import "../static/css/layer/layer.css"; */
 </style>
