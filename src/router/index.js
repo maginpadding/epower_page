@@ -26,6 +26,8 @@ import company from '@/components/www_epower/about/company'
 import server from '@/components/www_epower/center/server'
 //运营赋能
 import funeng from '@/components/www_epower/funeng/funeng'
+import mobileFuneng from '@/components/www_epower/funeng/mobileFuneng'
+
 //测试页面
 import form from '@/components/user/form/form'
 
@@ -104,6 +106,10 @@ export default new Router({
       path: '/funeng',
       name: 'funeng',
       component: funeng
+    }, {
+      path: '/funeng/m',
+      name: 'mobileFuneng',
+      component: mobileFuneng
     },
   ]
 })
