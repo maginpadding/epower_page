@@ -1,0 +1,1360 @@
+@charset "utf-8";
+/* 通用css类名 */
+*{
+  margin: 0;
+  padding: 0;
+}
+.box-size,
+.box-size * {
+  box-sizing: border-box;
+}
+ul,li,dl,ol,dd,dt{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    outline: none;
+}
+b,i{
+  font-weight: normal;
+  font-style: normal;
+}
+input,button{
+  background-color: transparent;
+  outline: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+ul,
+li,
+ol,
+dl,
+dt,
+dd {
+  list-style: none;
+}
+i{
+  font-style: normal;
+}
+a{
+  color: #666;
+  outline: none;
+  border: 0;
+}
+body {
+  font-family: "微软雅黑";
+}
+.border-none{
+  border:none !important;
+}
+.hide{
+  display: none !important;
+}
+.center{
+  width: 1200px;
+  margin: 0 auto;
+}
+.center-1200 {
+  width: 1200px !important;
+  margin: 0 auto !important;
+}
+/* 背景颜色 */
+.bg-fff {
+  background-color: #fff !important;
+}
+.bg-e2383a {
+  background-color: #e2383a !important;
+}
+.bg-f5 {
+  background-color: #f5f5f5 !important;
+}
+.bg-f5f6fb{
+  background-color: #f5f6fb !important;
+}
+.bg-transparent {
+  background-color: transparent !important;
+}
+/* 背景图片 默认平铺 */
+.bg-common{
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+/* padding间距 */
+.pt-60 {
+  padding-top: 60px;
+}
+
+.pb-60 {
+  padding-bottom: 60px;
+}
+
+.pb-50 {
+  padding-bottom: 50px;
+}
+/* margin边距 */
+.mr-20{
+    margin-right: 20px;
+}
+.mb-60 {
+  margin-bottom: 60px;
+}
+.mt-60 {
+  margin-top: 60px;
+}
+.mb-40 {
+  margin-bottom: 40px;
+}
+.mt-40 {
+  margin-top: 40px;
+}
+.mt-15{
+    margin-top: 15px;
+}
+/* 定位 */
+.pr {
+  position: relative;
+}
+
+.po {
+  position: absolute;
+}
+
+.clearfix{
+  overflow: hidden;
+}
+
+/* 颜色 */
+.color-434a54 {
+  color: #434a54;
+}
+.color-red{
+    color: red;
+}
+.color-e2383a{
+  color: #e2383a
+}
+.color-82939e {
+  color: #82939e;
+}
+
+.color-fff {
+  color: #fff;
+}
+
+.color-999{
+  color: #999;
+}
+.color-666 {
+  color: #666;
+}
+.color-80 {
+  color: #808080;
+}
+.color-333 {
+  color: #333;
+}
+/* 字体大小 */
+
+
+.font-36 {
+  font-size: 36px;
+}
+.font-32 {
+  font-size: 32px;
+}
+.font-24 {
+  font-size: 24px;
+}
+.font-20 {
+  font-size: 20px;
+}
+
+.font-18 {
+  font-size: 18px;
+}
+.font-16 {
+  font-size: 16px;
+}
+.font-12 {
+  font-size: 12px;
+}
+
+.bold,.font-bold {
+  font-weight: bold;
+}
+.font-lighter {
+font-weight: lighter;
+}
+/* 行高 */
+.lh-52 {
+  line-height: 52px;
+}
+
+.lh-36 {
+  line-height: 36px;
+}
+.lh-48 {
+  line-height: 48px;
+}
+.lh-64{
+    line-height: 64px;
+}
+.lh-42 {
+  line-height: 42px;
+}
+
+.lh-32 {
+  line-height: 32px;
+}
+.lh-24 {
+    line-height: 24px;
+  }
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+/* 浮动 */
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+/* title */
+
+.home-title-line {
+  height: 1px;
+  border-top: 1px solid #e4e4e4;
+  margin: 70px 0 100px 0;
+  text-align: center;
+  /*IE*/
+  text-align: -moz-center;
+  /*Firefox*/
+  text-align: -webkit-center;
+  /*Chrome*/
+}
+
+.home-title-line span {
+  position: relative;
+  top: -20px;
+  padding: 0 28px;
+  font-size: 32px;
+  color: #666;
+}
+
+.home-title-line p {
+  position: relative;
+  top: -10px;
+  padding: 0 28px;
+  font-size: 14px;
+  color: #999;
+}
+
+@keyframes overFlow-data {
+  to {
+      overflow-y: auto;
+      overflow-x: hidden;
+  }
+  }
+  @keyframes toShow-data {
+      from {
+          opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+
+        }
+        @-webkit-keyframes bgScroll {
+          0% {
+              -webkit-transform: translateY(0);
+              transform: translateY(0)
+          }
+      
+          100% {
+              -webkit-transform: translateY(-33.333%);
+              transform: translateY(-33.333%)
+          }
+      }
+      
+      @keyframes bgScroll {
+          0% {
+              -webkit-transform: translateY(0);
+              transform: translateY(0)
+          }
+      
+          100% {
+              -webkit-transform: translateY(-33.333%);
+              transform: translateY(-33.333%)
+          }
+      }
+/* 国内虚拟主机 */
+.vhost-li {
+  width: 33.3%;
+  height: 470px;
+  float: left;
+  background: #ffffff;
+  margin-top: 60px;
+  transition: all 0.2s;
+  border: solid 1px #e6e6e6;
+  position: relative;
+  z-index: 10;
+}
+
+.vhost-li .vhost-HD {
+  color: #f8823d;
+  font-size: 14px;
+  text-align: center;
+  line-height: 36px;
+  margin-bottom: 5px;
+}
+
+.vhost-li .vhost-buy {
+  width: 180px;
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+  border: solid 1px #e6e6e6;
+  font-size: 14px;
+  color: #666666;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 3px;
+  transition: all 0.2s;
+}
+
+.vhost-li:hover,
+.vhost-li.active {
+  transform: scale(1.1, 1.1);
+  border-color: #e84047;
+  box-shadow: 0 0 10px #e84047;
+  z-index: 100;
+}
+
+.vhost-li:hover .vhost-title,
+.vhost-li.active .vhost-title {
+  background: #e2383a;
+  color: #ffffff;
+}
+
+.vhost-li:hover .vhost-buy,
+.vhost-li.active .vhost-buy {
+  background: #e2383a;
+  color: #ffffff;
+  border-color: #e2383a;
+}
+
+.vhost .icon {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  vertical-align: middle;
+}
+
+.gift-icon {
+  background-image: url('https://www.hnhbhl.com/template/Home/Default/PC/Static/img/cuxiao.png');
+}
+
+.vhost-title {
+  font-size: 26px;
+  color: #333;
+  line-height: 96px;
+  height: 96px;
+  text-align: center;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.vhost-price {
+  color: #e2383a;
+  text-align: center;
+  line-height: 36px;
+  margin-top: 15px;
+}
+
+.vhost-price b {
+  font-size: 36px;
+  display: inline-block;
+  line-height: 36px;
+}
+
+.vhost-price span {
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.vhost-deploy {
+  overflow: hidden;
+  clear: both;
+  margin-bottom: 18px;
+  margin-top: 18px;
+}
+
+.vhost-deploy .vhost-span {
+  float: left;
+  text-align: center;
+  width: 33.33%;
+  border-right: solid 1px #e6e6e6;
+}
+
+.vhost-deploy .vhost-span p {
+  line-height: 26px;
+  font-size: 24px;
+  color: #333;
+}
+
+.vhost-deploy .vhost-span span {
+  color: #666;
+  font-size: 14px;
+  line-height: 24px;
+  display: inline-block;
+}
+
+.vhost-deploy .vhost-span:last-child {
+  border-right: none;
+}
+
+.vhost-info p {
+  line-height: 30px;
+  color: #666;
+  font-size: 14px;
+  text-indent: 27px;
+  text-align: left;
+}
+
+.vhost-info p i,
+.vhost-info p span {
+  color: #666;
+}
+
+.vhost {
+  width: 100%;
+  height: 812px;
+  padding-top: 48px;
+}
+
+.title h3 {
+  display: inline-block;
+  z-index: 100;
+  padding: 0 25px;
+}
+
+.title-line {
+  top: 50%;
+  margin-top: -15px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #d9d9d9;
+  z-index: 10;
+}
+
+.info {
+  line-height: 32px;
+  margin-bottom: 25px;
+}
+
+.vhost-tab {
+  width: 683px;
+  height: 46px;
+  margin: 0 auto;
+  display: flex;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.vhost-tab li {
+  line-height: 44px;
+  flex: 1;
+}
+
+.vhost-tab li a {
+  font-size: 16px;
+  color: #666;
+  display: inline-block;
+  width: auto;
+  line-height: 44px;
+  padding: 0 5px;
+}
+
+.vhost-tab .active a {
+  font-weight: bold;
+  border-bottom: 3px solid #e2383a;
+}
+
+.active-line {
+  height: 3px;
+  width: 33.33%;
+  background: #e2383a;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.tab-line {
+  bottom: -2px;
+  left: 0;
+  width: 693px;
+  height: 1px;
+  background: #d9d9d9;
+  z-index: -1;
+}
+
+/* 云服务器 */
+.cloud-server * {
+  box-sizing: border-box;
+}
+
+.cloud-server {
+  padding-bottom: 70px;
+  box-sizing: border-box;
+}
+
+.server-list {
+  display: flex;
+}
+
+.server-list>li:last-child {
+  margin-right: 0;
+}
+
+.server-list>li {
+  transition: all 0.1s;
+  border: solid 1px #e6e6e6;
+  flex: 1;
+  width: 380px;
+  height: 500px;
+  margin-right: 30px;
+  float: left;
+  margin-right: 20px;
+}
+
+.server-list>li .cs-top {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.server-list>li .cs-top .icon {
+  width: 90px;
+  height: 60px;
+  display: block;
+  margin: 0 auto;
+  background-image: url('http://user.epower.cn/template/Home/Default/PC/Static/img/postOffice.png');
+  background-size: 500px 600px;
+  margin-top: 28px;
+}
+
+.server-list>li .cs-top p {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.server-list>li .cs-center .cs-info {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.server-list>li .cs-center .cs-info div {
+  flex: 1;
+  height: 44px;
+  border-right: solid 1px #e6e6e6;
+}
+
+.server-list>li .cs-center .cs-info div:last-child {
+  border-right: none;
+}
+
+.server-list>li .cs-center .cs-info p {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.server-list>li .cs-center .cs-info span {
+  line-height: 20px;
+}
+
+.server-list>li .cs-center .other-info {
+  padding-left: 40px;
+}
+
+.server-list>li .cs-center .other-info div:nth-child(2) span:last-child,
+.server-list>li .cs-center .other-info div:nth-child(3) span:last-child {
+  color: #f8823d;
+}
+
+.server-list>li .cs-price {
+  margin: 16px auto;
+}
+
+.server-list>li .cs-btn {
+  width: 220px;
+  height: 44px;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  color: #666666;
+  background: #fff;
+  border: solid 1px #e6e6e6;
+}
+
+.server-list>li:hover {
+  margin-top: -10px;
+  border-color: #e84047;
+  box-shadow: 0 0 5px 5px rgba(212, 142, 145, 0.15);
+}
+
+.server-list>li:first-child .icon {
+  background-position: -234px -73px;
+}
+
+.server-list>li:first-child:hover .icon {
+  background-position: -118px -73px;
+}
+
+.server-list>li:nth-child(2) .icon {
+  background-position: -234px -143px;
+}
+
+.server-list>li:nth-child(2):hover .icon {
+  background-position: -115px -143px;
+}
+
+.server-list>li:last-child .icon {
+  background-position: -234px -225px;
+}
+
+.server-list>li:last-child:hover .icon {
+  background-position: -118px -225px;
+}
+
+.server-list>li:hover .cs-btn {
+  background-color: #e84047;
+  color: #fff;
+  border: solid 1px #e84047;
+}
+
+.cloud-server li:last-child {
+  margin-right: 0;
+}
+
+/* // 主机租用 */
+.host-lease-list {
+  display: flex;
+}
+
+.rental {
+  padding-top: 48px;
+}
+
+.title h3 {
+  display: inline-block;
+  z-index: 100;
+  padding: 0 25px;
+}
+
+.title-line {
+  top: 50%;
+  margin-top: -15px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #d9d9d9;
+  z-index: 10;
+}
+
+.info {
+  line-height: 32px;
+  margin-bottom: 25px;
+}
+
+.rental-tab {
+  line-height: 50px;
+  text-align: center;
+  display: flex;
+}
+
+.rental-tab .tab-li {
+  flex: 1;
+  background: #ffffff;
+  border-right: solid 1px #e6e6e6;
+  font-size: 16px;
+  color: #333333;
+  cursor: pointer;
+}
+
+.rental-tab .active,
+.rental-tab .show {
+  background: #e2383a;
+  color: #fff;
+  border-right-color: #e2383a;
+}
+
+.rental-tab .tab-li:last-child.active {
+  border-right: none;
+}
+
+.rental-tab .tab-li:last-child {
+  border-right: none;
+}
+
+#rentescrow .tarea {
+  background: #f5f5f5;
+}
+
+#rentescrow .tarea .top-nav {
+  height: 50px;
+  background: #fff;
+}
+
+#rentescrow .tarea .top-nav .center {
+  height: 100%;
+}
+
+#rentescrow .tarea .top-nav .lis {
+  width: 33.33333%;
+  height: 100%;
+  float: left;
+  text-align: center;
+  line-height: 50px;
+  color: #333;
+  font-size: 16px;
+  box-sizing: border-box;
+  *width: 32%;
+  cursor: pointer;
+}
+
+#rentescrow .tarea .top-nav .lis+.lis {
+  border-left: 1px solid #d9d9d9;
+}
+
+#rentescrow .tarea .top-nav .show {
+  background: #dd2726;
+  color: #fff;
+  border-color: #dd2726;
+}
+
+#rentescrow .tarea .content .blis {
+  display: none;
+  padding: 42px 0 50px 0;
+}
+
+#rentescrow .tarea .content .zjzy .zjzy-box {
+  *overflow: hidden;
+}
+
+#rentescrow .tarea .content .zjzy .zjzy-box:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+#rentescrow .tarea .content .zjzy .lis {
+  width: 25%;
+  box-sizing: border-box;
+  *width: 298px;
+  float: left;
+  background: #fff;
+  border: 1px solid #e4e4e4;
+}
+
+#rentescrow .tarea .content .zjzy .lis+.lis {
+  border-left-color: transparent;
+}
+
+#rentescrow .tarea .content .zjzy h2 {
+  padding: 27px 0 12px;
+  color: #333;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+}
+
+#rentescrow .tarea .content .zjzy .img {
+  padding-bottom: 12px;
+}
+
+#rentescrow .tarea .content .zjzy .img .icon {
+  background-position: 0 -350px;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+#rentescrow .tarea .content .zjzy .img h3 {
+  color: #fe8431;
+  font-size: 24px;
+  padding: 27px 0 5px;
+  text-align: center;
+}
+
+#rentescrow .tarea .content .zjzy .img p {
+  text-align: center;
+  color: #333;
+  font-size: 12px;
+}
+
+#rentescrow .tarea .content .zjzy p {
+  text-align: center;
+  margin-bottom: 18px;
+  color: #333;
+  font-size: 12px;
+}
+
+#rentescrow .tarea .content .zjzy .yh {
+  color: #fe8431;
+}
+
+#rentescrow .tarea .content .zjzy .button {
+  padding-bottom: 20px;
+}
+
+#rentescrow .tarea .content .zjzy .button a {
+  width: 200px;
+  height: 36px;
+  border-radius: 4px;
+  color: #dd2726;
+  border: 1px solid #dd2726;
+  text-align: center;
+  line-height: 36px;
+  margin: 0 auto;
+  display: block;
+  box-sizing: border-box;
+}
+
+#rentescrow .tarea .content .zjzy .lis.hover {
+  position: relative;
+  border-color: #ff8281;
+  box-shadow: 0 0 13px rgba(6, 0, 1, 0.14);
+}
+
+#rentescrow .tarea .content .zjzy .lis.hover .button a {
+  background: #dd2726;
+  color: #fff;
+}
+
+#rentescrow .tarea .content .xgzjzy .total {
+  background: #fff;
+  height: 50px;
+  box-sizing: border-box;
+  border: 1px solid #d9d9d9;
+  border-bottom: 0;
+  line-height: 50px;
+  text-align: center;
+  color: #333;
+  font-weight: 700;
+  background: #f7f7f7;
+}
+
+#rentescrow .tarea .content .xgzjzy .form-box {
+  *overflow: hidden;
+}
+
+#rentescrow .tarea .content .xgzjzy .form-box:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+#rentescrow .tarea .content .xgzjzy .form-box ul {
+  border-top: 1px solid #d9d9d9;
+  border-left: 1px solid transparent;
+  border-bottom: 1px solid #d9d9d9;
+  border-right: 1px solid transparent;
+  box-sizing: border-box;
+  float: left;
+  width: 14.285714%;
+  *width: 169px;
+  background: #fff;
+}
+
+#rentescrow .tarea .content .xgzjzy .form-box ul+ul {
+  border-right-color: #d9d9d9;
+}
+
+#rentescrow .tarea .content .xgzjzy .form-box li {
+  height: 50px;
+  line-height: 50px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #d9d9d9;
+  text-align: center;
+}
+
+#rentescrow .tarea .content .xgzjzy .form-box .prise {
+  border-bottom: 0;
+  height: 120px;
+}
+
+#rentescrow .tarea .content .xgzjzy .form-box .frist {
+  border-left-color: #d9d9d9;
+  border-right-color: #d9d9d9;
+}
+
+#rentescrow .tarea .content .xgzjzy .form-box .frist .prise {
+  line-height: 120px;
+}
+
+#rentescrow .tarea .content .xgzjzy .form-box .cp ul {
+  cursor: pointer;
+}
+
+#rentescrow .tarea .content .xgzjzy .form-box .cp1 {
+  border-right-color: #d9d9d9;
+}
+
+#rentescrow .tarea .content .xgzjzy .form-box .clq {
+  color: #333;
+}
+
+#rentescrow .tarea .content .xgzjzy .form-box .prise {
+  line-height: 30px;
+}
+
+#rentescrow .tarea .content .xgzjzy .form-box .prise h5 {
+  font-size: 22px;
+  color: #fe8431;
+  font-weight: normal;
+  padding-top: 15px;
+  padding-bottom: 18px;
+}
+
+#rentescrow .tarea .content .xgzjzy .form-box .prise h5 span {
+  font-size: 14px;
+  color: #fe8431;
+}
+
+#rentescrow .tarea .content .xgzjzy .form-box .prise .button a {
+  width: 130px;
+  height: 36px;
+  box-sizing: border-box;
+  text-align: center;
+  display: inline-block;
+  border: 1px solid #d9d9d9;
+  background: #f7f7f7;
+  line-height: 34px;
+  border-radius: 4px;
+}
+
+#rentescrow .tarea .content .xgzjzy .form-box .hover {
+  border-color: #ff8281;
+  box-shadow: 0 0 10px rgba(240, 9, 9, 0.35);
+  position: relative;
+}
+
+#rentescrow .tarea .content .xgzjzy .form-box .hover li {
+  border-color: transparent;
+}
+
+#rentescrow .tarea .content .xgzjzy .form-box .hover .button a {
+  background: #dd2726;
+  border-color: #dd2726;
+  color: #fff;
+}
+
+#rentescrow .tarea .content .zjtg .sjtg-nav {
+  text-align: center;
+  padding-bottom: 55px;
+}
+
+#rentescrow .tarea .content .zjtg .sjtg-nav .sjtg-navBox {
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 15px;
+  position: relative;
+  width: 446px;
+  margin: 0 auto;
+}
+
+#rentescrow .tarea .content .zjtg .sjtg-nav .line {
+  position: absolute;
+  width: 150px;
+  height: 3px;
+  bottom: -1px;
+  left: 0;
+  background: #f00909;
+}
+
+#rentescrow .tarea .content .zjtg .sjtg-nav .sjtg-navlis {
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+}
+
+#rentescrow .tarea .content .zjtg .sjtg-nav .sjtg-navlis+.sjtg-navlis {
+  margin-left: 48px;
+}
+
+#rentescrow .tarea .content .zjtg .sjtg-nav .sjtg-show {
+  font-weight: 700;
+}
+
+#rentescrow .tarea .content .zjtg .sjtg-qhbox .sjtg-qhlis {
+  *overflow: hidden;
+  display: none;
+}
+
+#rentescrow .tarea .content .zjtg .sjtg-qhbox .sjtg-qhlis:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+#rentescrow .tarea .content .zjtg .sjtg-qhbox .sjtg-qhlis .lis {
+  float: left;
+  box-sizing: border-box;
+  background: #fff;
+  cursor: pointer;
+  border: 1px solid #e6e6e6;
+  width: 300px;
+  margin-bottom: 30px;
+}
+
+#rentescrow .tarea .content .zjtg .sjtg-qhbox .sjtg-qhlis .img {
+  background: #f7f7f7;
+  padding: 30px 0;
+}
+
+#rentescrow .tarea .content .zjtg .sjtg-qhbox .sjtg-qhlis .img .icon {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+#rentescrow .tarea .content .zjtg .sjtg-qhbox .sjtg-qhlis .js {
+  padding: 30px 0 45px;
+}
+
+#rentescrow .tarea .content .zjtg .sjtg-qhbox .sjtg-qhlis ul {
+  *overflow: hidden;
+  position: relative;
+}
+
+#rentescrow .tarea .content .zjtg .sjtg-qhbox .sjtg-qhlis ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+#rentescrow .tarea .content .zjtg .sjtg-qhbox .sjtg-qhlis .fl {
+  width: 99px;
+  position: relative;
+}
+
+#rentescrow .tarea .content .zjtg .sjtg-qhbox .sjtg-qhlis .line {
+  position: absolute;
+  height: 34px;
+  width: 1px;
+  background: #e4e4e4;
+  top: 5px;
+  right: 0;
+}
+
+#rentescrow .tarea .content .zjtg .sjtg-qhbox .sjtg-qhlis .lis+.lis {
+  border-left-color: transparent;
+}
+
+#rentescrow .tarea .content .zjtg .sjtg-qhbox .sjtg-qhlis .lis1 .img .icon {
+  background-position: 0 -600px;
+}
+
+#rentescrow .tarea .content .zjtg .sjtg-qhbox .sjtg-qhlis .lis2 .img .icon {
+  background-position: -100px -600px;
+}
+
+#rentescrow .tarea .content .zjtg .sjtg-qhbox .sjtg-qhlis .lis3 .img .icon {
+  background-position: -200px -600px;
+}
+
+#rentescrow .tarea .content .zjtg .sjtg-qhbox .sjtg-qhlis .lis4 .img .icon {
+  background-position: -300px -600px;
+}
+
+#rentescrow .tarea .content .zjtg .sjtg-qhbox .sjtg-qhlis .ts {
+  margin-top: 10px;
+  padding: 15px 50px;
+  border: 1px solid #ffc8c8;
+  background: #fff;
+  width: 1098px;
+  float: left;
+}
+
+#rentescrow .tarea .content .zjtg .sjtg-qhbox .sjtg-qhlis .ts p {
+  text-indent: 3em;
+  position: relative;
+  text-align: left;
+}
+
+#rentescrow .tarea .content .zjtg .sjtg-qhbox .sjtg-qhlis .ts .icon {
+  width: 21px;
+  height: 18px;
+  position: absolute;
+  background-position: -22px -577px;
+  left: 0;
+  top: 0;
+}
+
+#rentescrow .tarea .content .zjtg .sjtg-qhbox .sjtg-qhlis h6 {
+  text-align: center;
+  font-weight: normal;
+  color: #333;
+}
+
+#rentescrow .tarea .content .zjtg .sjtg-qhbox .sjtg-qhlis p {
+  text-align: center;
+  color: #999;
+}
+
+#rentescrow .tarea .content .zjtg .sjtg-qhbox .sjtg-qhlis .prise {
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+#rentescrow .tarea .content .zjtg .sjtg-qhbox .sjtg-qhlis .prise h5 {
+  color: #fe8431;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 400;
+}
+
+#rentescrow .tarea .content .zjtg .sjtg-qhbox .sjtg-qhlis .button a {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 36px;
+  line-height: 36px;
+  color: #dd2726;
+  border: 1px solid #dd2726;
+  border-radius: 4px;
+  text-align: center;
+}
+
+#rentescrow .tarea .content .zjtg .sjtg-qhbox .sjtg-show {
+  display: block;
+}
+
+#rentescrow .tarea .content .zjtg .sjtg-qhbox .sjtg-qhlis.sjtg-show .lis.hover {
+  position: relative;
+  box-shadow: 0 0 13px rgba(6, 0, 1, 0.14);
+  border-color: #ff8281;
+}
+
+#rentescrow .tarea .content .zjtg .sjtg-qhbox .sjtg-qhlis.sjtg-show .lis.hover .button a {
+  background: #dd2726;
+  color: #fff;
+}
+
+#rentescrow .tarea .content .show {
+  display: block;
+}
+
+#rentescrow .icon {
+  background-image: url("https://www.eb.com.cn/template/Home/Default/PC/Static/img/rentEscrow.png");
+}
+
+#rentescrow .sm {
+  padding: 15px 50px;
+  border: 1px solid #ffc8c8;
+  background: #fff;
+  margin-top: 40px
+}
+
+#rentescrow .sm p {
+  text-indent: 3em;
+  position: relative
+}
+
+#rentescrow .sm .icon {
+  width: 21px;
+  height: 18px;
+  position: absolute;
+  background-position: -22px -577px;
+  left: 0;
+  top: 0
+}
+
+/* 我们的优势 */
+#whyChoose .totle p {
+  text-align: center;
+  margin-top: 25px;
+  color: #666;
+  font-size: 16px;
+  line-height: 28px
+}
+
+#whyChoose .title {
+  text-align: center;
+  position: relative;
+}
+
+#whyChoose .title-div {
+  position: absolute;
+  width: 1200px;
+  height: 1px;
+  left: 0px;
+  top: 70px;
+  border-top: 1px solid #e4e4e4;
+  color: red;
+  z-index: 1;
+}
+
+#whyChoose .title-h1 {
+  display: inline-block;
+  background: #f9f9f9;
+  z-index: 2;
+  position: relative;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+#whyChoose .logo {
+  margin-top: 50px
+}
+
+#whyChoose .logo ul:after {
+  content: "";
+  display: block;
+  clear: both
+}
+
+#whyChoose .logo ul li {
+  float: left;
+  width: 33.3333333%;
+  height: 220px;
+  position: relative;
+  margin-bottom: 40px
+}
+
+#whyChoose .logo ul li .img {
+  height: 130px;
+  width: 130px;
+  position: absolute;
+  box-shadow: 0 0 12px #ccc;
+  left: 0;
+  border-radius: 50%;
+  right: 0;
+  margin: auto;
+  transition: all 0.25s ease-in-out;
+  -webkit-transform: translate3d(0, 0, 0);
+  *position: static;
+  *left: auto;
+  *right: auto;
+  *top: auto;
+  *bottom: auto;
+  *display: block
+}
+
+#whyChoose .logo ul li .img div {
+  position: relative;
+  width: 100%;
+  height: 100%
+}
+
+#whyChoose .logo ul li .img:hover {
+  box-shadow: 0 0 20px #bbb
+}
+
+#whyChoose .logo ul li img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto
+}
+
+#whyChoose .logo ul li .describ {
+  position: absolute;
+  bottom: 30px;
+  width: 100%
+}
+
+#whyChoose .logo ul li p {
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+  line-height: 42px;
+}
+
+#whyChoose .logo ul li p {
+  line-height: 32px;
+}
+/* banner */
+#virtual-banner {
+	width: 100%;
+	height: 350px;
+	background: #2c343d;
+	position: relative
+}
+
+#virtual-banner .center {
+	position: relative
+}
+
+#virtual-banner .center .title {
+	padding: 0;
+	text-align: left;
+	font-size: 60px;
+	color: #fff;
+	position: absolute;
+	top: 75px;
+	left: 111px;
+	font-weight: 400;
+	animation: virtualBannerh1 1s ease-in-out
+}
+
+#virtual-banner .center h3 {
+	padding: 0;
+	font-size: 26px;
+	color: #fff;
+	position: absolute;
+	top: 170px;
+	left: 111px;
+	font-weight: 400;
+	animation: virtualBannerh3 1s ease-in-out
+}
+
+#virtual-banner .center .icon {
+	position: absolute;
+	/* background-image: url("../../../img/VirtualHost.png"); */
+	background-position: 0 0;
+	top: 30px;
+	right: 134px;
+	width: 404px;
+	height: 284px;
+	animation: virtualBannerimg 1s ease-in-out
+}
+
+#virtual-banner .center .icon {
+    position: absolute;
+    background-image: url(http://user.epower.cn/template/Home/Default/PC/Static/img/postOffice.png);
+    background-position: -103px -302px;
+    top: 0;
+    right: 134px;
+    width: 395px;
+    height: 297px;
+  }
+
+
+
+  

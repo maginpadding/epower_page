@@ -9,7 +9,7 @@ module.exports = {
 
     // Paths
     // assetsSubDirectory: 'template/Home/Default/PC/Static/epower/gw_info',
-    assetsSubDirectory: 'template/Home/Default/Mobile/Static/epower/gw_info',
+    assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {},
 
@@ -44,7 +44,7 @@ module.exports = {
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
     // assetsSubDirectory: 'template/Home/Default/PC/Static/epower/gw_info',
-    assetsSubDirectory: 'template/Home/Default/Mobile/Static/epower/gw_info',
+    assetsSubDirectory: 'static',
     assetsPublicPath: '/',
 
     /**

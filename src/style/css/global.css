@@ -4,11 +4,24 @@
   margin: 0;
   padding: 0;
 }
+.box-size,
+.box-size * {
+  box-sizing: border-box;
+}
 ul,li,dl,ol,dd,dt{
     list-style: none;
 }
 a{
     text-decoration: none;
+    outline: none;
+}
+b,i{
+  font-weight: normal;
+  font-style: normal;
+}
+input,button{
+  background-color: transparent;
+  outline: none;
 }
 h1,
 h2,
@@ -47,6 +60,10 @@ body {
 }
 .hide{
   display: none !important;
+}
+.center{
+  width: 1200px;
+  margin: 0 auto;
 }
 .center-1200 {
   width: 1200px !important;
@@ -209,6 +226,9 @@ font-weight: lighter;
 }
 .text-left {
   text-align: left;
+}
+.text-right {
+  text-align: right;
 }
 /* 浮动 */
 .fl {
