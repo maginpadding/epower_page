@@ -5,8 +5,8 @@ import Router from 'vue-router'
 // import mobileTradeInfo from '@/components/www_epower/info/mobile_trade_info'
 
 // // 官网建站介绍
-// import pcGwInfo from '@/components/www_epower/info/pc_gw_info'
-// import mobileGwInfo from '@/components/www_epower/info/mobile_gw_info'
+import pcGwInfo from '@/page/pc_gw_info'
+import mobileGwInfo from '@/page/m_gw_info'
 
 // //快速注册
 // import registe from '@/components/www_epower/info/registe'
@@ -41,7 +41,7 @@ import Router from 'vue-router'
 //EB云计算 
 // import ebYun from '@/components/eb/yun'
 // import ebCloud from '@/page/ebCloud'
-import mobile_cloud from '@/page/mobile_cloud'
+// import mobile_cloud from '@/page/mobile_cloud'
 
 Vue.use(Router)
 //使用历史模式需要后台支持--不用路由,使用切换
@@ -53,11 +53,11 @@ export default new Router({
     //   name: 'ebCloud',
     //   component: ebCloud
     // },
-    {
-      path: '/ebCloud/m',
-      name: 'mobile_cloud',
-      component: mobile_cloud
-    },
+    // {
+    //   path: '/ebCloud/m',
+    //   name: 'mobile_cloud',
+    //   component: mobile_cloud
+    // },
     //  {
     //   path: '/midAutumn',
     //   name: 'midAutumn',
@@ -75,16 +75,16 @@ export default new Router({
     //   name: 'mobileTradeInfo',
     //   component: mobileTradeInfo
     // },
-    // {
-    //   path: '/jianzhan',
-    //   name: 'pcGwInfo',
-    //   component: pcGwInfo
-    // },
-    // {
-    //   path: '/jianzhan/m',
-    //   name: 'mobileGwInfo',
-    //   component: mobileGwInfo
-    // },
+    {
+      path: '/jianzhan',
+      name: 'pcGwInfo',
+      component: pcGwInfo
+    },
+    {
+      path: '/jianzhan/m',
+      name: 'mobileGwInfo',
+      component: mobileGwInfo
+    },
     // {
     //   path: '/form',
     //   name: 'form',

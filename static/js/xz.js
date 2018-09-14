@@ -1,14 +1,14 @@
 $(function (param) {
-  var $a = $(".section-4 .buttons a");
-  var $s = $(".section-4 .buttons span");
+  var $a = $(".xz_wrap .buttons a");
+  var $s = $(".xz_wrap .buttons span");
   var cArr = ["p6", "p5", "p4", "p3", "p2", "p1"];
   var index = 0;
-  $(".section-4 .next").click(
+  $(".xz_wrap .next").click(
     function () {
       nextimg();
     }
   )
-  $(".section-4 .prev").click(
+  $(".xz_wrap .prev").click(
     function () {
       previmg();
     }
@@ -20,7 +20,7 @@ $(function (param) {
     //i是元素的索引，从0开始
     //e为当前处理的元素
     //each循环，当前处理的元素移除所有的class，然后添加数组索引i的class
-    $(".section-4 li").each(function (i, e) {
+    $(".xz_wrap li").each(function (i, e) {
       $(e).removeClass().addClass(cArr[i]);
     })
     index--;
@@ -34,7 +34,7 @@ $(function (param) {
   function nextimg() {
     cArr.push(cArr[0]);
     cArr.shift();
-    $(".section-4 li").each(function (i, e) {
+    $(".xz_wrap li").each(function (i, e) {
       $(e).removeClass().addClass(cArr[i]);
     })
     index++;
@@ -61,7 +61,7 @@ $(function (param) {
          */
         var newarr = cArr.splice(0, b);
         cArr = $.merge(cArr, newarr);
-        $(".section-4 li").each(function (i, e) {
+        $(".xz_wrap li").each(function (i, e) {
           $(e).removeClass().addClass(cArr[i]);
         })
         index = myindex;
@@ -78,7 +78,7 @@ $(function (param) {
         var oldarr = cArr.splice(0, -b)
         cArr = $.merge(cArr, oldarr);
         cArr.reverse();
-        $(".section-4 li").each(function (i, e) {
+        $(".xz_wrap li").each(function (i, e) {
           $(e).removeClass().addClass(cArr[i]);
         })
         index = myindex;
@@ -93,24 +93,24 @@ $(function (param) {
   }
 
   //点击class为p2的元素触发上一张照片的函数
-  $(document).on("click", ".section-4 .p2", function () {
+  $(document).on("click", ".xz_wrap .p2", function () {
     previmg();
     return false; //返回一个false值，让a标签不跳转
   });
 
   //点击class为p4的元素触发下一张照片的函数
-  $(document).on("click", ".section-4 .p4", function () {
+  $(document).on("click", ".xz_wrap .p4", function () {
     nextimg();
     return false;
   });
 
   //          鼠标移入box时清除定时器
-  $(".section-4 .box").mouseover(function () {
+  $(".xz_wrap .box").mouseover(function () {
     clearInterval(timer);
   })
 
   //          鼠标移出box时开始定时器
-  $(".section-4 .box").mouseleave(function () {
+  $(".xz_wrap .box").mouseleave(function () {
     timer = setInterval(nextimg, 4000);
   })
 
