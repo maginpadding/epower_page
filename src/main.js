@@ -6,6 +6,7 @@ import App from './App'
 import router from './router'
 
 
+axios.defaults.baseURL = 'api/'
 
 // import glob from 'glob'
 

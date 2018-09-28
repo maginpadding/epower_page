@@ -11,7 +11,14 @@ module.exports = {
     // assetsSubDirectory: 'template/Home/Default/PC/Static/epower/gw_info',
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+      '/api/**': {
+        target: 'http://localhost:8001',
+        pathRewrite: {
+          '^/api': '/'
+        }
+      },
+    },
 
     // Various Dev Server settings
     host: '127.0.0.1', // can be overwritten by process.env.HOST
@@ -21,7 +28,7 @@ module.exports = {
     notifyOnErrors: true,
     poll: false, // https://webpack.js.org/configuration/dev-server/#devserver-watchoptions-
 
-    
+
     /**
      * Source Maps
      */

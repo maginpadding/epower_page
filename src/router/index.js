@@ -11,6 +11,9 @@ import mobileGwInfo from '@/page/m_gw_info'
 //付款页面
 import pay from '@/page/pay'
 import mobilePay from '@/page/mobilePay'
+
+
+import imageUpload from '@/components/imageUpload'
 // //快速注册
 // import registe from '@/components/www_epower/info/registe'
 
@@ -51,6 +54,11 @@ Vue.use(Router)
 export default new Router({
   mode: 'history',
   routes: [
+    {
+      path:'/imageUpload',
+      name:'imageUpload',
+      component:imageUpload
+    }
     // {
     //   path: '/ebCloud',
     //   name: 'ebCloud',
@@ -78,26 +86,26 @@ export default new Router({
     //   name: 'mobileTradeInfo',
     //   component: mobileTradeInfo
     // },
-    {
-      path: '/jianzhan',
-      name: 'pcGwInfo',
-      component: pcGwInfo
-    },
-    {
-      path: '/jianzhan/m',
-      name: 'mobileGwInfo',
-      component: mobileGwInfo
-    },
-    {
-      path: '/pay',
-      name: 'pay',
-      component: pay
-    },
-    {
-      path: '/pay/m',
-      name: 'mobilePay',
-      component: mobilePay
-    },
+    // {
+    //   path: '/jianzhan',
+    //   name: 'pcGwInfo',
+    //   component: pcGwInfo
+    // },
+    // {
+    //   path: '/jianzhan/m',
+    //   name: 'mobileGwInfo',
+    //   component: mobileGwInfo
+    // },
+    // {
+    //   path: '/pay',
+    //   name: 'pay',
+    //   component: pay
+    // },
+    // {
+    //   path: '/pay/m',
+    //   name: 'mobilePay',
+    //   component: mobilePay
+    // },
     // {
     //   path: '/form',
     //   name: 'form',
