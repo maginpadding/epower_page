@@ -8,6 +8,9 @@ import Router from 'vue-router'
 import pcGwInfo from '@/page/pc_gw_info'
 import mobileGwInfo from '@/page/m_gw_info'
 
+//付款页面
+import pay from '@/page/pay'
+import mobilePay from '@/page/mobilePay'
 // //快速注册
 // import registe from '@/components/www_epower/info/registe'
 
@@ -84,6 +87,16 @@ export default new Router({
       path: '/jianzhan/m',
       name: 'mobileGwInfo',
       component: mobileGwInfo
+    },
+    {
+      path: '/pay',
+      name: 'pay',
+      component: pay
+    },
+    {
+      path: '/pay/m',
+      name: 'mobilePay',
+      component: mobilePay
     },
     // {
     //   path: '/form',

@@ -29,49 +29,49 @@ export default {
 </script>
 
 <style lang="less">
-// * {
-//   margin: 0;
-//   padding: 0;
-//   box-sizing: border-box;
-// }
-// body {
-//   min-width: 320px;
-//   max-width: 750px;
-//   font-family: '微软雅黑';
-//   font-size: 14px;
-//   margin: 0 auto;
-// }
-// .hide {
-//   display: none;
-// }
-// h1,
-// h2,
-// h3,
-// h4 {
-//   font-weight: normal;
-//   margin: 0;
-//   padding: 0;
-// }
-// b{
-//     font-weight: normal;
-// }
-// i{
-//     font-style: normal;
-// }
-// p {
-//   margin: 0;
-// }
-// a {
-//   text-decoration: none;
-// }
-// ul,
-// li,
-// ol,
-// dl,
-// dt,
-// dd {
-//   list-style: none;
-// }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-width: 320px;
+  max-width: 750px;
+  font-family: '微软雅黑';
+  font-size: 14px;
+  margin: 0 auto;
+}
+.hide {
+  display: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+b{
+    font-weight: normal;
+}
+i{
+    font-style: normal;
+}
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+ul,
+li,
+ol,
+dl,
+dt,
+dd {
+  list-style: none;
+}
 // .color-fff {
 //   color: #fff;
 // }
